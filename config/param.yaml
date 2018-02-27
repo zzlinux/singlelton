@@ -1,0 +1,121 @@
+%YAML:1.0
+appMode: 2
+TASK:
+    trace: 1
+    radarLocation: 0
+    cameraLocation: 1
+    apriltag: 1
+DEBUG:
+    trace: 1
+    radarLocation: 0
+    cameraLocation: 1
+    apriltag: 1
+trace:
+    mode: 0
+    oni: "/home/robocon/workspace/oni/0124-circleedgeback-4in.ONI"
+    RT01: !!opencv-matrix
+       rows: 4
+       cols: 4
+       dt: f
+       data: [ 9.99981105e-01, 6.01835735e-03, -1.23092392e-03,
+           -5.93803823e-03, 0., 2.00380027e-01, 9.79718328e-01,
+           -1.97705820e-01, 6.14294736e-03, -9.79699790e-01, 2.00376242e-01,
+           9.66625035e-01, 0., 0., 0., 1. ]
+    CIRCLE: !!opencv-matrix
+       rows: 3
+       cols: 6
+       dt: f
+       data: [0.6,1.5, 3.8,5, 0.5,2.3,
+              1,1.5,   5.7,7.2, 0.5,2.3,
+              -0.8,0.8, 5.5,6.5, 0.5,3.3]
+    CIRCLE2D: !!opencv-matrix
+       rows: 3
+       cols: 2
+       dt: i
+       data: [200,450,
+              220,420,
+              200,450]
+    BALL: !!opencv-matrix
+       rows: 3
+       cols: 6
+       dt: f
+       data: [-0.5,1.5, 0.8,6, 0.6,3,
+              0,2.5, 0.8,8, 0.6,3.5,
+              -1.5,1.5, 0.8,8, 0.6,4.2]
+    BALL2D: !!opencv-matrix
+       rows: 3
+       cols: 2
+       dt: i
+       data: [210,610,
+              210,500,
+              210,610]
+    ballcolor: "BLUE"
+    ballgold: "YELLOW"
+    BLUE:
+        hmin: 85
+        hmax: 124
+        smin: 43
+        smax: 255
+        vmin: 0
+        vmax: 255
+    RED:
+        hmin: 156
+        hmax: 179
+        smin: 43
+        smax: 255
+        vmin: 0
+        vmax: 255
+    YELLOW:
+        hmin: 26
+        hmax: 34
+        smin: 43
+        smax: 255
+        vmin: 46
+        vmax: 255
+    GREEN:
+        hmin: 35
+        hmax: 77
+        smin: 43
+        smax: 255
+        vmin: 46
+        vmax: 255
+cameraLocation:
+    OV2710_INTRINSIC: !!opencv-matrix
+       rows: 3
+       cols: 3
+       dt: f
+       data: [2.913949555529118e+02,0,0,
+              0.249703033828407,      2.918644439977966e+02,    0,
+              3.139312208326291e+02,  2.424113307214599e+02,    1]
+    OV2710_COEFFS: !!opencv-matrix
+       rows: 1
+       cols: 4
+       dt: f
+       data: [-0.224965668654656,    0.038536667147829,    8.150664191690574e-04,  -9.482220330654349e-04]
+apriltag:
+    camera_matrix: !!opencv-matrix
+       rows: 3
+       cols: 3
+       dt: d
+       data: [ 7.3574346916375328e+02, 0., 3.0922568287656634e+02, 0.,
+           7.3574346916375328e+02, 2.7230627442075098e+02, 0., 0., 1. ]
+    distortion_coefficients: !!opencv-matrix
+       rows: 5
+       cols: 1
+       dt: d
+       data: [ -5.0322923965824795e-01, 6.6975386313206886e-01,
+           -1.8146682544540774e-02,-4.2058557723658003e-03,
+           -2.3641315057113950e+00 ]
+    matrix: !!opencv-matrix
+       rows: 3
+       cols: 3
+       dt: d
+       data: [5.998408032715168e+02,0,0,
+           -0.734942309161167,5.962154747875757e+02,0,
+           2.944752364601941e+02,2.664853523643823e+02,1]
+    coeff: !!opencv-matrix
+       rows: 1
+       cols: 4
+       dt: f
+       data: [-0.411209551701076,0.180310100210018,
+           -0.006930421141986,0.001331654499296]

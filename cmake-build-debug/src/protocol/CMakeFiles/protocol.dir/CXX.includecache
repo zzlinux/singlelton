@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robocon/workspace/agent-v2.0/src/protocol/serialapp.cpp
+serialapp.h
+/home/robocon/workspace/agent-v2.0/src/protocol/serialapp.h
+
+/home/robocon/workspace/agent-v2.0/src/protocol/serialapp.h
+boost/thread/mutex.hpp
+-
+string
+-
+serialbase.h
+/home/robocon/workspace/agent-v2.0/src/protocol/serialbase.h
+utility.h
+/home/robocon/workspace/agent-v2.0/src/protocol/utility.h
+
+/home/robocon/workspace/agent-v2.0/src/protocol/serialbase.cpp
+serialbase.h
+/home/robocon/workspace/agent-v2.0/src/protocol/serialbase.h
+
+/home/robocon/workspace/agent-v2.0/src/protocol/serialbase.h
+boost/asio.hpp
+-
+
+/home/robocon/workspace/agent-v2.0/src/protocol/utility.cpp
+utility.h
+/home/robocon/workspace/agent-v2.0/src/protocol/utility.h
+opencv2/core/core.hpp
+-
+
+/home/robocon/workspace/agent-v2.0/src/protocol/utility.h
+opencv2/opencv.hpp
+-
+opencv2/core/core.hpp
+-
+stddef.h
+-
+

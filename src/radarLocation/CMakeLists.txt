@@ -1,0 +1,21 @@
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../../lib)
+add_library(radar
+        #Algorithm.cpp
+        #Radar.cpp
+        RadarController.cpp
+        RadarModel.cpp
+        lib/Urg_driver.cpp
+        lib/urg_connection.c
+        lib/ticks.cpp
+        lib/urg_utils.c
+        lib/urg_debug.c
+        lib/urg_ring_buffer.c
+        lib/urg_sensor.c
+        lib/urg_serial.c
+        lib/urg_tcpclient.c
+        lib/Connection_information.cpp
+        lib/urg_serial_utils_linux.c
+        )
+target_link_libraries(radar
+        ${OpenCV_LIBS}
+        )
