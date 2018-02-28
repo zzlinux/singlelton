@@ -43,10 +43,10 @@ RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/agent-v2.0
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/agent-v2.0/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/cameraLocation/CMakeFiles/camera.dir/depend.make
@@ -59,16 +59,16 @@ include src/cameraLocation/CMakeFiles/camera.dir/flags.make
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: src/cameraLocation/CMakeFiles/camera.dir/flags.make
 src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/cameraLocation/CameraController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camera.dir/CameraController.cpp.o -c /home/robocon/workspace/agent-v2.0/src/cameraLocation/CameraController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camera.dir/CameraController.cpp.o -c /home/robocon/workspace/singleton/src/cameraLocation/CameraController.cpp
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camera.dir/CameraController.cpp.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/cameraLocation/CameraController.cpp > CMakeFiles/camera.dir/CameraController.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/cameraLocation/CameraController.cpp > CMakeFiles/camera.dir/CameraController.cpp.i
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camera.dir/CameraController.cpp.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/cameraLocation/CameraController.cpp -o CMakeFiles/camera.dir/CameraController.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/cameraLocation/CameraController.cpp -o CMakeFiles/camera.dir/CameraController.cpp.s
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o.provides.build: 
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o: src/cameraLocation/CMakeFiles/camera.dir/flags.make
 src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o: ../src/cameraLocation/CameraModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camera.dir/CameraModel.cpp.o -c /home/robocon/workspace/agent-v2.0/src/cameraLocation/CameraModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camera.dir/CameraModel.cpp.o -c /home/robocon/workspace/singleton/src/cameraLocation/CameraModel.cpp
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camera.dir/CameraModel.cpp.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/cameraLocation/CameraModel.cpp > CMakeFiles/camera.dir/CameraModel.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/cameraLocation/CameraModel.cpp > CMakeFiles/camera.dir/CameraModel.cpp.i
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camera.dir/CameraModel.cpp.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/cameraLocation/CameraModel.cpp -o CMakeFiles/camera.dir/CameraModel.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/cameraLocation/CameraModel.cpp -o CMakeFiles/camera.dir/CameraModel.cpp.s
 
 src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o.requires:
 
@@ -117,9 +117,9 @@ src/cameraLocation/libcamera.a: src/cameraLocation/CMakeFiles/camera.dir/CameraC
 src/cameraLocation/libcamera.a: src/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o
 src/cameraLocation/libcamera.a: src/cameraLocation/CMakeFiles/camera.dir/build.make
 src/cameraLocation/libcamera.a: src/cameraLocation/CMakeFiles/camera.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcamera.a"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && $(CMAKE_COMMAND) -P CMakeFiles/camera.dir/cmake_clean_target.cmake
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camera.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcamera.a"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && $(CMAKE_COMMAND) -P CMakeFiles/camera.dir/cmake_clean_target.cmake
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camera.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/cameraLocation/CMakeFiles/camera.dir/build: src/cameraLocation/libcamera.a
@@ -132,10 +132,10 @@ src/cameraLocation/CMakeFiles/camera.dir/requires: src/cameraLocation/CMakeFiles
 .PHONY : src/cameraLocation/CMakeFiles/camera.dir/requires
 
 src/cameraLocation/CMakeFiles/camera.dir/clean:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation && $(CMAKE_COMMAND) -P CMakeFiles/camera.dir/cmake_clean.cmake
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation && $(CMAKE_COMMAND) -P CMakeFiles/camera.dir/cmake_clean.cmake
 .PHONY : src/cameraLocation/CMakeFiles/camera.dir/clean
 
 src/cameraLocation/CMakeFiles/camera.dir/depend:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/agent-v2.0 /home/robocon/workspace/agent-v2.0/src/cameraLocation /home/robocon/workspace/agent-v2.0/cmake-build-debug /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/singleton /home/robocon/workspace/singleton/src/cameraLocation /home/robocon/workspace/singleton/cmake-build-debug /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation /home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/cameraLocation/CMakeFiles/camera.dir/depend
 

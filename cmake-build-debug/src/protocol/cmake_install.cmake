@@ -1,4 +1,4 @@
-# Install script for directory: /home/robocon/workspace/agent-v2.0/src/protocol
+# Install script for directory: /home/robocon/workspace/singleton/src/protocol
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

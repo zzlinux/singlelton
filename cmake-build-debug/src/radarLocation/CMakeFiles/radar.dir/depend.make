@@ -121,6 +121,9 @@ src/radarLocation/CMakeFiles/radar.dir/RadarController.cpp.o: /usr/local/include
 src/radarLocation/CMakeFiles/radar.dir/RadarController.cpp.o: /usr/local/include/opencv2/videoio.hpp
 src/radarLocation/CMakeFiles/radar.dir/RadarController.cpp.o: /usr/local/include/opencv2/videoio/videoio_c.h
 
+src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/protocol/serialapp.h
+src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/protocol/serialbase.h
+src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/protocol/utility.h
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/RadarModel.cpp
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/RadarModel.h
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/lib/Connection_information.h
@@ -128,6 +131,7 @@ src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/li
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/lib/Urg_driver.h
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/lib/detect_os.h
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/radarLocation/lib/math_utilities.h
+src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: ../src/thread/Param.h
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: /usr/local/include/opencv/cxcore.h
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: /usr/local/include/opencv2/calib3d.hpp
 src/radarLocation/CMakeFiles/radar.dir/RadarModel.cpp.o: /usr/local/include/opencv2/calib3d/calib3d_c.h

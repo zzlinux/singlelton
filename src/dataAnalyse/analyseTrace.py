@@ -4,7 +4,7 @@ import pylab as plt
 print "hello"
 f = open("traces.yml")
 ya = yaml.load(f)
-data = ya["Time20180127-155235"]
+data = ya["Time20180227-231936"]
 traces = data['points']
 x = []
 y = []

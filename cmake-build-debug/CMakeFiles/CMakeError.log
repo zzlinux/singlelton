@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3b789/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3b789.dir/build.make CMakeFiles/cmTC_3b789.dir/build
-make[1]: Entering directory `/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3b789.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3b789.dir/CheckSymbolExists.c.o   -c /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_3b789
-/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b789.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3b789.dir/CheckSymbolExists.c.o  -o cmTC_3b789 
-CMakeFiles/cmTC_3b789.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_cb68c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb68c.dir/build.make CMakeFiles/cmTC_cb68c.dir/build
+make[1]: Entering directory `/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb68c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cb68c.dir/CheckSymbolExists.c.o   -c /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cb68c
+/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb68c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cb68c.dir/CheckSymbolExists.c.o  -o cmTC_cb68c 
+CMakeFiles/cmTC_cb68c.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTC_3b789] Error 1
-make[1]: Leaving directory `/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [cmTC_3b789/fast] Error 2
+make[1]: *** [cmTC_cb68c] Error 1
+make[1]: Leaving directory `/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [cmTC_cb68c/fast] Error 2
 
-File /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -32,20 +32,20 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_019ad/fast"
-/usr/bin/make -f CMakeFiles/cmTC_019ad.dir/build.make CMakeFiles/cmTC_019ad.dir/build
-make[1]: Entering directory `/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_019ad.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_019ad.dir/CheckFunctionExists.c.o   -c /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
-Linking C executable cmTC_019ad
-/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_019ad.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_019ad.dir/CheckFunctionExists.c.o  -o cmTC_019ad -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_9f431/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f431.dir/build.make CMakeFiles/cmTC_9f431.dir/build
+make[1]: Entering directory `/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f431.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9f431.dir/CheckFunctionExists.c.o   -c /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f431
+/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f431.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9f431.dir/CheckFunctionExists.c.o  -o cmTC_9f431 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTC_019ad] Error 1
-make[1]: Leaving directory `/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [cmTC_019ad/fast] Error 2
+make[1]: *** [cmTC_9f431] Error 1
+make[1]: Leaving directory `/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [cmTC_9f431/fast] Error 2
 
 

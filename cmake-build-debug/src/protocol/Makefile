@@ -48,10 +48,10 @@ RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/agent-v2.0
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/agent-v2.0/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/protocol/CMakeFiles/progress.marks
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles /home/robocon/workspace/singleton/cmake-build-debug/src/protocol/CMakeFiles/progress.marks
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/clean
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/protocol/CMakeFiles/protocol.dir/rule:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/CMakeFiles/protocol.dir/rule
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/protocol/CMakeFiles/protocol.dir/rule
 .PHONY : src/protocol/CMakeFiles/protocol.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ protocol: src/protocol/CMakeFiles/protocol.dir/rule
 
 # fast build rule for target.
 protocol/fast:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/build
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/build
 .PHONY : protocol/fast
 
 serialapp.o: serialapp.cpp.o
@@ -131,7 +131,7 @@ serialapp.o: serialapp.cpp.o
 
 # target to build an object file
 serialapp.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.o
 .PHONY : serialapp.cpp.o
 
 serialapp.i: serialapp.cpp.i
@@ -140,7 +140,7 @@ serialapp.i: serialapp.cpp.i
 
 # target to preprocess a source file
 serialapp.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.i
 .PHONY : serialapp.cpp.i
 
 serialapp.s: serialapp.cpp.s
@@ -149,7 +149,7 @@ serialapp.s: serialapp.cpp.s
 
 # target to generate assembly for a file
 serialapp.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.s
 .PHONY : serialapp.cpp.s
 
 serialbase.o: serialbase.cpp.o
@@ -158,7 +158,7 @@ serialbase.o: serialbase.cpp.o
 
 # target to build an object file
 serialbase.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.o
 .PHONY : serialbase.cpp.o
 
 serialbase.i: serialbase.cpp.i
@@ -167,7 +167,7 @@ serialbase.i: serialbase.cpp.i
 
 # target to preprocess a source file
 serialbase.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.i
 .PHONY : serialbase.cpp.i
 
 serialbase.s: serialbase.cpp.s
@@ -176,7 +176,7 @@ serialbase.s: serialbase.cpp.s
 
 # target to generate assembly for a file
 serialbase.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.s
 .PHONY : serialbase.cpp.s
 
 utility.o: utility.cpp.o
@@ -185,7 +185,7 @@ utility.o: utility.cpp.o
 
 # target to build an object file
 utility.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/utility.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/utility.cpp.o
 .PHONY : utility.cpp.o
 
 utility.i: utility.cpp.i
@@ -194,7 +194,7 @@ utility.i: utility.cpp.i
 
 # target to preprocess a source file
 utility.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/utility.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/utility.cpp.i
 .PHONY : utility.cpp.i
 
 utility.s: utility.cpp.s
@@ -203,7 +203,7 @@ utility.s: utility.cpp.s
 
 # target to generate assembly for a file
 utility.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/utility.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/utility.cpp.s
 .PHONY : utility.cpp.s
 
 # Help Target
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

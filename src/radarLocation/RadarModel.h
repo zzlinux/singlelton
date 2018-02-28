@@ -5,15 +5,14 @@
 #ifndef ROBOCON_RADARMODEL_H
 #define ROBOCON_RADARMODEL_H
 
+#include <list>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
 
 #include "lib/Urg_driver.h"
 #include "lib/Connection_information.h"
 #include "lib/math_utilities.h"
-
-#include <iostream>
-#include <opencv2/core/core.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/highgui/highgui.hpp>
 
 using namespace qrk;
 
@@ -31,6 +30,8 @@ namespace hitcrt
         cv::Point2d world2pixel(cv::Point2d old);
         void fillMat(cv::Mat &img, std::vector<cv::Point2d> &points, cv::Scalar color);
         void myimshow(std::vector<cv::Point2d> &points);
+        void drawAxes(cv::Mat &img);
+        void showResultImg(std::vector<float> &position,std::vector <std::vector<cv::Point2d>> &lines,bool &isLocationValued);
         float CalYawAngle(LINEKB &KB);
         double CalPointLineDistance(const cv::Point2d &point, const LINE &line);
         double CalPointLineDistance(const cv::Point2d point,const LINEKB &kb);
@@ -50,6 +51,8 @@ namespace hitcrt
         void kalman1_init(kalman1_state *state, float init_x, float init_p);
         float kalman1_filter(kalman1_state *state, float z_measure);
         /*----------------kalman filter end------------------------------------------------------------------------*/
+        const int WINDOWSIZE = 7;
+        void averageFilter(std::list<std::vector<float> > &slidewindow,std::vector<float> & position);
     };
 }
 

@@ -48,10 +48,10 @@ RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/agent-v2.0
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/agent-v2.0/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/trace/CMakeFiles/progress.marks
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles /home/robocon/workspace/singleton/cmake-build-debug/src/trace/CMakeFiles/progress.marks
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/clean
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/trace/CMakeFiles/trace.dir/rule:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/CMakeFiles/trace.dir/rule
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/trace/CMakeFiles/trace.dir/rule
 .PHONY : src/trace/CMakeFiles/trace.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ trace: src/trace/CMakeFiles/trace.dir/rule
 
 # fast build rule for target.
 trace/fast:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/build
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/build
 .PHONY : trace/fast
 
 BallAssociate.o: BallAssociate.cpp.o
@@ -131,7 +131,7 @@ BallAssociate.o: BallAssociate.cpp.o
 
 # target to build an object file
 BallAssociate.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallAssociate.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallAssociate.cpp.o
 .PHONY : BallAssociate.cpp.o
 
 BallAssociate.i: BallAssociate.cpp.i
@@ -140,7 +140,7 @@ BallAssociate.i: BallAssociate.cpp.i
 
 # target to preprocess a source file
 BallAssociate.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallAssociate.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallAssociate.cpp.i
 .PHONY : BallAssociate.cpp.i
 
 BallAssociate.s: BallAssociate.cpp.s
@@ -149,7 +149,7 @@ BallAssociate.s: BallAssociate.cpp.s
 
 # target to generate assembly for a file
 BallAssociate.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallAssociate.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallAssociate.cpp.s
 .PHONY : BallAssociate.cpp.s
 
 BallDetector.o: BallDetector.cpp.o
@@ -158,7 +158,7 @@ BallDetector.o: BallDetector.cpp.o
 
 # target to build an object file
 BallDetector.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallDetector.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallDetector.cpp.o
 .PHONY : BallDetector.cpp.o
 
 BallDetector.i: BallDetector.cpp.i
@@ -167,7 +167,7 @@ BallDetector.i: BallDetector.cpp.i
 
 # target to preprocess a source file
 BallDetector.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallDetector.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallDetector.cpp.i
 .PHONY : BallDetector.cpp.i
 
 BallDetector.s: BallDetector.cpp.s
@@ -176,7 +176,7 @@ BallDetector.s: BallDetector.cpp.s
 
 # target to generate assembly for a file
 BallDetector.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallDetector.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/BallDetector.cpp.s
 .PHONY : BallDetector.cpp.s
 
 CircleDetector.o: CircleDetector.cpp.o
@@ -185,7 +185,7 @@ CircleDetector.o: CircleDetector.cpp.o
 
 # target to build an object file
 CircleDetector.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/CircleDetector.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/CircleDetector.cpp.o
 .PHONY : CircleDetector.cpp.o
 
 CircleDetector.i: CircleDetector.cpp.i
@@ -194,7 +194,7 @@ CircleDetector.i: CircleDetector.cpp.i
 
 # target to preprocess a source file
 CircleDetector.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/CircleDetector.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/CircleDetector.cpp.i
 .PHONY : CircleDetector.cpp.i
 
 CircleDetector.s: CircleDetector.cpp.s
@@ -203,7 +203,7 @@ CircleDetector.s: CircleDetector.cpp.s
 
 # target to generate assembly for a file
 CircleDetector.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/CircleDetector.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/CircleDetector.cpp.s
 .PHONY : CircleDetector.cpp.s
 
 FitTrace.o: FitTrace.cpp.o
@@ -212,7 +212,7 @@ FitTrace.o: FitTrace.cpp.o
 
 # target to build an object file
 FitTrace.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/FitTrace.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/FitTrace.cpp.o
 .PHONY : FitTrace.cpp.o
 
 FitTrace.i: FitTrace.cpp.i
@@ -221,7 +221,7 @@ FitTrace.i: FitTrace.cpp.i
 
 # target to preprocess a source file
 FitTrace.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/FitTrace.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/FitTrace.cpp.i
 .PHONY : FitTrace.cpp.i
 
 FitTrace.s: FitTrace.cpp.s
@@ -230,7 +230,7 @@ FitTrace.s: FitTrace.cpp.s
 
 # target to generate assembly for a file
 FitTrace.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/FitTrace.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/FitTrace.cpp.s
 .PHONY : FitTrace.cpp.s
 
 Recorder.o: Recorder.cpp.o
@@ -239,7 +239,7 @@ Recorder.o: Recorder.cpp.o
 
 # target to build an object file
 Recorder.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Recorder.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Recorder.cpp.o
 .PHONY : Recorder.cpp.o
 
 Recorder.i: Recorder.cpp.i
@@ -248,7 +248,7 @@ Recorder.i: Recorder.cpp.i
 
 # target to preprocess a source file
 Recorder.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Recorder.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Recorder.cpp.i
 .PHONY : Recorder.cpp.i
 
 Recorder.s: Recorder.cpp.s
@@ -257,7 +257,7 @@ Recorder.s: Recorder.cpp.s
 
 # target to generate assembly for a file
 Recorder.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Recorder.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Recorder.cpp.s
 .PHONY : Recorder.cpp.s
 
 TraceController.o: TraceController.cpp.o
@@ -266,7 +266,7 @@ TraceController.o: TraceController.cpp.o
 
 # target to build an object file
 TraceController.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/TraceController.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/TraceController.cpp.o
 .PHONY : TraceController.cpp.o
 
 TraceController.i: TraceController.cpp.i
@@ -275,7 +275,7 @@ TraceController.i: TraceController.cpp.i
 
 # target to preprocess a source file
 TraceController.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/TraceController.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/TraceController.cpp.i
 .PHONY : TraceController.cpp.i
 
 TraceController.s: TraceController.cpp.s
@@ -284,7 +284,7 @@ TraceController.s: TraceController.cpp.s
 
 # target to generate assembly for a file
 TraceController.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/TraceController.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/TraceController.cpp.s
 .PHONY : TraceController.cpp.s
 
 Trajectory.o: Trajectory.cpp.o
@@ -293,7 +293,7 @@ Trajectory.o: Trajectory.cpp.o
 
 # target to build an object file
 Trajectory.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Trajectory.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Trajectory.cpp.o
 .PHONY : Trajectory.cpp.o
 
 Trajectory.i: Trajectory.cpp.i
@@ -302,7 +302,7 @@ Trajectory.i: Trajectory.cpp.i
 
 # target to preprocess a source file
 Trajectory.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Trajectory.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Trajectory.cpp.i
 .PHONY : Trajectory.cpp.i
 
 Trajectory.s: Trajectory.cpp.s
@@ -311,7 +311,7 @@ Trajectory.s: Trajectory.cpp.s
 
 # target to generate assembly for a file
 Trajectory.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Trajectory.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/Trajectory.cpp.s
 .PHONY : Trajectory.cpp.s
 
 rgbd_camera.o: rgbd_camera.cpp.o
@@ -320,7 +320,7 @@ rgbd_camera.o: rgbd_camera.cpp.o
 
 # target to build an object file
 rgbd_camera.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/rgbd_camera.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/rgbd_camera.cpp.o
 .PHONY : rgbd_camera.cpp.o
 
 rgbd_camera.i: rgbd_camera.cpp.i
@@ -329,7 +329,7 @@ rgbd_camera.i: rgbd_camera.cpp.i
 
 # target to preprocess a source file
 rgbd_camera.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/rgbd_camera.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/rgbd_camera.cpp.i
 .PHONY : rgbd_camera.cpp.i
 
 rgbd_camera.s: rgbd_camera.cpp.s
@@ -338,7 +338,7 @@ rgbd_camera.s: rgbd_camera.cpp.s
 
 # target to generate assembly for a file
 rgbd_camera.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/rgbd_camera.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/rgbd_camera.cpp.s
 .PHONY : rgbd_camera.cpp.s
 
 transformer.o: transformer.cpp.o
@@ -347,7 +347,7 @@ transformer.o: transformer.cpp.o
 
 # target to build an object file
 transformer.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/transformer.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/transformer.cpp.o
 .PHONY : transformer.cpp.o
 
 transformer.i: transformer.cpp.i
@@ -356,7 +356,7 @@ transformer.i: transformer.cpp.i
 
 # target to preprocess a source file
 transformer.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/transformer.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/transformer.cpp.i
 .PHONY : transformer.cpp.i
 
 transformer.s: transformer.cpp.s
@@ -365,7 +365,7 @@ transformer.s: transformer.cpp.s
 
 # target to generate assembly for a file
 transformer.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/transformer.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/transformer.cpp.s
 .PHONY : transformer.cpp.s
 
 # Help Target
@@ -415,6 +415,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

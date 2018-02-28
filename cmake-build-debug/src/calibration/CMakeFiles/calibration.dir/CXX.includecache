@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/robocon/workspace/agent-v2.0/src/calibration/MonoCameraCalibration.cpp
+/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.cpp
 MonoCameraCalibration.h
-/home/robocon/workspace/agent-v2.0/src/calibration/MonoCameraCalibration.h
+/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h
 
-/home/robocon/workspace/agent-v2.0/src/calibration/MonoCameraCalibration.h
+/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -22,9 +22,9 @@ opencv2/imgproc/imgproc.hpp
 opencv2/calib3d.hpp
 -
 
-/home/robocon/workspace/agent-v2.0/src/calibration/RgbdCalibration.cpp
+/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.cpp
 RgbdCalibration.h
-/home/robocon/workspace/agent-v2.0/src/calibration/RgbdCalibration.h
+/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h
 iostream
 -
 fstream
@@ -48,17 +48,17 @@ pcl/visualization/cloud_viewer.h
 boost/date_time/posix_time/posix_time.hpp
 -
 
-/home/robocon/workspace/agent-v2.0/src/calibration/RgbdCalibration.h
+/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h
 rgbd_camera.h
-/home/robocon/workspace/agent-v2.0/src/calibration/rgbd_camera.h
+/home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
 memory
 -
 
-/home/robocon/workspace/agent-v2.0/src/calibration/rgbd_camera.cpp
+/home/robocon/workspace/singleton/src/calibration/rgbd_camera.cpp
 rgbd_camera.h
-/home/robocon/workspace/agent-v2.0/src/calibration/rgbd_camera.h
+/home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
 
-/home/robocon/workspace/agent-v2.0/src/calibration/rgbd_camera.h
+/home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
 opencv2/opencv.hpp
 -
 openni2/OpenNI.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/robocon/workspace/agent-v2.0/src/cameraLocation
+# Install script for directory: /home/robocon/workspace/singleton/src/cameraLocation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

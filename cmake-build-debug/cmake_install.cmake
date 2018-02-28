@@ -1,4 +1,4 @@
-# Install script for directory: /home/robocon/workspace/agent-v2.0
+# Install script for directory: /home/robocon/workspace/singleton
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,13 +34,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/trace/cmake_install.cmake")
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/cameraLocation/cmake_install.cmake")
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/radarLocation/cmake_install.cmake")
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/thread/cmake_install.cmake")
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/protocol/cmake_install.cmake")
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag/cmake_install.cmake")
-  include("/home/robocon/workspace/agent-v2.0/cmake-build-debug/src/calibration/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/trace/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/radarLocation/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/thread/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/apriltag/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/robocon/workspace/agent-v2.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/robocon/workspace/singleton/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

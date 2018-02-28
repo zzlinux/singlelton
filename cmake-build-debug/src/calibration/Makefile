@@ -48,10 +48,10 @@ RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/agent-v2.0
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/agent-v2.0/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/calibration/CMakeFiles/progress.marks
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles /home/robocon/workspace/singleton/cmake-build-debug/src/calibration/CMakeFiles/progress.marks
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/clean
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/calibration/CMakeFiles/calibration.dir/rule:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/CMakeFiles/calibration.dir/rule
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/calibration/CMakeFiles/calibration.dir/rule
 .PHONY : src/calibration/CMakeFiles/calibration.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ calibration: src/calibration/CMakeFiles/calibration.dir/rule
 
 # fast build rule for target.
 calibration/fast:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/build
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/build
 .PHONY : calibration/fast
 
 MonoCameraCalibration.o: MonoCameraCalibration.cpp.o
@@ -131,7 +131,7 @@ MonoCameraCalibration.o: MonoCameraCalibration.cpp.o
 
 # target to build an object file
 MonoCameraCalibration.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.o
 .PHONY : MonoCameraCalibration.cpp.o
 
 MonoCameraCalibration.i: MonoCameraCalibration.cpp.i
@@ -140,7 +140,7 @@ MonoCameraCalibration.i: MonoCameraCalibration.cpp.i
 
 # target to preprocess a source file
 MonoCameraCalibration.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.i
 .PHONY : MonoCameraCalibration.cpp.i
 
 MonoCameraCalibration.s: MonoCameraCalibration.cpp.s
@@ -149,7 +149,7 @@ MonoCameraCalibration.s: MonoCameraCalibration.cpp.s
 
 # target to generate assembly for a file
 MonoCameraCalibration.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.s
 .PHONY : MonoCameraCalibration.cpp.s
 
 RgbdCalibration.o: RgbdCalibration.cpp.o
@@ -158,7 +158,7 @@ RgbdCalibration.o: RgbdCalibration.cpp.o
 
 # target to build an object file
 RgbdCalibration.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.o
 .PHONY : RgbdCalibration.cpp.o
 
 RgbdCalibration.i: RgbdCalibration.cpp.i
@@ -167,7 +167,7 @@ RgbdCalibration.i: RgbdCalibration.cpp.i
 
 # target to preprocess a source file
 RgbdCalibration.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.i
 .PHONY : RgbdCalibration.cpp.i
 
 RgbdCalibration.s: RgbdCalibration.cpp.s
@@ -176,7 +176,7 @@ RgbdCalibration.s: RgbdCalibration.cpp.s
 
 # target to generate assembly for a file
 RgbdCalibration.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.s
 .PHONY : RgbdCalibration.cpp.s
 
 rgbd_camera.o: rgbd_camera.cpp.o
@@ -185,7 +185,7 @@ rgbd_camera.o: rgbd_camera.cpp.o
 
 # target to build an object file
 rgbd_camera.cpp.o:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.o
 .PHONY : rgbd_camera.cpp.o
 
 rgbd_camera.i: rgbd_camera.cpp.i
@@ -194,7 +194,7 @@ rgbd_camera.i: rgbd_camera.cpp.i
 
 # target to preprocess a source file
 rgbd_camera.cpp.i:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.i
 .PHONY : rgbd_camera.cpp.i
 
 rgbd_camera.s: rgbd_camera.cpp.s
@@ -203,7 +203,7 @@ rgbd_camera.s: rgbd_camera.cpp.s
 
 # target to generate assembly for a file
 rgbd_camera.cpp.s:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.s
 .PHONY : rgbd_camera.cpp.s
 
 # Help Target
@@ -235,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

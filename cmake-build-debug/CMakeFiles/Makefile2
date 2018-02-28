@@ -54,10 +54,10 @@ RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/agent-v2.0
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/agent-v2.0/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/robocon.dir
@@ -72,7 +72,7 @@ CMakeFiles/robocon.dir/all: src/apriltag/CMakeFiles/apriltag.dir/all
 CMakeFiles/robocon.dir/all: src/calibration/CMakeFiles/calibration.dir/all
 	$(MAKE) -f CMakeFiles/robocon.dir/build.make CMakeFiles/robocon.dir/depend
 	$(MAKE) -f CMakeFiles/robocon.dir/build.make CMakeFiles/robocon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target robocon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target robocon"
 .PHONY : CMakeFiles/robocon.dir/all
 
 # Include target in all.
@@ -82,9 +82,9 @@ all: CMakeFiles/robocon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/robocon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 57
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robocon.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/robocon.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ src/trace/preinstall:
 src/trace/CMakeFiles/trace.dir/all:
 	$(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/depend
 	$(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56,57 "Built target trace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56,57 "Built target trace"
 .PHONY : src/trace/CMakeFiles/trace.dir/all
 
 # Include target in all.
@@ -137,9 +137,9 @@ all: src/trace/CMakeFiles/trace.dir/all
 
 # Build rule for subdir invocation for target.
 src/trace/CMakeFiles/trace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 src/trace/CMakeFiles/trace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/trace/CMakeFiles/trace.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ src/cameraLocation/preinstall:
 src/cameraLocation/CMakeFiles/camera.dir/all:
 	$(MAKE) -f src/cameraLocation/CMakeFiles/camera.dir/build.make src/cameraLocation/CMakeFiles/camera.dir/depend
 	$(MAKE) -f src/cameraLocation/CMakeFiles/camera.dir/build.make src/cameraLocation/CMakeFiles/camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=22,23,24 "Built target camera"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=22,23,24 "Built target camera"
 .PHONY : src/cameraLocation/CMakeFiles/camera.dir/all
 
 # Include target in all.
@@ -192,9 +192,9 @@ all: src/cameraLocation/CMakeFiles/camera.dir/all
 
 # Build rule for subdir invocation for target.
 src/cameraLocation/CMakeFiles/camera.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/cameraLocation/CMakeFiles/camera.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/cameraLocation/CMakeFiles/camera.dir/rule
 
 # Convenience name for target.
@@ -237,7 +237,7 @@ src/radarLocation/preinstall:
 src/radarLocation/CMakeFiles/radar.dir/all:
 	$(MAKE) -f src/radarLocation/CMakeFiles/radar.dir/build.make src/radarLocation/CMakeFiles/radar.dir/depend
 	$(MAKE) -f src/radarLocation/CMakeFiles/radar.dir/build.make src/radarLocation/CMakeFiles/radar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target radar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target radar"
 .PHONY : src/radarLocation/CMakeFiles/radar.dir/all
 
 # Include target in all.
@@ -247,9 +247,9 @@ all: src/radarLocation/CMakeFiles/radar.dir/all
 
 # Build rule for subdir invocation for target.
 src/radarLocation/CMakeFiles/radar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 src/radarLocation/CMakeFiles/radar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/radarLocation/CMakeFiles/radar.dir/rule
 
 # Convenience name for target.
@@ -296,7 +296,7 @@ src/thread/CMakeFiles/thread.dir/all: src/protocol/CMakeFiles/protocol.dir/all
 src/thread/CMakeFiles/thread.dir/all: src/apriltag/CMakeFiles/apriltag.dir/all
 	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/depend
 	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=45,46,47 "Built target thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=45,46,47 "Built target thread"
 .PHONY : src/thread/CMakeFiles/thread.dir/all
 
 # Include target in all.
@@ -306,9 +306,9 @@ all: src/thread/CMakeFiles/thread.dir/all
 
 # Build rule for subdir invocation for target.
 src/thread/CMakeFiles/thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 src/thread/CMakeFiles/thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/thread/CMakeFiles/thread.dir/rule
 
 # Convenience name for target.
@@ -351,7 +351,7 @@ src/protocol/preinstall:
 src/protocol/CMakeFiles/protocol.dir/all:
 	$(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/depend
 	$(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=25,26,27,28 "Built target protocol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=25,26,27,28 "Built target protocol"
 .PHONY : src/protocol/CMakeFiles/protocol.dir/all
 
 # Include target in all.
@@ -361,9 +361,9 @@ all: src/protocol/CMakeFiles/protocol.dir/all
 
 # Build rule for subdir invocation for target.
 src/protocol/CMakeFiles/protocol.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/protocol/CMakeFiles/protocol.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/protocol/CMakeFiles/protocol.dir/rule
 
 # Convenience name for target.
@@ -406,7 +406,7 @@ src/apriltag/preinstall:
 src/apriltag/CMakeFiles/apriltag.dir/all:
 	$(MAKE) -f src/apriltag/CMakeFiles/apriltag.dir/build.make src/apriltag/CMakeFiles/apriltag.dir/depend
 	$(MAKE) -f src/apriltag/CMakeFiles/apriltag.dir/build.make src/apriltag/CMakeFiles/apriltag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target apriltag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target apriltag"
 .PHONY : src/apriltag/CMakeFiles/apriltag.dir/all
 
 # Include target in all.
@@ -416,9 +416,9 @@ all: src/apriltag/CMakeFiles/apriltag.dir/all
 
 # Build rule for subdir invocation for target.
 src/apriltag/CMakeFiles/apriltag.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 src/apriltag/CMakeFiles/apriltag.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/apriltag/CMakeFiles/apriltag.dir/rule
 
 # Convenience name for target.
@@ -461,7 +461,7 @@ src/calibration/preinstall:
 src/calibration/CMakeFiles/calibration.dir/all:
 	$(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/depend
 	$(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=18,19,20,21 "Built target calibration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=18,19,20,21 "Built target calibration"
 .PHONY : src/calibration/CMakeFiles/calibration.dir/all
 
 # Include target in all.
@@ -471,9 +471,9 @@ all: src/calibration/CMakeFiles/calibration.dir/all
 
 # Build rule for subdir invocation for target.
 src/calibration/CMakeFiles/calibration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/calibration/CMakeFiles/calibration.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : src/calibration/CMakeFiles/calibration.dir/rule
 
 # Convenience name for target.

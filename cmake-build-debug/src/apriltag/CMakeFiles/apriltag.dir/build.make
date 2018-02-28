@@ -43,10 +43,10 @@ RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/agent-v2.0
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/agent-v2.0/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/apriltag/CMakeFiles/apriltag.dir/depend.make
@@ -59,16 +59,16 @@ include src/apriltag/CMakeFiles/apriltag.dir/flags.make
 
 src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/apriltag/ApriltagController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/ApriltagController.cpp.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/ApriltagController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/ApriltagController.cpp.o -c /home/robocon/workspace/singleton/src/apriltag/ApriltagController.cpp
 
 src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/ApriltagController.cpp.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/ApriltagController.cpp > CMakeFiles/apriltag.dir/ApriltagController.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/ApriltagController.cpp > CMakeFiles/apriltag.dir/ApriltagController.cpp.i
 
 src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/ApriltagController.cpp.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/ApriltagController.cpp -o CMakeFiles/apriltag.dir/ApriltagController.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/ApriltagController.cpp -o CMakeFiles/apriltag.dir/ApriltagController.cpp.s
 
 src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o.provides.build: sr
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o: ../src/apriltag/lib/Edge.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Edge.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Edge.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Edge.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/Edge.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/Edge.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Edge.cc > CMakeFiles/apriltag.dir/lib/Edge.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/Edge.cc > CMakeFiles/apriltag.dir/lib/Edge.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/Edge.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Edge.cc -o CMakeFiles/apriltag.dir/lib/Edge.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/Edge.cc -o CMakeFiles/apriltag.dir/lib/Edge.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o.requires:
 
@@ -107,16 +107,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o.provides.build: src/apriltag/
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o: ../src/apriltag/lib/FloatImage.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/FloatImage.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/FloatImage.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/FloatImage.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/FloatImage.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/FloatImage.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/FloatImage.cc > CMakeFiles/apriltag.dir/lib/FloatImage.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/FloatImage.cc > CMakeFiles/apriltag.dir/lib/FloatImage.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/FloatImage.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/FloatImage.cc -o CMakeFiles/apriltag.dir/lib/FloatImage.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/FloatImage.cc -o CMakeFiles/apriltag.dir/lib/FloatImage.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o.requires:
 
@@ -131,16 +131,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o.provides.build: src/apr
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o: ../src/apriltag/lib/Gaussian.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Gaussian.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Gaussian.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Gaussian.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/Gaussian.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/Gaussian.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Gaussian.cc > CMakeFiles/apriltag.dir/lib/Gaussian.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/Gaussian.cc > CMakeFiles/apriltag.dir/lib/Gaussian.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/Gaussian.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Gaussian.cc -o CMakeFiles/apriltag.dir/lib/Gaussian.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/Gaussian.cc -o CMakeFiles/apriltag.dir/lib/Gaussian.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o.requires:
 
@@ -155,16 +155,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o.provides.build: src/april
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o: ../src/apriltag/lib/GLine2D.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/GLine2D.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GLine2D.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/GLine2D.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/GLine2D.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/GLine2D.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GLine2D.cc > CMakeFiles/apriltag.dir/lib/GLine2D.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/GLine2D.cc > CMakeFiles/apriltag.dir/lib/GLine2D.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/GLine2D.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GLine2D.cc -o CMakeFiles/apriltag.dir/lib/GLine2D.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/GLine2D.cc -o CMakeFiles/apriltag.dir/lib/GLine2D.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o.requires:
 
@@ -179,16 +179,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o.provides.build: src/aprilt
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o: ../src/apriltag/lib/GLineSegment2D.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GLineSegment2D.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/GLineSegment2D.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GLineSegment2D.cc > CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/GLineSegment2D.cc > CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GLineSegment2D.cc -o CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/GLineSegment2D.cc -o CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o.requires:
 
@@ -203,16 +203,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o.provides.build: src
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o: ../src/apriltag/lib/GrayModel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/GrayModel.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GrayModel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/GrayModel.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/GrayModel.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/GrayModel.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GrayModel.cc > CMakeFiles/apriltag.dir/lib/GrayModel.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/GrayModel.cc > CMakeFiles/apriltag.dir/lib/GrayModel.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/GrayModel.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/GrayModel.cc -o CMakeFiles/apriltag.dir/lib/GrayModel.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/GrayModel.cc -o CMakeFiles/apriltag.dir/lib/GrayModel.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o.requires:
 
@@ -227,16 +227,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o.provides.build: src/apri
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o: ../src/apriltag/lib/Homography33.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Homography33.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Homography33.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Homography33.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/Homography33.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/Homography33.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Homography33.cc > CMakeFiles/apriltag.dir/lib/Homography33.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/Homography33.cc > CMakeFiles/apriltag.dir/lib/Homography33.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/Homography33.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Homography33.cc -o CMakeFiles/apriltag.dir/lib/Homography33.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/Homography33.cc -o CMakeFiles/apriltag.dir/lib/Homography33.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o.requires:
 
@@ -251,16 +251,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o.provides.build: src/a
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o: ../src/apriltag/lib/MathUtil.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/MathUtil.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/MathUtil.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/MathUtil.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/MathUtil.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/MathUtil.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/MathUtil.cc > CMakeFiles/apriltag.dir/lib/MathUtil.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/MathUtil.cc > CMakeFiles/apriltag.dir/lib/MathUtil.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/MathUtil.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/MathUtil.cc -o CMakeFiles/apriltag.dir/lib/MathUtil.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/MathUtil.cc -o CMakeFiles/apriltag.dir/lib/MathUtil.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o.requires:
 
@@ -275,16 +275,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o.provides.build: src/april
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o: ../src/apriltag/lib/Quad.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Quad.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Quad.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Quad.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/Quad.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/Quad.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Quad.cc > CMakeFiles/apriltag.dir/lib/Quad.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/Quad.cc > CMakeFiles/apriltag.dir/lib/Quad.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/Quad.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Quad.cc -o CMakeFiles/apriltag.dir/lib/Quad.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/Quad.cc -o CMakeFiles/apriltag.dir/lib/Quad.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o.requires:
 
@@ -299,16 +299,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o.provides.build: src/apriltag/
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o: ../src/apriltag/lib/Segment.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Segment.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Segment.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Segment.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/Segment.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/Segment.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Segment.cc > CMakeFiles/apriltag.dir/lib/Segment.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/Segment.cc > CMakeFiles/apriltag.dir/lib/Segment.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/Segment.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Segment.cc -o CMakeFiles/apriltag.dir/lib/Segment.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/Segment.cc -o CMakeFiles/apriltag.dir/lib/Segment.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o.requires:
 
@@ -323,16 +323,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o.provides.build: src/aprilt
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o: ../src/apriltag/lib/Serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Serial.cpp.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/Serial.cpp.o -c /home/robocon/workspace/singleton/src/apriltag/lib/Serial.cpp
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/Serial.cpp.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Serial.cpp > CMakeFiles/apriltag.dir/lib/Serial.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/Serial.cpp > CMakeFiles/apriltag.dir/lib/Serial.cpp.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/Serial.cpp.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/Serial.cpp -o CMakeFiles/apriltag.dir/lib/Serial.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/Serial.cpp -o CMakeFiles/apriltag.dir/lib/Serial.cpp.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o.requires:
 
@@ -347,16 +347,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o.provides.build: src/aprilt
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o: ../src/apriltag/lib/TagDetection.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/TagDetection.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagDetection.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/TagDetection.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/TagDetection.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/TagDetection.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagDetection.cc > CMakeFiles/apriltag.dir/lib/TagDetection.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/TagDetection.cc > CMakeFiles/apriltag.dir/lib/TagDetection.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/TagDetection.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagDetection.cc -o CMakeFiles/apriltag.dir/lib/TagDetection.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/TagDetection.cc -o CMakeFiles/apriltag.dir/lib/TagDetection.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o.requires:
 
@@ -371,16 +371,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o.provides.build: src/a
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o: ../src/apriltag/lib/TagDetector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/TagDetector.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagDetector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/TagDetector.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/TagDetector.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/TagDetector.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagDetector.cc > CMakeFiles/apriltag.dir/lib/TagDetector.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/TagDetector.cc > CMakeFiles/apriltag.dir/lib/TagDetector.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/TagDetector.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagDetector.cc -o CMakeFiles/apriltag.dir/lib/TagDetector.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/TagDetector.cc -o CMakeFiles/apriltag.dir/lib/TagDetector.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o.requires:
 
@@ -395,16 +395,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o.provides.build: src/ap
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o: ../src/apriltag/lib/TagFamily.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/TagFamily.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagFamily.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/TagFamily.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/TagFamily.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/TagFamily.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagFamily.cc > CMakeFiles/apriltag.dir/lib/TagFamily.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/TagFamily.cc > CMakeFiles/apriltag.dir/lib/TagFamily.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/TagFamily.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/TagFamily.cc -o CMakeFiles/apriltag.dir/lib/TagFamily.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/TagFamily.cc -o CMakeFiles/apriltag.dir/lib/TagFamily.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o.requires:
 
@@ -419,16 +419,16 @@ src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o.provides.build: src/apri
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o: src/apriltag/CMakeFiles/apriltag.dir/flags.make
 src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o: ../src/apriltag/lib/UnionFindSimple.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o -c /home/robocon/workspace/agent-v2.0/src/apriltag/lib/UnionFindSimple.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o -c /home/robocon/workspace/singleton/src/apriltag/lib/UnionFindSimple.cc
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.i"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/agent-v2.0/src/apriltag/lib/UnionFindSimple.cc > CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/apriltag/lib/UnionFindSimple.cc > CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.i
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.s"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/agent-v2.0/src/apriltag/lib/UnionFindSimple.cc -o CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/apriltag/lib/UnionFindSimple.cc -o CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.s
 
 src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o.requires:
 
@@ -481,9 +481,9 @@ src/apriltag/libapriltag.a: src/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.c
 src/apriltag/libapriltag.a: src/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o
 src/apriltag/libapriltag.a: src/apriltag/CMakeFiles/apriltag.dir/build.make
 src/apriltag/libapriltag.a: src/apriltag/CMakeFiles/apriltag.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/agent-v2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libapriltag.a"
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && $(CMAKE_COMMAND) -P CMakeFiles/apriltag.dir/cmake_clean_target.cmake
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/apriltag.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libapriltag.a"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && $(CMAKE_COMMAND) -P CMakeFiles/apriltag.dir/cmake_clean_target.cmake
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/apriltag.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/apriltag/CMakeFiles/apriltag.dir/build: src/apriltag/libapriltag.a
@@ -510,10 +510,10 @@ src/apriltag/CMakeFiles/apriltag.dir/requires: src/apriltag/CMakeFiles/apriltag.
 .PHONY : src/apriltag/CMakeFiles/apriltag.dir/requires
 
 src/apriltag/CMakeFiles/apriltag.dir/clean:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag && $(CMAKE_COMMAND) -P CMakeFiles/apriltag.dir/cmake_clean.cmake
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag && $(CMAKE_COMMAND) -P CMakeFiles/apriltag.dir/cmake_clean.cmake
 .PHONY : src/apriltag/CMakeFiles/apriltag.dir/clean
 
 src/apriltag/CMakeFiles/apriltag.dir/depend:
-	cd /home/robocon/workspace/agent-v2.0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/agent-v2.0 /home/robocon/workspace/agent-v2.0/src/apriltag /home/robocon/workspace/agent-v2.0/cmake-build-debug /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag /home/robocon/workspace/agent-v2.0/cmake-build-debug/src/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/singleton /home/robocon/workspace/singleton/src/apriltag /home/robocon/workspace/singleton/cmake-build-debug /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag /home/robocon/workspace/singleton/cmake-build-debug/src/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/apriltag/CMakeFiles/apriltag.dir/depend
 

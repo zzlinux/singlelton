@@ -3,7 +3,7 @@
 //
 
 #include "RadarModel.h"
-
+#include "../thread/Param.h"
 namespace hitcrt
 {
     RadarModel::RadarModel()
@@ -31,16 +31,16 @@ namespace hitcrt
         long min_distance = urg.min_distance();
         long max_distance = urg.max_distance();
         double xMax = 0;double yMax = 0;
-        size_t start,end;
-        float scale = data.size()/240;
+        size_t start , end ;
+        float scale = data.size()/240.0;
         if(mode == 0)
         {
-            start = (int)scale*130;
-            end = (int)scale*210;
+            start = int(scale*140);
+            end = int(scale*210);
         }else if(mode == 1)
         {
-            start = (int)scale*75;
-            end = data.size()-(int)scale*75;
+            start = int(scale*75);
+            end = data.size()-int(scale*75);
         }
         double radian;
         for(int i=start;i<end;i++)
@@ -60,13 +60,14 @@ namespace hitcrt
             //cout<<"x = "<<tmp_point.x<<" y = "<<tmp_point.y<<endl;
             VecPoint.push_back(tmp_point);
         }
+        //std::cout<<"view size: "<<VecPoint.size()<<std::endl;
     }
     cv::Point2d RadarModel::world2pixel(cv::Point2d old)
     {
-        int divNum = 17  ;
+        int divNum = 11;
         cv::Point2d trans;
-        trans.x = 600+(int)old.x/divNum;
-        trans.y = 550-(int)old.y/divNum;
+        trans.x = 320-(int)old.x/divNum;
+        trans.y = 440-(int)old.y/divNum;
         return trans;
 
     }
@@ -75,24 +76,78 @@ namespace hitcrt
         for(auto p:points)
         {
             p = world2pixel(p);
-            if(p.y>=0&&p.y<800&&p.x>=0&&p.x<1200)
+            if(p.y>=0&&p.y<480&&p.x>=0&&p.x<640)
             {
-                circle(img,cv::Point(p.x,p.y),3,color,-1);
+                //circle(img,cv::Point(p.x,p.y),1,color,-1);
+                img.at<cv::Vec3b>(p.y,p.x)[0] = color[0];
+                img.at<cv::Vec3b>(p.y,p.x)[1] = color[1];
+                img.at<cv::Vec3b>(p.y,p.x)[2] = color[2];
             }
             else
                 std::cout <<"p.x = "<<p.x<<" p.y = "<<p.y<<std::endl;
         }
     }
+    void RadarModel::drawAxes(cv::Mat &img)
+    {
+        cv::line(img,cv::Point(0,440),cv::Point(640,440),cv::Scalar(255,255,255)); //x
+        cv::line(img,cv::Point(320,479),cv::Point(320,0),cv::Scalar(255,255,255)); //y
+        cv::line(img,cv::Point(229,436),cv::Point(229,444),cv::Scalar(255,255,255)); //x+1
+        cv::line(img,cv::Point(138,436),cv::Point(138,444),cv::Scalar(255,255,255)); //x+2
+        cv::line(img,cv::Point(47,436),cv::Point(47,444),cv::Scalar(255,255,255)); //x+3
+        cv::line(img,cv::Point(411,436),cv::Point(411,444),cv::Scalar(255,255,255)); //x-1
+        cv::line(img,cv::Point(502,436),cv::Point(502,444),cv::Scalar(255,255,255)); //x-2
+        cv::line(img,cv::Point(593,436),cv::Point(593,444),cv::Scalar(255,255,255)); //x-3
+        cv::line(img,cv::Point(316,349),cv::Point(324,349),cv::Scalar(255,255,255)); //y+1
+        cv::line(img,cv::Point(316,258),cv::Point(324,258),cv::Scalar(255,255,255)); //y+2
+        cv::line(img,cv::Point(316,167),cv::Point(324,167),cv::Scalar(255,255,255)); //y+3
+        cv::line(img,cv::Point(316,76),cv::Point(324,76),cv::Scalar(255,255,255)); //y+4
+        cv::putText(img,"1",cv::Point(325,360),cv::FONT_HERSHEY_PLAIN,2,cv::Scalar(0,25,255),1);
+        cv::putText(img,"-1",cv::Point(387,469),cv::FONT_HERSHEY_PLAIN,2,cv::Scalar(0,25,255),1);
+    }
+    #define RANDCOLOR cv::Scalar(rand()/256,rand()/256,rand()/256)
+    void RadarModel::showResultImg(std::vector<float> &position,std::vector <std::vector<cv::Point2d>> &lines,bool &isLocationValued)
+    {
+        image = cv::Mat::zeros(480,640,CV_8UC3);
+        drawAxes(image);
+        const std::vector<cv::Scalar> color ={cv::Scalar(255,80,80),cv::Scalar(80,255,80),cv::Scalar(80,80,255)};
+        for(int i=0;i<lines.size();i++) {
+            fillMat(image, lines[i], i < 3 ? color[i] : RANDCOLOR);
+            // fill the line num
+            std::stringstream text;
+            text << i;
+            cv::Point2d textPos = world2pixel(lines[i].front());  //num
+            cv::putText(image, text.str(), cv::Point(textPos.x+1, textPos.y+1), cv::FONT_HERSHEY_PLAIN, 1,
+                        cv::Scalar(255, 0, 0), 1);
+            cv::Point2d p1 = lines[i].front();
+            cv::Point2d p2 = lines[i].back();
+            p1 = world2pixel(p1);
+            p2 = world2pixel(p2);
+            //cv::line(image, cv::Point(p1.x, p1.y), cv::Point(p2.x, p2.y), cv::Scalar(0, 255, 255));
+            circle(image, cv::Point(p1.x, p1.y), 2, cv::Scalar(255, 255, 255), -1);
+            circle(image, cv::Point(p2.x, p2.y), 2, cv::Scalar(255, 255, 255), -1);
+        }
+        if(isLocationValued)
+        {
+            std::stringstream text;
+            text<<"radar(x,corner) = ( "<<position.front()<<","<<position.back()<<")";
+            std::stringstream value;
+            value <<"isvalued :"<<"yes";
+            cv::putText(image,text.str(),cv::Point(20,50),cv::FONT_HERSHEY_PLAIN,1,cv::Scalar(194,20,93),1);
+            cv::putText(image,value.str(),cv::Point(20,80),cv::FONT_HERSHEY_PLAIN,1,cv::Scalar(87,45,200),1);
+        }
+        Param::mimshow("radarImage",image);
+    }
     void RadarModel::myimshow(std::vector<cv::Point2d> &points)
     {
-        cv::Mat image = cv::Mat::zeros(800,1200,CV_8UC3);
+        cv::Mat image = cv::Mat::zeros(480,640,CV_8UC3);
         cv::Point2d p;
         for(auto point:points)
         {
             p = world2pixel(point);
-            if(p.y>=0&&p.y<800&&p.x>=0&&p.x<1200)
+            if(p.y>=0&&p.y<480&&p.x>=0&&p.x<640)
                 image.at<cv::Vec3b>(p.y,p.x)[1] = 188;
         }
+        drawAxes(image);
         cv::imshow("img",image);
         cv::waitKey(1);
     }
@@ -149,8 +204,8 @@ namespace hitcrt
     {
         const int MAXLINENUM = 2;
         const int ITERANUM = 100;
-        const double disDelta = 30;
-        const int MINLINELEN = VecPoint.size()*0.3;
+        const double disDelta = 20;
+        const int MINLINELEN = VecPoint.size()*0.2;
         const int MAXNOISENUM = 20;
         std::vector<int> maxLineIndex;           //ransc找到最优模型的索引
         std::vector<std::vector<int>> LINES;        //记录找到的线段的索引
@@ -200,31 +255,11 @@ namespace hitcrt
         }
         //std::cout <<"LINES.size()= "<< LINES.size()<<std::endl;
         sort(LINES.begin(),LINES.end());        //按激光雷达扫描顺序给找到点排序
-        image = cv::Mat::zeros(800,1200,CV_8UC3);
-        LINEKB kb;
         for(int i=0;i<LINES.size();i++)
         {
             for(auto pIndex:LINES[i])
                 findLine.push_back(VecPoint[pIndex]);
             lines.push_back(findLine);
-            fillMat(image,findLine,i<3?color[i]:RANDCOLOR);
-            // fill the line num
-            std::stringstream text;
-            text<<i;
-            cv::Point2d textPos = world2pixel(findLine.front());  //num
-            cv::putText(image,text.str(),cv::Point(textPos.x,textPos.y),cv::FONT_HERSHEY_PLAIN,3,cv::Scalar(255,0,0),2);
-            cv::Point2d p1 = findLine.front();
-            cv::Point2d p2 = findLine.back();
-            if(fitLine(findLine,kb))
-            {
-                p1.y = kb.k * p1.x + kb.b;
-                p2.y = kb.k * p2.x + kb.b;
-            }
-            p1 = world2pixel(p1);
-            p2 = world2pixel(p2);
-            cv::line(image, cv::Point(p1.x, p1.y), cv::Point(p2.x, p2.y), cv::Scalar(0, 255, 255));
-            circle(image, cv::Point(p1.x, p1.y), 4, cv::Scalar(255, 255, 0), -1);
-            circle(image, cv::Point(p2.x, p2.y), 4, cv::Scalar(255, 255, 0), -1);
             findLine.clear();
         }
     }
@@ -274,5 +309,22 @@ namespace hitcrt
         state->x = state->x + state->gain * (z_measure - state->H * state->x);
         state->p = (1 - state->gain * state->H) * state->p;
         return state->x;
+    }
+    void RadarModel::averageFilter(std::list<std::vector<float> > &slidewindow,std::vector<float> & position)
+    {
+        slidewindow.push_back(position);
+        struct{float x;float corner;} sum{0,0};
+        for(auto data:slidewindow)
+        {
+            sum.x+=data[0];
+            sum.corner+=data[1];
+            //sum.y+=data[2];
+        }
+        position.clear();
+        position.push_back(sum.x/slidewindow.size());
+        position.push_back(sum.corner/slidewindow.size());
+        //position.push_back(sum.y/slidewindow.size());
+        if(slidewindow.size()>WINDOWSIZE)
+            slidewindow.pop_front();
     }
 }

@@ -7,11 +7,11 @@ C_FLAGS =   -O3 -DNDEBUG -Wall -O3 -march=native
 
 C_DEFINES = -DDISABLE_DAVIDSDK -DDISABLE_DSSDK -DDISABLE_ENSENSO -DDISABLE_LIBUSB_1_0 -DDISABLE_OPENNI -DDISABLE_PCAP -DDISABLE_PNG -DDISABLE_RSSDK
 
-C_INCLUDES = -I/usr/include/vtk-5.8 -I/home/robocon/workspace/agent-v2.0/src/trace -I/home/robocon/workspace/agent-v2.0/src/cameraLocation -I/home/robocon/workspace/agent-v2.0/src/radarLocation -I/home/robocon/workspace/agent-v2.0/src/protocol -I/home/robocon/workspace/agent-v2.0/src/apriltag -I/home/robocon/workspace/agent-v2.0/src/calibration -I/usr/include/openni2 -I/usr/local/include/pcl-1.8 -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /usr/local/include 
+C_INCLUDES = -I/usr/include/vtk-5.8 -I/home/robocon/workspace/singleton/src/trace -I/home/robocon/workspace/singleton/src/cameraLocation -I/home/robocon/workspace/singleton/src/radarLocation -I/home/robocon/workspace/singleton/src/protocol -I/home/robocon/workspace/singleton/src/apriltag -I/home/robocon/workspace/singleton/src/calibration -I/usr/include/openni2 -I/usr/local/include/pcl-1.8 -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /usr/local/include 
 
 CXX_FLAGS =   -Wno-deprecated -O3 -DNDEBUG -Wall -O3 -march=native   -std=gnu++11
 
 CXX_DEFINES = -DDISABLE_DAVIDSDK -DDISABLE_DSSDK -DDISABLE_ENSENSO -DDISABLE_LIBUSB_1_0 -DDISABLE_OPENNI -DDISABLE_PCAP -DDISABLE_PNG -DDISABLE_RSSDK
 
-CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/robocon/workspace/agent-v2.0/src/trace -I/home/robocon/workspace/agent-v2.0/src/cameraLocation -I/home/robocon/workspace/agent-v2.0/src/radarLocation -I/home/robocon/workspace/agent-v2.0/src/protocol -I/home/robocon/workspace/agent-v2.0/src/apriltag -I/home/robocon/workspace/agent-v2.0/src/calibration -I/usr/include/openni2 -I/usr/local/include/pcl-1.8 -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /usr/local/include 
+CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/robocon/workspace/singleton/src/trace -I/home/robocon/workspace/singleton/src/cameraLocation -I/home/robocon/workspace/singleton/src/radarLocation -I/home/robocon/workspace/singleton/src/protocol -I/home/robocon/workspace/singleton/src/apriltag -I/home/robocon/workspace/singleton/src/calibration -I/usr/include/openni2 -I/usr/local/include/pcl-1.8 -I/usr/include/eigen3 -isystem /usr/local/include/opencv -isystem /usr/local/include 
 
