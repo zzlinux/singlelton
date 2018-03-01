@@ -5,6 +5,7 @@
 #include "Param.h"
 #include <opencv2/highgui/highgui.hpp>
 namespace  hitcrt{
+    bool Param::debug;
     Param::task Param::trace;
     Param::task Param::cameraLocation;
     Param::task Param::radarLocation;

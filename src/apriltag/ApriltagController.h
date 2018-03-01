@@ -59,7 +59,7 @@ namespace hitcrt
         cv::Mat frame,readFrame;
         boost::shared_mutex cameralock;
 
-        ApriltagController();
+        ApriltagController(int id);
         ~ApriltagController();
         double tic();
         inline double standardRad(double t);

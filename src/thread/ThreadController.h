@@ -25,19 +25,22 @@ namespace hitcrt {
         boost::thread m_communicationThread;
         boost::thread m_mutualThread;
         boost::thread m_traceThread;
-        boost::thread m_cameraLocationThread;
+        boost::thread m_cameraLocation0Thread;
+        boost::thread m_cameraLocation1Thread;
         boost::thread m_radarLocationThread;
         boost::thread m_apriltagThread;
 
         void m_communication();
         void m_mutual();
         void m_trace();
-        void m_cameraLocation();
+        void m_cameraLocation0();
+        void m_cameraLocation1();
         void m_radarLocation();
         void m_apriltag();
 
         std::unique_ptr<TraceController> trace;
-        std::unique_ptr<CameraController> cameraLocation;
+        std::unique_ptr<CameraController> cameraLocation0;
+        std::unique_ptr<CameraController> cameraLocation1;
         std::unique_ptr<RadarController> radarLocation;
         std::unique_ptr<ApriltagController> aprilTag;
     };

@@ -16,7 +16,7 @@ namespace hitcrt
     const char* windowName = "apriltags_demo";
     const double PI = 3.14159265358979323846;
     const double TWOPI = 2.0*PI;
-    ApriltagController::ApriltagController() : m_tagDetector(NULL),
+    ApriltagController::ApriltagController(int id) : m_tagDetector(NULL),
                                  m_tagCodes(AprilTags::tagCodes36h11),
 
                                  m_draw(true),
@@ -33,7 +33,7 @@ namespace hitcrt
                                  m_exposure(-1),
                                  m_gain(-1),
                                  m_brightness(-1),
-                                 m_deviceId(1)
+                                 m_deviceId(id)
     {
         m_tagDetector = new AprilTags::TagDetector(m_tagCodes);
 

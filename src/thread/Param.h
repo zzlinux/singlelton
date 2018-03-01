@@ -25,6 +25,7 @@ namespace  hitcrt{
 
         struct task{bool start;bool debug;};
         static task trace,cameraLocation,radarLocation,apriltag;
+        static bool debug;
 
         struct colorhsv{
             struct {int min;int max;}h,s,v;

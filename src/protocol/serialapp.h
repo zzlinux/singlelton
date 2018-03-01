@@ -25,7 +25,8 @@ public:
         SEND_ERR_UV,
         SEND_RADAR,
         SEND_SUPPLY,
-        SEND_CAMERA,
+        SEND_CAMERA0,
+        SEND_CAMERA1,
         SEND_TRACE
     };
 

@@ -61,8 +61,10 @@ void SerialApp::send(SEND_FLAG send_flag, std::vector<float> num)
         buff[2] = 0x05;
     if(SEND_SUPPLY == send_flag)
         buff[2] = 0x06;
-    if(SEND_CAMERA == send_flag)
+    if(SEND_CAMERA0 == send_flag)
         buff[2] = 0x07;
+    if(SEND_CAMERA1 == send_flag)
+        buff[2] = 0x08;
 //
 //
     buff[3] = static_cast<unsigned char>(num.size());

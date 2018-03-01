@@ -7,7 +7,7 @@
 
 namespace hitcrt
 {
-    CameraModel::CameraModel(int cameraid)
+    CameraModel::CameraModel(int id):cameraid(id)
     {
         cap = cv::VideoCapture(cameraid);
         assert(cap.isOpened());

@@ -18,10 +18,11 @@ namespace hitcrt
         assert(fs.isOpened());
         cv::FileNode task = fs["TASK"],debug = fs["DEBUG"],trace = fs["trace"],cameraLocation = fs["cameraLocation"];
         cv::FileNode c = trace[(string)trace["ballcolor"]],g = trace[(string)trace["ballgold"]];
-        Param::trace = {(int)task["trace"],(int)debug["trace"]};
-        Param::cameraLocation = {(int)task["cameraLocation"],(int)debug["cameraLocation"]};
-        Param::radarLocation = {(int)task["radarLocation"],(int)debug["radarLocation"]};
-        Param::apriltag = {(int)task["apriltag"],(int)debug["apriltag"]};
+        Param::debug = (int)debug["master"];
+        Param::trace = {(int)task["trace"],(int)debug["trace"]&&Param::debug};
+        Param::cameraLocation = {(int)task["cameraLocation"],(int)debug["cameraLocation"]&&Param::debug};
+        Param::radarLocation = {(int)task["radarLocation"],(int)debug["radarLocation"]&&Param::debug};
+        Param::apriltag = {(int)task["apriltag"],(int)debug["apriltag"]&&Param::debug};
         Param::traceinfo = {(int)trace["mode"],(std::string)trace["oni"],
                         {{(int)c["hmin"],(int)c["hmax"]},{(int)c["smin"],(int)c["smax"]},{(int)c["vmin"],(int)c["vmax"]}},
                         {{(int)g["hmin"],(int)g["hmax"]},{(int)g["smin"],(int)g["smax"]},{(int)g["vmin"],(int)g["vmax"]}},
@@ -44,8 +45,10 @@ namespace hitcrt
         }
         if(Param::cameraLocation.start)
         {
-            cameraLocation = std::unique_ptr<CameraController>(new CameraController(0));
-            m_cameraLocationThread = boost::thread(boost::bind(&ThreadController::m_cameraLocation,this));
+            cameraLocation0 = std::unique_ptr<CameraController>(new CameraController(0));
+            m_cameraLocation0Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation0,this));
+            cameraLocation1 = std::unique_ptr<CameraController>(new CameraController(1));
+            m_cameraLocation1Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation1,this));
         }
         if(Param::radarLocation.start)
         {
@@ -54,13 +57,16 @@ namespace hitcrt
         }
         if(Param::apriltag.start)
         {
-            aprilTag = std::unique_ptr<ApriltagController>(new ApriltagController);
+            aprilTag = std::unique_ptr<ApriltagController>(new ApriltagController(1));
             m_apriltagThread = boost::thread(boost::bind(&ThreadController::m_apriltag,this));
         }
         m_communicationThread = boost::thread(boost::bind(&ThreadController::m_communication,this));
 
-        m_mutualThread = boost::thread(boost::bind(&ThreadController::m_mutual,this));
-        m_mutualThread.join();
+        if(Param::debug)
+        {
+            m_mutualThread = boost::thread(boost::bind(&ThreadController::m_mutual,this));
+            m_mutualThread.join();
+        }else m_communicationThread.join();
     }
     void ThreadController::m_communication()
     {
@@ -126,10 +132,15 @@ namespace hitcrt
         std::cout<<"traceThread id "<<m_traceThread.get_id()<<std::endl;
         trace->run();
     }
-    void ThreadController::m_cameraLocation()
+    void ThreadController::m_cameraLocation0()
     {
-        std::cout<<"cameraLocationThread id "<<m_cameraLocationThread.get_id()<<std::endl;
-        cameraLocation->run();
+        std::cout<<"cameraLocation0Thread id "<<m_cameraLocation0Thread.get_id()<<std::endl;
+        cameraLocation0->run();
+    }
+    void ThreadController::m_cameraLocation1()
+    {
+        std::cout<<"cameraLocation1Thread id "<<m_cameraLocation1Thread.get_id()<<std::endl;
+        cameraLocation1->run();
     }
     void ThreadController::m_radarLocation()
     {

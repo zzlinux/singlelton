@@ -16,10 +16,12 @@ namespace hitcrt
     class CameraController :private CameraModel
     {
     public:
-        CameraController(int cameraid):CameraModel(cameraid){};
+        CameraController(int id);
         ~CameraController(){};
         void run();
+        static int count;
     private:
+        std::string windowName;
         cv::Mat frame;
         cv::Mat readFrame;
         cv::Mat temp;

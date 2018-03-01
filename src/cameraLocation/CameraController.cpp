@@ -7,6 +7,14 @@
 
 namespace hitcrt
 {
+    int CameraController::count = 0;
+    CameraController::CameraController(int id):CameraModel(id)
+    {
+        std::stringstream text;
+        text<<"cameraLocation "<<count<<std::endl;
+        windowName = text.str();
+        count++;
+    };
     void CameraController::run()
     {
         m_cameraDataThread = boost::thread(boost::bind(&CameraController::m_cameraReadFrame,this));
@@ -15,7 +23,7 @@ namespace hitcrt
     }
     void CameraController::m_cameraReadFrame()
     {
-        std::cout<<"cameraDataThread id "<<m_cameraDataThread.get_id()<<std::endl;
+        std::cout<<"cameraDataThread "<<cameraid<<" id "<<m_cameraDataThread.get_id()<<std::endl;
         while (Param::m_process)
         {
             struct timeval st,en;
@@ -31,7 +39,7 @@ namespace hitcrt
     }
     void CameraController::m_cameraProcess()
     {
-        std::cout<<"cameraProcessThread id "<<m_cameraProcessThread.get_id()<<std::endl;
+        std::cout<<"cameraProcessThread "<<cameraid<<" id "<<m_cameraProcessThread.get_id()<<std::endl;
         std::vector<float> position;
         bool isLocationValued;
         while (Param::m_process)
@@ -44,7 +52,8 @@ namespace hitcrt
             apply(position,isLocationValued);
             if(isLocationValued)
             {
-                Param::serial->send(SerialApp::SEND_CAMERA,position);
+                if(cameraid == 0) Param::serial->send(SerialApp::SEND_CAMERA0,position);
+                else Param::serial->send(SerialApp::SEND_CAMERA1,position);
             }
             position.clear();
         }
@@ -83,7 +92,7 @@ namespace hitcrt
         }
         cv::putText(readFrame, txt.str(), cv::Point(10, 80), cv::FONT_HERSHEY_PLAIN, 1, cv::Scalar(10, 90, 255), 2);
         cv::putText(readFrame, linenum.str(), cv::Point(10, 60), cv::FONT_HERSHEY_PLAIN, 1, cv::Scalar(150, 200, 20), 2);
-        if(Param::cameraLocation.debug)Param::mimshow("frame",readFrame);
+        if(Param::cameraLocation.debug)Param::mimshow(windowName,readFrame);
         if(cv::waitKey(1)=='c')
         {
             cv::waitKey(100000000);
@@ -181,7 +190,6 @@ namespace hitcrt
         {
             flag = 1;
             std::cout <<"straight"<<std::endl;
-
         }else {flag = 3;return false;}
         return true;
     }
