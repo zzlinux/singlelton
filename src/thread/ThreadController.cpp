@@ -58,8 +58,8 @@ namespace hitcrt
             m_apriltagThread = boost::thread(boost::bind(&ThreadController::m_apriltag,this));
         }
         m_communicationThread = boost::thread(boost::bind(&ThreadController::m_communication,this));
-        m_mutualThread = boost::thread(boost::bind(&ThreadController::m_mutual,this));
 
+        m_mutualThread = boost::thread(boost::bind(&ThreadController::m_mutual,this));
         m_mutualThread.join();
     }
     void ThreadController::m_communication()
@@ -67,7 +67,7 @@ namespace hitcrt
         std::cout<<"communicationThread id "<<m_communicationThread.get_id()<<std::endl;
         SerialApp::RECEIVE_FLAG flag;
         std::vector<float> data;
-        while (true)
+        while (Param::m_process)
         {
             boost::this_thread::interruption_point();
             Param::serial->receive(flag,data);
@@ -107,12 +107,6 @@ namespace hitcrt
             if(ch == 'q')
             {
                 Param::m_process = false;
-                m_mutualThread.interrupt();
-                m_mutualThread.join();
-
-                m_communicationThread.interrupt();
-                m_communicationThread.join();
-
                 break;
             }else if(ch == '0'){
                 Param::m_traceMode = 0;

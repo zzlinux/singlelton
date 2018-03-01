@@ -145,7 +145,6 @@ namespace hitcrt
         std::cout<<"apriltagDataThread id "<<m_apriltagDataThread.get_id()<<std::endl;
         while (Param::m_process)
         {
-            boost::this_thread::interruption_point();
             struct timeval st,en;
             gettimeofday(&st,NULL);
             readFrameFromCamera();
@@ -159,7 +158,6 @@ namespace hitcrt
         std::cout <<"apriltagProcessThread id: "<<m_apriltagProcessThread.get_id()<<std::endl;
         while (Param::m_process)
         {
-            boost::this_thread::interruption_point();
             struct timeval st,en;
             gettimeofday(&st,NULL);
             getFrame();

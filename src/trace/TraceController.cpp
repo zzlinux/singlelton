@@ -26,7 +26,6 @@ namespace hitcrt
         std::cout<<"traceDataThread id "<<m_traceDataThread.get_id()<<std::endl;
         while (Param::m_process)
         {
-            boost::this_thread::interruption_point();
             struct timeval st,en;
             gettimeofday(&st,NULL);
             cv::Mat rgb,dep;
@@ -56,7 +55,6 @@ namespace hitcrt
         char isHit = 10;
         while (Param::m_process)
         {
-            boost::this_thread::interruption_point();
             cv::Mat color,depth,depth8U;
             {
                 boost::shared_lock<boost::shared_mutex> readLock(kinectlock);

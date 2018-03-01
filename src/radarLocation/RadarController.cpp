@@ -12,7 +12,7 @@ namespace hitcrt
         bool isLocationValued;          //判断激光雷达获得坐标是否正确
         std::vector<float> sendflag(1);
         char mode;
-        while(true)
+        while(Param::m_process)
         {
             if(Param::m_radarMode==0){sendflag[0] = 0;mode = Param::m_radarMode;}
             else if(Param::m_radarMode ==1){sendflag[0] = 1;mode = Param::m_radarMode;}
@@ -42,7 +42,10 @@ namespace hitcrt
         MyRansac(VecPoint,lines);
         bool isLocationValued = getRadarPosition(lines,position,mode);
         if(isLocationValued) averageFilter(slidewindow,position);
-        if(Param::radarLocation.debug) {showResultImg(position,lines,isLocationValued);myimshow(VecPoint);}
+        if(Param::radarLocation.debug) {
+            showResultImg(position,lines,isLocationValued);
+            myimshow(VecPoint);
+        }
         return isLocationValued;
     }
     bool RadarController::getRadarPosition(std::vector<std::vector<cv::Point2d> >&lines,std::vector<float > &position,char mode)
@@ -54,7 +57,6 @@ namespace hitcrt
         {
             for(auto l:lines)
             {
-                //std::cout<<"l.size : "<<l.size();
                 tempL.clear();
                 getLocation(l,tempL);
                 if(abs(tempL[1]>25)){
@@ -64,24 +66,18 @@ namespace hitcrt
                 position.assign(tempL.begin(),tempL.end());
             }
             if(position.empty())return false;
-            //std::cout<<"point "<<lines.back().front()<<std::endl;
-            //if(abs(position[1])>25){std::cout<<"angle too big "<<position[0]<<","<<position[1]<<std::endl;return false;}
-            //std::cout<<"mode = 0 x line.size "<<lines.back().size()<<std::endl;
         }else if(mode ==1)
         {
             for(auto l:lines)
             {
                 tempL.clear();
                 getLocation(l,tempL);
-                if(abs(tempL[1])<65||tempL[0]>2000)continue;
+                if(abs(tempL[1])<65)continue;
                 position.assign(tempL.begin(),tempL.end());
-                //std::cout<<"mode = 1 x line.size "<<l.size()<<std::endl;
-                //std::cout<<"mode = 1 angle,dis "<<tempL[1]<<","<<tempL[0]<<std::endl;
             }
             if(position.empty())return false;
         }else return false;
         return true;
-
     }
     void RadarController::getLocation(std::vector<cv::Point2d>&line,std::vector<float> &position)
     {
@@ -103,21 +99,5 @@ namespace hitcrt
             position.push_back(x);
             position.push_back(angle);
         }
-        /*
-        if(fitLine(line,kb))
-        {
-            //std::cout<<"k,b is "<<kb.k<<","<<kb.b<<std::endl;
-            x = CalPointLineDistance(cv::Point2d(0,0),kb);
-            angle = CalYawAngle(kb);
-            position.push_back(x);
-            position.push_back(angle);
-        }else{
-            //std::cout<<"k,b is "<<kb.k<<","<<kb.b<<std::endl;
-            x = abs(line.front().x);
-            angle = 0;
-            position.push_back(x);
-            position.push_back(angle);
-        }
-         */
     }
 }

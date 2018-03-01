@@ -18,7 +18,6 @@ namespace hitcrt
         std::cout<<"cameraDataThread id "<<m_cameraDataThread.get_id()<<std::endl;
         while (Param::m_process)
         {
-            boost::this_thread::interruption_point();
             struct timeval st,en;
             gettimeofday(&st,NULL);
             {
@@ -37,7 +36,6 @@ namespace hitcrt
         bool isLocationValued;
         while (Param::m_process)
         {
-            boost::this_thread::interruption_point();
             {
                 boost::shared_lock<boost::shared_mutex> readlock(cameralock);
                 if(frame.empty())continue;
