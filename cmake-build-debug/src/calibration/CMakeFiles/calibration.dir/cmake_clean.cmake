@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/calibration.dir/rgbd_camera.cpp.o"
   "CMakeFiles/calibration.dir/RgbdCalibration.cpp.o"
+  "CMakeFiles/calibration.dir/RgbdRecorder.cpp.o"
   "CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.o"
   "libcalibration.pdb"
   "libcalibration.a"

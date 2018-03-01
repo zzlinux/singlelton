@@ -1,6 +1,7 @@
 add_library(calibration
         rgbd_camera.cpp
         RgbdCalibration.cpp
+        RgbdRecorder.cpp
         MonoCameraCalibration.cpp)
 
 target_link_libraries(calibration

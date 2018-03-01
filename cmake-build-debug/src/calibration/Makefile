@@ -179,6 +179,33 @@ RgbdCalibration.cpp.s:
 	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.s
 .PHONY : RgbdCalibration.cpp.s
 
+RgbdRecorder.o: RgbdRecorder.cpp.o
+
+.PHONY : RgbdRecorder.o
+
+# target to build an object file
+RgbdRecorder.cpp.o:
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdRecorder.cpp.o
+.PHONY : RgbdRecorder.cpp.o
+
+RgbdRecorder.i: RgbdRecorder.cpp.i
+
+.PHONY : RgbdRecorder.i
+
+# target to preprocess a source file
+RgbdRecorder.cpp.i:
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdRecorder.cpp.i
+.PHONY : RgbdRecorder.cpp.i
+
+RgbdRecorder.s: RgbdRecorder.cpp.s
+
+.PHONY : RgbdRecorder.s
+
+# target to generate assembly for a file
+RgbdRecorder.cpp.s:
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/RgbdRecorder.cpp.s
+.PHONY : RgbdRecorder.cpp.s
+
 rgbd_camera.o: rgbd_camera.cpp.o
 
 .PHONY : rgbd_camera.o
@@ -221,6 +248,9 @@ help:
 	@echo "... RgbdCalibration.o"
 	@echo "... RgbdCalibration.i"
 	@echo "... RgbdCalibration.s"
+	@echo "... RgbdRecorder.o"
+	@echo "... RgbdRecorder.i"
+	@echo "... RgbdRecorder.s"
 	@echo "... rgbd_camera.o"
 	@echo "... rgbd_camera.i"
 	@echo "... rgbd_camera.s"

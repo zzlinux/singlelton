@@ -28,6 +28,7 @@ CMakeFiles/robocon.dir/src/main.cpp.o
  ../src/trace/TraceController.h
  /home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h
  /home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h
+ /home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
  /home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
  /home/robocon/workspace/singleton/src/main.cpp
  /home/robocon/workspace/singleton/src/thread/ThreadController.h

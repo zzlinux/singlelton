@@ -54,6 +54,22 @@ rgbd_camera.h
 memory
 -
 
+/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.cpp
+iostream
+-
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+RgbdRecorder.h
+/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
+openni2/OpenNI.h
+-
+
+/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
+
 /home/robocon/workspace/singleton/src/calibration/rgbd_camera.cpp
 rgbd_camera.h
 /home/robocon/workspace/singleton/src/calibration/rgbd_camera.h

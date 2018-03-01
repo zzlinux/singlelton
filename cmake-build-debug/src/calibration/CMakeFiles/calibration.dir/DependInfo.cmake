@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.o"
   "/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/CMakeFiles/calibration.dir/RgbdCalibration.cpp.o"
+  "/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/CMakeFiles/calibration.dir/RgbdRecorder.cpp.o"
   "/home/robocon/workspace/singleton/src/calibration/rgbd_camera.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/CMakeFiles/calibration.dir/rgbd_camera.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

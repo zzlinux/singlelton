@@ -238,6 +238,8 @@ rgbd_camera.h
 memory
 -
 
+/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
+
 /home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
 opencv2/opencv.hpp
 -
@@ -255,6 +257,8 @@ calibration/RgbdCalibration.h
 /home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h
 calibration/MonoCameraCalibration.h
 /home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h
+calibration/RgbdRecorder.h
+/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
 
 /home/robocon/workspace/singleton/src/thread/ThreadController.h
 iostream

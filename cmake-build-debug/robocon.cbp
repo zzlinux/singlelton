@@ -846,6 +846,12 @@
 		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h">
 			<Option target="calibration"/>
 		</Unit>
+		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.cpp">
+			<Option target="calibration"/>
+		</Unit>
+		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h">
+			<Option target="calibration"/>
+		</Unit>
 		<Unit filename="/home/robocon/workspace/singleton/src/calibration/rgbd_camera.cpp">
 			<Option target="calibration"/>
 		</Unit>
