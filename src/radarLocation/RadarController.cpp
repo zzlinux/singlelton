@@ -38,7 +38,7 @@ namespace hitcrt
         }
         std::vector<cv::Point2d> VecPoint;
         depth2xy(data,VecPoint,mode);
-        std::vector<std::vector<cv::Point2d>>lines;
+        std::vector<std::vector<cv::Point2d> >lines;
         MyRansac(VecPoint,lines);
         bool isLocationValued = getRadarPosition(lines,position,mode);
         if(isLocationValued) averageFilter(slidewindow,position);
