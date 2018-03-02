@@ -27,7 +27,8 @@ public:
         SEND_SUPPLY,
         SEND_CAMERA0,
         SEND_CAMERA1,
-        SEND_TRACE
+        SEND_TRACE,
+        SEND_APRILTAG
     };
 
     enum RECEIVE_FLAG

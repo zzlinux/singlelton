@@ -2,7 +2,7 @@
 appMode: 3
 sleeptime: 0
 TASK:
-    trace: 1
+    trace: 0
     radarLocation: 0
     cameraLocation: 0
     apriltag: 1

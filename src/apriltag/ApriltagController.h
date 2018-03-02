@@ -32,6 +32,10 @@ namespace hitcrt
 {
     class ApriltagController {
     public:
+        ApriltagController(int id);
+        ~ApriltagController();
+        void run();
+    private:
         AprilTags::TagDetector* m_tagDetector;
         AprilTags::TagCodes m_tagCodes;
 
@@ -59,20 +63,15 @@ namespace hitcrt
         cv::Mat frame,readFrame;
         boost::shared_mutex cameralock;
 
-        ApriltagController(int id);
-        ~ApriltagController();
-        double tic();
         inline double standardRad(double t);
         void wRo_to_euler(const Eigen::Matrix3d& wRo, double& yaw, double& pitch, double& roll);
-        void readFrameFromCamera();
-        bool getFrame();
         void print_detection(AprilTags::TagDetection& detection);
         void apply();
         boost::thread m_apriltagDataThread;
         boost::thread m_apriltagProcessThread;
         void m_apriltagReadFrame();
         void m_apriltagProcess();
-        void run();
+        struct {int id = 10;int lastId = 10;int count = 0;int lastSend =10;} message;
     };
 }
 #endif //ROBOCON_APRILTAGCONTROLLER_H
