@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.7)
+
 project(robocon)
+
+set(MANUAL_ROBOT false)
 
 set(CMAKE_CXX_STANDARD 11)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -20,30 +23,37 @@ find_package(PCL 1.7 REQUIRED)
 find_package(Eigen3 REQUIRED)
 
 include_directories(
-        src/trace
-        src/cameraLocation
-        src/radarLocation
+        config
         src/protocol
-        src/apriltag
         src/calibration
+        src/threadTaskFactory
+        src/threadTaskFactory/trace
+        src/threadTaskFactory/cameraLocation
+        src/threadTaskFactory/radarLocation
+        src/threadTaskFactory/apriltag
         ${OPENCV_INCLUDE_DIRS}
         ${OPENNI2_INCLUDE_DIRS}
         ${PCL_INCLUDE_DIRS}
         ${EIGEN3_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
 )
-ADD_SUBDIRECTORY(src/trace)
-ADD_SUBDIRECTORY(src/cameraLocation)
-ADD_SUBDIRECTORY(src/radarLocation)
-ADD_SUBDIRECTORY(src/thread)
 ADD_SUBDIRECTORY(src/protocol)
-ADD_SUBDIRECTORY(src/apriltag)
-ADD_SUBDIRECTORY(src/calibration)
+ADD_SUBDIRECTORY(src/thread)
+if(MANUAL_ROBOT)
+    ADD_SUBDIRECTORY(src/threadTaskFactory/radarLocation)
+else(MANUAL_ROBOT)
+    ADD_SUBDIRECTORY(src/calibration)
+    ADD_SUBDIRECTORY(src/threadTaskFactory/trace)
+    ADD_SUBDIRECTORY(src/threadTaskFactory/cameraLocation)
+    ADD_SUBDIRECTORY(src/threadTaskFactory/apriltag)
+endif(MANUAL_ROBOT)
 
 set(SOURCE_FILES src/main.cpp)
 add_executable(robocon ${SOURCE_FILES})
 target_link_libraries(robocon
         thread
-        calibration
         ${BOOST_LIBRARIES}
         )
+if(NOT MANUAL_ROBOT)
+    target_link_libraries(robocon calibration)
+endif(NOT MANUAL_ROBOT)

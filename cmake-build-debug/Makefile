@@ -124,43 +124,17 @@ robocon/fast:
 .PHONY : robocon/fast
 
 #=============================================================================
-# Target rules for targets named trace
+# Target rules for targets named protocol
 
 # Build rule for target.
-trace: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trace
-.PHONY : trace
+protocol: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 protocol
+.PHONY : protocol
 
 # fast build rule for target.
-trace/fast:
-	$(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/build
-.PHONY : trace/fast
-
-#=============================================================================
-# Target rules for targets named camera
-
-# Build rule for target.
-camera: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camera
-.PHONY : camera
-
-# fast build rule for target.
-camera/fast:
-	$(MAKE) -f src/cameraLocation/CMakeFiles/camera.dir/build.make src/cameraLocation/CMakeFiles/camera.dir/build
-.PHONY : camera/fast
-
-#=============================================================================
-# Target rules for targets named radar
-
-# Build rule for target.
-radar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 radar
-.PHONY : radar
-
-# fast build rule for target.
-radar/fast:
-	$(MAKE) -f src/radarLocation/CMakeFiles/radar.dir/build.make src/radarLocation/CMakeFiles/radar.dir/build
-.PHONY : radar/fast
+protocol/fast:
+	$(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/build
+.PHONY : protocol/fast
 
 #=============================================================================
 # Target rules for targets named thread
@@ -176,32 +150,6 @@ thread/fast:
 .PHONY : thread/fast
 
 #=============================================================================
-# Target rules for targets named protocol
-
-# Build rule for target.
-protocol: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 protocol
-.PHONY : protocol
-
-# fast build rule for target.
-protocol/fast:
-	$(MAKE) -f src/protocol/CMakeFiles/protocol.dir/build.make src/protocol/CMakeFiles/protocol.dir/build
-.PHONY : protocol/fast
-
-#=============================================================================
-# Target rules for targets named apriltag
-
-# Build rule for target.
-apriltag: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 apriltag
-.PHONY : apriltag
-
-# fast build rule for target.
-apriltag/fast:
-	$(MAKE) -f src/apriltag/CMakeFiles/apriltag.dir/build.make src/apriltag/CMakeFiles/apriltag.dir/build
-.PHONY : apriltag/fast
-
-#=============================================================================
 # Target rules for targets named calibration
 
 # Build rule for target.
@@ -213,6 +161,45 @@ calibration: cmake_check_build_system
 calibration/fast:
 	$(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/build
 .PHONY : calibration/fast
+
+#=============================================================================
+# Target rules for targets named trace
+
+# Build rule for target.
+trace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trace
+.PHONY : trace
+
+# fast build rule for target.
+trace/fast:
+	$(MAKE) -f src/threadTaskFactory/trace/CMakeFiles/trace.dir/build.make src/threadTaskFactory/trace/CMakeFiles/trace.dir/build
+.PHONY : trace/fast
+
+#=============================================================================
+# Target rules for targets named camera
+
+# Build rule for target.
+camera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	$(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
+#=============================================================================
+# Target rules for targets named apriltag
+
+# Build rule for target.
+apriltag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag
+.PHONY : apriltag
+
+# fast build rule for target.
+apriltag/fast:
+	$(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build
+.PHONY : apriltag/fast
 
 src/main.o: src/main.cpp.o
 
@@ -250,13 +237,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... robocon"
+	@echo "... protocol"
+	@echo "... thread"
+	@echo "... calibration"
 	@echo "... trace"
 	@echo "... camera"
-	@echo "... radar"
-	@echo "... thread"
-	@echo "... protocol"
 	@echo "... apriltag"
-	@echo "... calibration"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

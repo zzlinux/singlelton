@@ -34,13 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/robocon/workspace/singleton/cmake-build-debug/src/trace/cmake_install.cmake")
-  include("/home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation/cmake_install.cmake")
-  include("/home/robocon/workspace/singleton/cmake-build-debug/src/radarLocation/cmake_install.cmake")
-  include("/home/robocon/workspace/singleton/cmake-build-debug/src/thread/cmake_install.cmake")
   include("/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/cmake_install.cmake")
-  include("/home/robocon/workspace/singleton/cmake-build-debug/src/apriltag/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/thread/cmake_install.cmake")
   include("/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/cmake_install.cmake")
+  include("/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/cmake_install.cmake")
 
 endif()
 

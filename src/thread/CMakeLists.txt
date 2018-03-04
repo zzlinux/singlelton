@@ -4,11 +4,15 @@ add_library(thread
         ThreadController.h
         Param.cpp
         )
-target_link_libraries(thread
-        ${BOOST_LIBRARIES}
-        trace
-        camera
-        protocol
-        radar
-        apriltag
-        )
+if(MANUAL_ROBOT)
+    target_link_libraries(thread
+            protocol
+            radar)
+else(MANUAL_ROBOT)
+    target_link_libraries(thread
+            protocol
+            trace
+            camera
+            apriltag
+            )
+endif(MANUAL_ROBOT)

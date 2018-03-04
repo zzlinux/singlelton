@@ -3,8 +3,9 @@ add_library(calibration
         RgbdCalibration.cpp
         RgbdRecorder.cpp
         MonoCameraCalibration.cpp)
-
 target_link_libraries(calibration
         ${OpenNI2_LIBRARIES}
         ${OpenCV_LIBS}
+        ${PCL_LIBRARIES}
+        ${EIGEN3_LIBS}
 )

@@ -1,4 +1,5 @@
 #include <iostream>
+#include "makeParam.h"
 #include "thread/ThreadController.h"
 #include "calibration/RgbdCalibration.h"
 #include "calibration/MonoCameraCalibration.h"
@@ -22,6 +23,7 @@ int main() {
     std::cout << "Hello, World!" << std::endl;
     switch (mode)
     {
+#if ROBOT == 1
         case RGBDCALIBRATION:
         {
             std::cout<<"RGBD CALIBRATION APP"<<std::endl;
@@ -43,6 +45,7 @@ int main() {
             calibration.run();
             break;
         }
+#else
         case ROBOCON:
         {
             std::cout<<"ROBOCON APP"<<std::endl;
@@ -51,6 +54,7 @@ int main() {
             thread.run();
             break;
         }
+#endif
         default:
             break;
     }

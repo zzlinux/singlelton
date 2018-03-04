@@ -63,16 +63,15 @@ CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 # Target rules for target CMakeFiles/robocon.dir
 
 # All Build rule for target.
-CMakeFiles/robocon.dir/all: src/trace/CMakeFiles/trace.dir/all
-CMakeFiles/robocon.dir/all: src/cameraLocation/CMakeFiles/camera.dir/all
-CMakeFiles/robocon.dir/all: src/radarLocation/CMakeFiles/radar.dir/all
-CMakeFiles/robocon.dir/all: src/thread/CMakeFiles/thread.dir/all
 CMakeFiles/robocon.dir/all: src/protocol/CMakeFiles/protocol.dir/all
-CMakeFiles/robocon.dir/all: src/apriltag/CMakeFiles/apriltag.dir/all
+CMakeFiles/robocon.dir/all: src/thread/CMakeFiles/thread.dir/all
 CMakeFiles/robocon.dir/all: src/calibration/CMakeFiles/calibration.dir/all
+CMakeFiles/robocon.dir/all: src/threadTaskFactory/trace/CMakeFiles/trace.dir/all
+CMakeFiles/robocon.dir/all: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all
+CMakeFiles/robocon.dir/all: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all
 	$(MAKE) -f CMakeFiles/robocon.dir/build.make CMakeFiles/robocon.dir/depend
 	$(MAKE) -f CMakeFiles/robocon.dir/build.make CMakeFiles/robocon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=44,45 "Built target robocon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=30,31 "Built target robocon"
 .PHONY : CMakeFiles/robocon.dir/all
 
 # Include target in all.
@@ -82,7 +81,7 @@ all: CMakeFiles/robocon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/robocon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robocon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/robocon.dir/rule
@@ -99,230 +98,6 @@ CMakeFiles/robocon.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/robocon.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/trace
-
-# Convenience name for "all" pass in the directory.
-src/trace/all: src/trace/CMakeFiles/trace.dir/all
-
-.PHONY : src/trace/all
-
-# Convenience name for "clean" pass in the directory.
-src/trace/clean: src/trace/CMakeFiles/trace.dir/clean
-
-.PHONY : src/trace/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/trace/preinstall:
-
-.PHONY : src/trace/preinstall
-
-#=============================================================================
-# Target rules for target src/trace/CMakeFiles/trace.dir
-
-# All Build rule for target.
-src/trace/CMakeFiles/trace.dir/all:
-	$(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/depend
-	$(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58 "Built target trace"
-.PHONY : src/trace/CMakeFiles/trace.dir/all
-
-# Include target in all.
-all: src/trace/CMakeFiles/trace.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/trace/CMakeFiles/trace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 src/trace/CMakeFiles/trace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
-.PHONY : src/trace/CMakeFiles/trace.dir/rule
-
-# Convenience name for target.
-trace: src/trace/CMakeFiles/trace.dir/rule
-
-.PHONY : trace
-
-# clean rule for target.
-src/trace/CMakeFiles/trace.dir/clean:
-	$(MAKE) -f src/trace/CMakeFiles/trace.dir/build.make src/trace/CMakeFiles/trace.dir/clean
-.PHONY : src/trace/CMakeFiles/trace.dir/clean
-
-# clean rule for target.
-clean: src/trace/CMakeFiles/trace.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/cameraLocation
-
-# Convenience name for "all" pass in the directory.
-src/cameraLocation/all: src/cameraLocation/CMakeFiles/camera.dir/all
-
-.PHONY : src/cameraLocation/all
-
-# Convenience name for "clean" pass in the directory.
-src/cameraLocation/clean: src/cameraLocation/CMakeFiles/camera.dir/clean
-
-.PHONY : src/cameraLocation/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/cameraLocation/preinstall:
-
-.PHONY : src/cameraLocation/preinstall
-
-#=============================================================================
-# Target rules for target src/cameraLocation/CMakeFiles/camera.dir
-
-# All Build rule for target.
-src/cameraLocation/CMakeFiles/camera.dir/all:
-	$(MAKE) -f src/cameraLocation/CMakeFiles/camera.dir/build.make src/cameraLocation/CMakeFiles/camera.dir/depend
-	$(MAKE) -f src/cameraLocation/CMakeFiles/camera.dir/build.make src/cameraLocation/CMakeFiles/camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=23,24,25 "Built target camera"
-.PHONY : src/cameraLocation/CMakeFiles/camera.dir/all
-
-# Include target in all.
-all: src/cameraLocation/CMakeFiles/camera.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/cameraLocation/CMakeFiles/camera.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/cameraLocation/CMakeFiles/camera.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
-.PHONY : src/cameraLocation/CMakeFiles/camera.dir/rule
-
-# Convenience name for target.
-camera: src/cameraLocation/CMakeFiles/camera.dir/rule
-
-.PHONY : camera
-
-# clean rule for target.
-src/cameraLocation/CMakeFiles/camera.dir/clean:
-	$(MAKE) -f src/cameraLocation/CMakeFiles/camera.dir/build.make src/cameraLocation/CMakeFiles/camera.dir/clean
-.PHONY : src/cameraLocation/CMakeFiles/camera.dir/clean
-
-# clean rule for target.
-clean: src/cameraLocation/CMakeFiles/camera.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/radarLocation
-
-# Convenience name for "all" pass in the directory.
-src/radarLocation/all: src/radarLocation/CMakeFiles/radar.dir/all
-
-.PHONY : src/radarLocation/all
-
-# Convenience name for "clean" pass in the directory.
-src/radarLocation/clean: src/radarLocation/CMakeFiles/radar.dir/clean
-
-.PHONY : src/radarLocation/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/radarLocation/preinstall:
-
-.PHONY : src/radarLocation/preinstall
-
-#=============================================================================
-# Target rules for target src/radarLocation/CMakeFiles/radar.dir
-
-# All Build rule for target.
-src/radarLocation/CMakeFiles/radar.dir/all:
-	$(MAKE) -f src/radarLocation/CMakeFiles/radar.dir/build.make src/radarLocation/CMakeFiles/radar.dir/depend
-	$(MAKE) -f src/radarLocation/CMakeFiles/radar.dir/build.make src/radarLocation/CMakeFiles/radar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target radar"
-.PHONY : src/radarLocation/CMakeFiles/radar.dir/all
-
-# Include target in all.
-all: src/radarLocation/CMakeFiles/radar.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/radarLocation/CMakeFiles/radar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 14
-	$(MAKE) -f CMakeFiles/Makefile2 src/radarLocation/CMakeFiles/radar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
-.PHONY : src/radarLocation/CMakeFiles/radar.dir/rule
-
-# Convenience name for target.
-radar: src/radarLocation/CMakeFiles/radar.dir/rule
-
-.PHONY : radar
-
-# clean rule for target.
-src/radarLocation/CMakeFiles/radar.dir/clean:
-	$(MAKE) -f src/radarLocation/CMakeFiles/radar.dir/build.make src/radarLocation/CMakeFiles/radar.dir/clean
-.PHONY : src/radarLocation/CMakeFiles/radar.dir/clean
-
-# clean rule for target.
-clean: src/radarLocation/CMakeFiles/radar.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory src/thread
-
-# Convenience name for "all" pass in the directory.
-src/thread/all: src/thread/CMakeFiles/thread.dir/all
-
-.PHONY : src/thread/all
-
-# Convenience name for "clean" pass in the directory.
-src/thread/clean: src/thread/CMakeFiles/thread.dir/clean
-
-.PHONY : src/thread/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/thread/preinstall:
-
-.PHONY : src/thread/preinstall
-
-#=============================================================================
-# Target rules for target src/thread/CMakeFiles/thread.dir
-
-# All Build rule for target.
-src/thread/CMakeFiles/thread.dir/all: src/trace/CMakeFiles/trace.dir/all
-src/thread/CMakeFiles/thread.dir/all: src/cameraLocation/CMakeFiles/camera.dir/all
-src/thread/CMakeFiles/thread.dir/all: src/radarLocation/CMakeFiles/radar.dir/all
-src/thread/CMakeFiles/thread.dir/all: src/protocol/CMakeFiles/protocol.dir/all
-src/thread/CMakeFiles/thread.dir/all: src/apriltag/CMakeFiles/apriltag.dir/all
-	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/depend
-	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=46,47,48 "Built target thread"
-.PHONY : src/thread/CMakeFiles/thread.dir/all
-
-# Include target in all.
-all: src/thread/CMakeFiles/thread.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-src/thread/CMakeFiles/thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 51
-	$(MAKE) -f CMakeFiles/Makefile2 src/thread/CMakeFiles/thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
-.PHONY : src/thread/CMakeFiles/thread.dir/rule
-
-# Convenience name for target.
-thread: src/thread/CMakeFiles/thread.dir/rule
-
-.PHONY : thread
-
-# clean rule for target.
-src/thread/CMakeFiles/thread.dir/clean:
-	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/clean
-.PHONY : src/thread/CMakeFiles/thread.dir/clean
-
-# clean rule for target.
-clean: src/thread/CMakeFiles/thread.dir/clean
 
 .PHONY : clean
 
@@ -382,57 +157,60 @@ clean: src/protocol/CMakeFiles/protocol.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src/apriltag
+# Directory level rules for directory src/thread
 
 # Convenience name for "all" pass in the directory.
-src/apriltag/all: src/apriltag/CMakeFiles/apriltag.dir/all
+src/thread/all: src/thread/CMakeFiles/thread.dir/all
 
-.PHONY : src/apriltag/all
+.PHONY : src/thread/all
 
 # Convenience name for "clean" pass in the directory.
-src/apriltag/clean: src/apriltag/CMakeFiles/apriltag.dir/clean
+src/thread/clean: src/thread/CMakeFiles/thread.dir/clean
 
-.PHONY : src/apriltag/clean
+.PHONY : src/thread/clean
 
 # Convenience name for "preinstall" pass in the directory.
-src/apriltag/preinstall:
+src/thread/preinstall:
 
-.PHONY : src/apriltag/preinstall
+.PHONY : src/thread/preinstall
 
 #=============================================================================
-# Target rules for target src/apriltag/CMakeFiles/apriltag.dir
+# Target rules for target src/thread/CMakeFiles/thread.dir
 
 # All Build rule for target.
-src/apriltag/CMakeFiles/apriltag.dir/all:
-	$(MAKE) -f src/apriltag/CMakeFiles/apriltag.dir/build.make src/apriltag/CMakeFiles/apriltag.dir/depend
-	$(MAKE) -f src/apriltag/CMakeFiles/apriltag.dir/build.make src/apriltag/CMakeFiles/apriltag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target apriltag"
-.PHONY : src/apriltag/CMakeFiles/apriltag.dir/all
+src/thread/CMakeFiles/thread.dir/all: src/protocol/CMakeFiles/protocol.dir/all
+src/thread/CMakeFiles/thread.dir/all: src/threadTaskFactory/trace/CMakeFiles/trace.dir/all
+src/thread/CMakeFiles/thread.dir/all: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all
+src/thread/CMakeFiles/thread.dir/all: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all
+	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/depend
+	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=32,33,34 "Built target thread"
+.PHONY : src/thread/CMakeFiles/thread.dir/all
 
 # Include target in all.
-all: src/apriltag/CMakeFiles/apriltag.dir/all
+all: src/thread/CMakeFiles/thread.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/apriltag/CMakeFiles/apriltag.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 17
-	$(MAKE) -f CMakeFiles/Makefile2 src/apriltag/CMakeFiles/apriltag.dir/all
+src/thread/CMakeFiles/thread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 37
+	$(MAKE) -f CMakeFiles/Makefile2 src/thread/CMakeFiles/thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
-.PHONY : src/apriltag/CMakeFiles/apriltag.dir/rule
+.PHONY : src/thread/CMakeFiles/thread.dir/rule
 
 # Convenience name for target.
-apriltag: src/apriltag/CMakeFiles/apriltag.dir/rule
+thread: src/thread/CMakeFiles/thread.dir/rule
 
-.PHONY : apriltag
-
-# clean rule for target.
-src/apriltag/CMakeFiles/apriltag.dir/clean:
-	$(MAKE) -f src/apriltag/CMakeFiles/apriltag.dir/build.make src/apriltag/CMakeFiles/apriltag.dir/clean
-.PHONY : src/apriltag/CMakeFiles/apriltag.dir/clean
+.PHONY : thread
 
 # clean rule for target.
-clean: src/apriltag/CMakeFiles/apriltag.dir/clean
+src/thread/CMakeFiles/thread.dir/clean:
+	$(MAKE) -f src/thread/CMakeFiles/thread.dir/build.make src/thread/CMakeFiles/thread.dir/clean
+.PHONY : src/thread/CMakeFiles/thread.dir/clean
+
+# clean rule for target.
+clean: src/thread/CMakeFiles/thread.dir/clean
 
 .PHONY : clean
 
@@ -488,6 +266,171 @@ src/calibration/CMakeFiles/calibration.dir/clean:
 
 # clean rule for target.
 clean: src/calibration/CMakeFiles/calibration.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/threadTaskFactory/trace
+
+# Convenience name for "all" pass in the directory.
+src/threadTaskFactory/trace/all: src/threadTaskFactory/trace/CMakeFiles/trace.dir/all
+
+.PHONY : src/threadTaskFactory/trace/all
+
+# Convenience name for "clean" pass in the directory.
+src/threadTaskFactory/trace/clean: src/threadTaskFactory/trace/CMakeFiles/trace.dir/clean
+
+.PHONY : src/threadTaskFactory/trace/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/threadTaskFactory/trace/preinstall:
+
+.PHONY : src/threadTaskFactory/trace/preinstall
+
+#=============================================================================
+# Target rules for target src/threadTaskFactory/trace/CMakeFiles/trace.dir
+
+# All Build rule for target.
+src/threadTaskFactory/trace/CMakeFiles/trace.dir/all:
+	$(MAKE) -f src/threadTaskFactory/trace/CMakeFiles/trace.dir/build.make src/threadTaskFactory/trace/CMakeFiles/trace.dir/depend
+	$(MAKE) -f src/threadTaskFactory/trace/CMakeFiles/trace.dir/build.make src/threadTaskFactory/trace/CMakeFiles/trace.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44 "Built target trace"
+.PHONY : src/threadTaskFactory/trace/CMakeFiles/trace.dir/all
+
+# Include target in all.
+all: src/threadTaskFactory/trace/CMakeFiles/trace.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/threadTaskFactory/trace/CMakeFiles/trace.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/trace/CMakeFiles/trace.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
+.PHONY : src/threadTaskFactory/trace/CMakeFiles/trace.dir/rule
+
+# Convenience name for target.
+trace: src/threadTaskFactory/trace/CMakeFiles/trace.dir/rule
+
+.PHONY : trace
+
+# clean rule for target.
+src/threadTaskFactory/trace/CMakeFiles/trace.dir/clean:
+	$(MAKE) -f src/threadTaskFactory/trace/CMakeFiles/trace.dir/build.make src/threadTaskFactory/trace/CMakeFiles/trace.dir/clean
+.PHONY : src/threadTaskFactory/trace/CMakeFiles/trace.dir/clean
+
+# clean rule for target.
+clean: src/threadTaskFactory/trace/CMakeFiles/trace.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/threadTaskFactory/cameraLocation
+
+# Convenience name for "all" pass in the directory.
+src/threadTaskFactory/cameraLocation/all: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all
+
+.PHONY : src/threadTaskFactory/cameraLocation/all
+
+# Convenience name for "clean" pass in the directory.
+src/threadTaskFactory/cameraLocation/clean: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/clean
+
+.PHONY : src/threadTaskFactory/cameraLocation/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/threadTaskFactory/cameraLocation/preinstall:
+
+.PHONY : src/threadTaskFactory/cameraLocation/preinstall
+
+#=============================================================================
+# Target rules for target src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir
+
+# All Build rule for target.
+src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all:
+	$(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/depend
+	$(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=23,24,25 "Built target camera"
+.PHONY : src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all
+
+# Include target in all.
+all: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
+.PHONY : src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule
+
+# Convenience name for target.
+camera: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule
+
+.PHONY : camera
+
+# clean rule for target.
+src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/clean:
+	$(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/clean
+.PHONY : src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/clean
+
+# clean rule for target.
+clean: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/threadTaskFactory/apriltag
+
+# Convenience name for "all" pass in the directory.
+src/threadTaskFactory/apriltag/all: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all
+
+.PHONY : src/threadTaskFactory/apriltag/all
+
+# Convenience name for "clean" pass in the directory.
+src/threadTaskFactory/apriltag/clean: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/clean
+
+.PHONY : src/threadTaskFactory/apriltag/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/threadTaskFactory/apriltag/preinstall:
+
+.PHONY : src/threadTaskFactory/apriltag/preinstall
+
+#=============================================================================
+# Target rules for target src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir
+
+# All Build rule for target.
+src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all:
+	$(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/depend
+	$(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target apriltag"
+.PHONY : src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all
+
+# Include target in all.
+all: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 17
+	$(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
+.PHONY : src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule
+
+# Convenience name for target.
+apriltag: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule
+
+.PHONY : apriltag
+
+# clean rule for target.
+src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/clean:
+	$(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/clean
+.PHONY : src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/clean
+
+# clean rule for target.
+clean: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/clean
 
 .PHONY : clean
 

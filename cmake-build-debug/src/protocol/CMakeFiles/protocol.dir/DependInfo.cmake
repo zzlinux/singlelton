@@ -25,12 +25,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
-  "../src/trace"
-  "../src/cameraLocation"
-  "../src/radarLocation"
+  "../config"
   "../src/protocol"
-  "../src/apriltag"
   "../src/calibration"
+  "../src/threadTaskFactory"
+  "../src/threadTaskFactory/trace"
+  "../src/threadTaskFactory/cameraLocation"
+  "../src/threadTaskFactory/radarLocation"
+  "../src/threadTaskFactory/apriltag"
   "/usr/include/openni2"
   "/usr/local/include/pcl-1.8"
   "/usr/include/eigen3"

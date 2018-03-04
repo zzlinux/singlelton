@@ -41,13 +41,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
   "../cmake_modules/FindEigen3.cmake"
   "../cmake_modules/FindOpenNI2.cmake"
-  "../src/apriltag/CMakeLists.txt"
   "../src/calibration/CMakeLists.txt"
-  "../src/cameraLocation/CMakeLists.txt"
   "../src/protocol/CMakeLists.txt"
-  "../src/radarLocation/CMakeLists.txt"
   "../src/thread/CMakeLists.txt"
-  "../src/trace/CMakeLists.txt"
+  "../src/threadTaskFactory/apriltag/CMakeLists.txt"
+  "../src/threadTaskFactory/cameraLocation/CMakeLists.txt"
+  "../src/threadTaskFactory/trace/CMakeLists.txt"
   "/usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake"
   "/usr/lib/vtk-5.8/UseVTK.cmake"
   "/usr/lib/vtk-5.8/VTKConfig-Java.cmake"
@@ -74,23 +73,21 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/trace/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/cameraLocation/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/radarLocation/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/protocol/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/apriltag/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/calibration/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/threadTaskFactory/trace/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/threadTaskFactory/cameraLocation/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/threadTaskFactory/apriltag/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/robocon.dir/DependInfo.cmake"
-  "src/trace/CMakeFiles/trace.dir/DependInfo.cmake"
-  "src/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake"
-  "src/radarLocation/CMakeFiles/radar.dir/DependInfo.cmake"
-  "src/thread/CMakeFiles/thread.dir/DependInfo.cmake"
   "src/protocol/CMakeFiles/protocol.dir/DependInfo.cmake"
-  "src/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake"
+  "src/thread/CMakeFiles/thread.dir/DependInfo.cmake"
   "src/calibration/CMakeFiles/calibration.dir/DependInfo.cmake"
+  "src/threadTaskFactory/trace/CMakeFiles/trace.dir/DependInfo.cmake"
+  "src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake"
+  "src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake"
   )

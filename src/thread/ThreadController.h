@@ -14,6 +14,7 @@
 #include "RadarController.h"
 #include "ApriltagController.h"
 
+#include "makeParam.h"
 namespace hitcrt {
     class ThreadController
     {
@@ -38,11 +39,14 @@ namespace hitcrt {
         void m_radarLocation();
         void m_apriltag();
 
+#if ROBOT == 0
+        std::unique_ptr<RadarController> radarLocation;
+#else
         std::unique_ptr<TraceController> trace;
         std::unique_ptr<CameraController> cameraLocation0;
         std::unique_ptr<CameraController> cameraLocation1;
-        std::unique_ptr<RadarController> radarLocation;
         std::unique_ptr<ApriltagController> aprilTag;
+#endif
     };
 }
 

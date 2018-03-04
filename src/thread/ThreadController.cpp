@@ -17,7 +17,7 @@ namespace hitcrt
         cv::FileStorage fs(cv::String("../config/param.yaml"), cv::FileStorage::READ);
         assert(fs.isOpened());
         cv::FileNode task = fs["TASK"],debug = fs["DEBUG"],trace = fs["trace"],cameraLocation = fs["cameraLocation"];
-        cv::FileNode c = trace[(string)trace["ballcolor"]],g = trace[(string)trace["ballgold"]];
+        cv::FileNode c = trace[(std::string)trace["ballcolor"]],g = trace[(std::string)trace["ballgold"]];
         Param::debug = (int)debug["master"];
         Param::trace = {(int)task["trace"],(int)debug["trace"]&&Param::debug};
         Param::cameraLocation = {(int)task["cameraLocation"],(int)debug["cameraLocation"]&&Param::debug};
@@ -38,6 +38,13 @@ namespace hitcrt
     }
     void ThreadController::run()
     {
+#if ROBOT == 0
+        if(Param::radarLocation.start)
+        {
+            radarLocation = std::unique_ptr<RadarController>(new RadarController);
+            m_radarLocationThread = boost::thread(boost::bind(&ThreadController::m_radarLocation,this));
+        }
+#else
         if(Param::trace.start)
         {
             trace = std::unique_ptr<TraceController>(new TraceController);
@@ -50,16 +57,12 @@ namespace hitcrt
             cameraLocation1 = std::unique_ptr<CameraController>(new CameraController(1));
             m_cameraLocation1Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation1,this));
         }
-        if(Param::radarLocation.start)
-        {
-            radarLocation = std::unique_ptr<RadarController>(new RadarController);
-            m_radarLocationThread = boost::thread(boost::bind(&ThreadController::m_radarLocation,this));
-        }
         if(Param::apriltag.start)
         {
             aprilTag = std::unique_ptr<ApriltagController>(new ApriltagController(1));
             m_apriltagThread = boost::thread(boost::bind(&ThreadController::m_apriltag,this));
         }
+#endif
         m_communicationThread = boost::thread(boost::bind(&ThreadController::m_communication,this));
 
         if(Param::debug)
@@ -127,6 +130,14 @@ namespace hitcrt
             }
         }
     }
+
+#if ROBOT == 0
+    void ThreadController::m_radarLocation()
+    {
+        std::cout <<"radarProcessThread id: "<<m_radarLocationThread.get_id()<<std::endl;
+        radarLocation->run();
+    }
+#else
     void ThreadController::m_trace()
     {
         std::cout<<"traceThread id "<<m_traceThread.get_id()<<std::endl;
@@ -142,14 +153,10 @@ namespace hitcrt
         std::cout<<"cameraLocation1Thread id "<<m_cameraLocation1Thread.get_id()<<std::endl;
         cameraLocation1->run();
     }
-    void ThreadController::m_radarLocation()
-    {
-        std::cout <<"radarProcessThread id: "<<m_radarLocationThread.get_id()<<std::endl;
-        radarLocation->run();
-    }
     void ThreadController::m_apriltag()
     {
         std::cout <<"apriltagThread id: "<<m_apriltagThread.get_id()<<std::endl;
         aprilTag->run();
     }
+#endif
 }

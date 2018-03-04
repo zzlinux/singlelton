@@ -24,12 +24,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
-  "../src/trace"
-  "../src/cameraLocation"
-  "../src/radarLocation"
+  "../config"
   "../src/protocol"
-  "../src/apriltag"
   "../src/calibration"
+  "../src/threadTaskFactory"
+  "../src/threadTaskFactory/trace"
+  "../src/threadTaskFactory/cameraLocation"
+  "../src/threadTaskFactory/radarLocation"
+  "../src/threadTaskFactory/apriltag"
   "/usr/include/openni2"
   "/usr/local/include/pcl-1.8"
   "/usr/include/eigen3"
@@ -39,11 +41,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/robocon/workspace/singleton/cmake-build-debug/src/trace/CMakeFiles/trace.dir/DependInfo.cmake"
-  "/home/robocon/workspace/singleton/cmake-build-debug/src/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake"
   "/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/DependInfo.cmake"
-  "/home/robocon/workspace/singleton/cmake-build-debug/src/radarLocation/CMakeFiles/radar.dir/DependInfo.cmake"
-  "/home/robocon/workspace/singleton/cmake-build-debug/src/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake"
+  "/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/CMakeFiles/trace.dir/DependInfo.cmake"
+  "/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake"
+  "/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
