@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtrace.a  CMakeFiles/trace.dir/TraceController.cpp.o CMakeFiles/trace.dir/BallAssociate.cpp.o CMakeFiles/trace.dir/BallDetector.cpp.o CMakeFiles/trace.dir/CircleDetector.cpp.o CMakeFiles/trace.dir/FitTrace.cpp.o CMakeFiles/trace.dir/rgbd_camera.cpp.o CMakeFiles/trace.dir/Trajectory.cpp.o CMakeFiles/trace.dir/transformer.cpp.o CMakeFiles/trace.dir/Recorder.cpp.o
-/usr/bin/ranlib libtrace.a
