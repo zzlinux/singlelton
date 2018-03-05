@@ -6,35 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/robocon/workspace/singleton/src/protocol/serialapp.cpp
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialapp.cpp
 serialapp.h
-/home/robocon/workspace/singleton/src/protocol/serialapp.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialapp.h
 
-/home/robocon/workspace/singleton/src/protocol/serialapp.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialapp.h
 boost/thread/mutex.hpp
 -
 string
 -
 serialbase.h
-/home/robocon/workspace/singleton/src/protocol/serialbase.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.h
 utility.h
-/home/robocon/workspace/singleton/src/protocol/utility.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.h
 
-/home/robocon/workspace/singleton/src/protocol/serialbase.cpp
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.cpp
 serialbase.h
-/home/robocon/workspace/singleton/src/protocol/serialbase.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.h
 
-/home/robocon/workspace/singleton/src/protocol/serialbase.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.h
 boost/asio.hpp
 -
 
-/home/robocon/workspace/singleton/src/protocol/utility.cpp
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.cpp
 utility.h
-/home/robocon/workspace/singleton/src/protocol/utility.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.h
 opencv2/core/core.hpp
 -
 
-/home/robocon/workspace/singleton/src/protocol/utility.h
+/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.h
 opencv2/opencv.hpp
 -
 opencv2/core/core.hpp

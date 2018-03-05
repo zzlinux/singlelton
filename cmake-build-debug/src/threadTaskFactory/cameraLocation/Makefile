@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
+CMAKE_SOURCE_DIR = /home/robocon/workspace/CLionProjects/singlelton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/progress.marks
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/progress.marks
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/clean
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/preinstall
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/preinstall
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule
 .PHONY : src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ camera: src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/rule
 
 # fast build rule for target.
 camera/fast:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build
 .PHONY : camera/fast
 
 CameraController.o: CameraController.cpp.o
@@ -131,7 +131,7 @@ CameraController.o: CameraController.cpp.o
 
 # target to build an object file
 CameraController.cpp.o:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o
 .PHONY : CameraController.cpp.o
 
 CameraController.i: CameraController.cpp.i
@@ -140,7 +140,7 @@ CameraController.i: CameraController.cpp.i
 
 # target to preprocess a source file
 CameraController.cpp.i:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.i
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.i
 .PHONY : CameraController.cpp.i
 
 CameraController.s: CameraController.cpp.s
@@ -149,7 +149,7 @@ CameraController.s: CameraController.cpp.s
 
 # target to generate assembly for a file
 CameraController.cpp.s:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.s
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.s
 .PHONY : CameraController.cpp.s
 
 CameraModel.o: CameraModel.cpp.o
@@ -158,7 +158,7 @@ CameraModel.o: CameraModel.cpp.o
 
 # target to build an object file
 CameraModel.cpp.o:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o
 .PHONY : CameraModel.cpp.o
 
 CameraModel.i: CameraModel.cpp.i
@@ -167,7 +167,7 @@ CameraModel.i: CameraModel.cpp.i
 
 # target to preprocess a source file
 CameraModel.cpp.i:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.i
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.i
 .PHONY : CameraModel.cpp.i
 
 CameraModel.s: CameraModel.cpp.s
@@ -176,7 +176,7 @@ CameraModel.s: CameraModel.cpp.s
 
 # target to generate assembly for a file
 CameraModel.cpp.s:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.s
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.s
 .PHONY : CameraModel.cpp.s
 
 # Help Target
@@ -205,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

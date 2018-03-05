@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/robocon/workspace/singleton/src/protocol/serialapp.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.o"
-  "/home/robocon/workspace/singleton/src/protocol/serialbase.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.o"
-  "/home/robocon/workspace/singleton/src/protocol/utility.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/utility.cpp.o"
+  "/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialapp.cpp" "/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/serialapp.cpp.o"
+  "/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.cpp" "/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/serialbase.cpp.o"
+  "/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.cpp" "/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/CMakeFiles/protocol.dir/utility.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +24,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/vtk-5.8"
+  "/usr/include/vtk-5.10"
   "../config"
   "../src/protocol"
   "../src/calibration"

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o"
-  "/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.cpp" "/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o"
+  "/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraController.cpp" "/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o"
+  "/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.cpp" "/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraModel.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,7 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/vtk-5.8"
+  "/usr/include/vtk-5.10"
   "../config"
   "../src/protocol"
   "../src/calibration"

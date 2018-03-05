@@ -1,4 +1,4 @@
-# Install script for directory: /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation
+# Install script for directory: /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

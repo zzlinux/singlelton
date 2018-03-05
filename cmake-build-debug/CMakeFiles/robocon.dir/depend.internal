@@ -9,7 +9,7 @@ CMakeFiles/robocon.dir/src/main.cpp.o
  ../src/protocol/utility.h
  ../src/thread/ThreadController.h
  ../src/threadTaskFactory/TaskFactory.h
- /home/robocon/workspace/singleton/src/main.cpp
+ /home/robocon/workspace/CLionProjects/singlelton/src/main.cpp
  /usr/local/include/opencv/cxcore.h
  /usr/local/include/opencv2/calib3d.hpp
  /usr/local/include/opencv2/calib3d/calib3d_c.h

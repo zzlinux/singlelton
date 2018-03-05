@@ -34,39 +34,39 @@ stddef.h
 iostream
 ../src/threadTaskFactory/iostream
 
-/home/robocon/workspace/singleton/src/thread/Param.cpp
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/Param.cpp
 Param.h
-/home/robocon/workspace/singleton/src/thread/Param.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/Param.h
 opencv2/highgui/highgui.hpp
 -
 
-/home/robocon/workspace/singleton/src/thread/Param.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/Param.h
 boost/thread.hpp
 -
 opencv2/opencv.hpp
 -
 serialapp.h
-/home/robocon/workspace/singleton/src/thread/serialapp.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/serialapp.h
 
-/home/robocon/workspace/singleton/src/thread/ThreadController.cpp
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/ThreadController.cpp
 opencv2/core/core.hpp
 -
 ThreadController.h
-/home/robocon/workspace/singleton/src/thread/ThreadController.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/ThreadController.h
 Param.h
-/home/robocon/workspace/singleton/src/thread/Param.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/Param.h
 makeParam.h
-/home/robocon/workspace/singleton/src/thread/makeParam.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/makeParam.h
 
-/home/robocon/workspace/singleton/src/thread/ThreadController.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/ThreadController.h
 iostream
 -
 boost/thread.hpp
 -
 serialapp.h
-/home/robocon/workspace/singleton/src/thread/serialapp.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/serialapp.h
 TaskFactory.h
-/home/robocon/workspace/singleton/src/thread/TaskFactory.h
+/home/robocon/workspace/CLionProjects/singlelton/src/thread/TaskFactory.h
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

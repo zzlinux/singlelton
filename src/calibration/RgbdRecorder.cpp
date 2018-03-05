@@ -21,7 +21,7 @@ namespace hitcrt
 {
     RgbdRecorder::RgbdRecorder()
     {
-        fileurl = "../../oni/color.ONI";
+        fileurl = "../../oni/0305color.ONI";
     }
     void RgbdRecorder::run()
     {

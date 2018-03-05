@@ -7,21 +7,20 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  ../src/protocol/utility.h
  ../src/thread/Param.h
  ../src/threadTaskFactory/TaskFactory.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.cpp
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag16h5.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag25h7.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag25h9.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag36h11.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag36h9.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetector.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagFamily.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/ApriltagController.cpp
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/ApriltagController.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag16h5.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag25h7.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag25h9.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag36h11.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag36h9.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetector.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagFamily.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -36,11 +35,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -54,14 +55,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -72,7 +71,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -82,7 +82,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -92,15 +95,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -133,31 +149,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -198,7 +189,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -207,12 +198,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -273,36 +265,35 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  /usr/local/include/opencv2/videoio.hpp
  /usr/local/include/opencv2/videoio/videoio_c.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Edge.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Edge.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Edge.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Edge.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gaussian.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gaussian.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/XYWeight.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/XYWeight.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/XYWeight.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/XYWeight.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gaussian.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gaussian.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gaussian.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gaussian.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GrayModel.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GrayModel.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GrayModel.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GrayModel.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -317,11 +308,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -335,14 +328,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -353,7 +344,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -363,7 +355,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -373,15 +368,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -414,31 +422,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -479,7 +462,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -488,12 +471,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -502,12 +486,11 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Homography33.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Homography33.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Homography33.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Homography33.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -522,11 +505,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -540,14 +525,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -558,7 +541,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -568,7 +552,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -578,15 +565,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -619,31 +619,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -684,7 +659,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -693,12 +668,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -758,21 +734,20 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
  /usr/local/include/opencv2/videoio.hpp
  /usr/local/include/opencv2/videoio/videoio_c.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Homography33.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Quad.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Quad.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Segment.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/XYWeight.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Homography33.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Quad.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Quad.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Segment.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/XYWeight.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -787,11 +762,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -805,14 +782,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -823,7 +798,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -833,7 +809,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -843,15 +822,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -884,31 +876,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -949,7 +916,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -958,12 +925,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -972,19 +940,18 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Segment.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Segment.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Segment.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Segment.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Serial.cpp
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Serial.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Serial.cpp
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Serial.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -999,11 +966,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -1017,14 +986,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -1035,7 +1002,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -1045,7 +1013,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -1055,15 +1026,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -1096,31 +1080,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -1161,7 +1120,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -1170,12 +1129,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -1235,27 +1195,26 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
  /usr/local/include/opencv2/videoio.hpp
  /usr/local/include/opencv2/videoio/videoio_c.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Edge.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gaussian.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GrayModel.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gridder.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Homography33.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Quad.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Segment.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetector.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetector.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagFamily.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/XYWeight.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Edge.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gaussian.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GrayModel.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gridder.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Homography33.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Quad.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Segment.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetector.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetector.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagFamily.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/XYWeight.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -1270,11 +1229,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -1288,14 +1249,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -1306,7 +1265,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -1316,7 +1276,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -1326,15 +1289,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -1367,31 +1343,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -1432,7 +1383,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -1441,12 +1392,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -1508,13 +1460,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
  /usr/local/include/opencv2/videoio.hpp
  /usr/local/include/opencv2/videoio/videoio_c.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.h
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagFamily.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagFamily.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagFamily.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagFamily.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
- /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/Eigenvalues
  /usr/include/eigen3/Eigen/Geometry
  /usr/include/eigen3/Eigen/Householder
@@ -1529,11 +1480,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h
  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
  /usr/include/eigen3/Eigen/src/Core/Assign.h
+ /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
  /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
  /usr/include/eigen3/Eigen/src/Core/Block.h
  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+ /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
@@ -1547,14 +1500,12 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
  /usr/include/eigen3/Eigen/src/Core/Dot.h
  /usr/include/eigen3/Eigen/src/Core/EigenBase.h
- /usr/include/eigen3/Eigen/src/Core/Flagged.h
- /usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
- /usr/include/eigen3/Eigen/src/Core/Functors.h
  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
  /usr/include/eigen3/Eigen/src/Core/IO.h
+ /usr/include/eigen3/Eigen/src/Core/Inverse.h
  /usr/include/eigen3/Eigen/src/Core/Map.h
  /usr/include/eigen3/Eigen/src/Core/MapBase.h
  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
@@ -1565,7 +1516,8 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Core/NumTraits.h
  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
- /usr/include/eigen3/Eigen/src/Core/ProductBase.h
+ /usr/include/eigen3/Eigen/src/Core/Product.h
+ /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
  /usr/include/eigen3/Eigen/src/Core/Random.h
  /usr/include/eigen3/Eigen/src/Core/Redux.h
  /usr/include/eigen3/Eigen/src/Core/Ref.h
@@ -1575,7 +1527,10 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Core/Select.h
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+ /usr/include/eigen3/Eigen/src/Core/Solve.h
  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+ /usr/include/eigen3/Eigen/src/Core/SolverBase.h
+ /usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
  /usr/include/eigen3/Eigen/src/Core/StableNorm.h
  /usr/include/eigen3/Eigen/src/Core/Stride.h
  /usr/include/eigen3/Eigen/src/Core/Swap.h
@@ -1585,15 +1540,28 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
  /usr/include/eigen3/Eigen/src/Core/Visitor.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
+ /usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+ /usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
- /usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
+ /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
+ /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
@@ -1626,31 +1594,6 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
- /usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
  /usr/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
@@ -1691,7 +1634,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
  /usr/include/eigen3/Eigen/src/LU/Determinant.h
  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
- /usr/include/eigen3/Eigen/src/LU/Inverse.h
+ /usr/include/eigen3/Eigen/src/LU/InverseImpl.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
  /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
  /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
@@ -1700,12 +1643,13 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
  /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+ /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
  /usr/include/eigen3/Eigen/src/misc/Image.h
  /usr/include/eigen3/Eigen/src/misc/Kernel.h
- /usr/include/eigen3/Eigen/src/misc/Solve.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
@@ -1765,5 +1709,5 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
  /usr/local/include/opencv2/videoio.hpp
  /usr/local/include/opencv2/videoio/videoio_c.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.cc
- /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.cc
+ /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h

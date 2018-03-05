@@ -5,41 +5,41 @@
 		<Option title="robocon"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\usr\local\share\pcl-1.8\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\vtk-5.8\;CMake Files\..\..\..\..\usr\lib\vtk-5.8\CMake\;CMake Files\cmake_modules\;CMake Files\src\;CMake Files\src\protocol\;CMake Files\src\thread\;CMake Files\src\threadTaskFactory\;CMake Files\src\threadTaskFactory\trace\;CMake Files\src\threadTaskFactory\cameraLocation\;CMake Files\src\threadTaskFactory\apriltag\;CMake Files\src\calibration\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\..\usr\local\share\pcl-1.8\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\;CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\CMake\;CMake Files\cmake_modules\;CMake Files\src\;CMake Files\src\protocol\;CMake Files\src\thread\;CMake Files\src\threadTaskFactory\;CMake Files\src\threadTaskFactory\trace\;CMake Files\src\threadTaskFactory\cameraLocation\;CMake Files\src\threadTaskFactory\apriltag\;CMake Files\src\calibration\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="robocon">
-				<Option output="/home/robocon/workspace/singleton/bin/robocon" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/bin"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/bin/robocon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,39 +52,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 robocon"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 robocon"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="robocon/fast">
-				<Option output="/home/robocon/workspace/singleton/bin/robocon" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/bin"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/bin/robocon" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/bin"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -97,39 +97,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 robocon/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 robocon/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="protocol">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/libprotocol.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/protocol"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/libprotocol.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -142,38 +142,38 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 protocol"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 protocol"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="protocol/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/libprotocol.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/protocol"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/libprotocol.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -186,38 +186,38 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 protocol/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 protocol/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/protocol/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="thread">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/thread/libthread.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/thread"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/libthread.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -230,39 +230,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 thread"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 thread"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="thread/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/thread/libthread.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/thread"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/libthread.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -275,39 +275,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 thread/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 thread/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/thread/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="taskFactory">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/libtaskFactory.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/libtaskFactory.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -320,39 +320,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 taskFactory"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 taskFactory"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="taskFactory/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/libtaskFactory.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/libtaskFactory.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -365,39 +365,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 taskFactory/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 taskFactory/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="calibration">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/libcalibration.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/calibration"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/libcalibration.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -410,39 +410,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 calibration"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 calibration"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="calibration/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/libcalibration.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/calibration"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/libcalibration.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -455,39 +455,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 calibration/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 calibration/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/calibration/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="trace">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/libtrace.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/libtrace.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -500,39 +500,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 trace"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 trace"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="trace/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/libtrace.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/libtrace.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -545,39 +545,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 trace/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 trace/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/trace/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="camera">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/libcamera.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/libcamera.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -590,39 +590,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 camera"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 camera"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="camera/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/libcamera.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/libcamera.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -635,39 +635,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 camera/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 camera/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/cameraLocation/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="apriltag">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/libapriltag.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/libapriltag.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -680,39 +680,39 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 apriltag"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 apriltag"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="apriltag/fast">
-				<Option output="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/libapriltag.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag"/>
+				<Option output="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/libapriltag.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -725,407 +725,380 @@
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
 					<Add option="-DDISABLE_RSSDK"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/home/robocon/workspace/singleton/config"/>
-					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
-					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
-					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/radarLocation"/>
-					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag"/>
+					<Add directory="/usr/include/vtk-5.10"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/config"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/protocol"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/thread"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/radarLocation"/>
+					<Add directory="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag"/>
 					<Add directory="/usr/include/openni2"/>
 					<Add directory="/usr/local/include/pcl-1.8"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 apriltag/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 apriltag/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/CalibrationFactory.cpp">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/CalibrationFactory.h">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/MonoCameraCalibration.cpp">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/MonoCameraCalibration.h">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/RgbdCalibration.cpp">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/RgbdCalibration.h">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/RgbdRecorder.cpp">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/RgbdRecorder.h">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/rgbd_camera.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/rgbd_camera.cpp">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/rgbd_camera.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/rgbd_camera.h">
 			<Option target="calibration"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/main.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/main.cpp">
 			<Option target="robocon"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/serialapp.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialapp.cpp">
 			<Option target="protocol"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/serialapp.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialapp.h">
 			<Option target="protocol"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/serialbase.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.cpp">
 			<Option target="protocol"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/serialbase.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/serialbase.h">
 			<Option target="protocol"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/utility.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.cpp">
 			<Option target="protocol"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/utility.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/utility.h">
 			<Option target="protocol"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/thread/Param.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/thread/Param.cpp">
 			<Option target="thread"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/thread/Param.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/thread/Param.h">
 			<Option target="thread"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/thread/ThreadController.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/thread/ThreadController.cpp">
 			<Option target="thread"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/thread/ThreadController.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/thread/ThreadController.h">
 			<Option target="thread"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/TaskFactory.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/TaskFactory.cpp">
 			<Option target="taskFactory"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/TaskFactory.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/TaskFactory.h">
 			<Option target="taskFactory"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/ApriltagController.cpp">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/ApriltagController.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Edge.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Edge.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Edge.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Edge.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/FloatImage.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLine2D.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLine2D.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GLineSegment2D.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gaussian.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gaussian.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gaussian.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gaussian.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GrayModel.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GrayModel.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/GrayModel.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/GrayModel.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Gridder.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Gridder.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Homography33.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Homography33.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Homography33.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Homography33.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/MathUtil.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/MathUtil.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Quad.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Quad.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Quad.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Quad.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Segment.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Segment.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Segment.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Segment.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Serial.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Serial.cpp">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Serial.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Serial.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag16h5.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag16h5.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag16h5_other.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag16h5_other.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag25h7.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag25h7.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag25h9.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag25h9.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag36h11.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag36h11.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag36h11_other.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag36h11_other.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Tag36h9.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/Tag36h9.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetection.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetection.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetector.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetector.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagDetector.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagDetector.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagFamily.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagFamily.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/TagFamily.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/TagFamily.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.cc">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.cc">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/UnionFindSimple.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/XYWeight.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/XYWeight.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/pch.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/lib/pch.h">
 			<Option target="apriltag"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraController.cpp">
 			<Option target="camera"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraController.h">
 			<Option target="camera"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.cpp">
 			<Option target="camera"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.h">
 			<Option target="camera"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/BallAssociate.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/BallAssociate.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/BallAssociate.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/BallAssociate.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/BallDetector.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/BallDetector.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/BallDetector.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/BallDetector.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/CircleDetector.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/CircleDetector.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/CircleDetector.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/CircleDetector.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/FitTrace.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/FitTrace.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/FitTrace.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/FitTrace.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/Recorder.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/Recorder.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/Recorder.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/Recorder.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/TraceController.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/TraceController.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/TraceController.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/TraceController.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/Trajectory.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/Trajectory.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/Trajectory.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/Trajectory.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/rgbd_camera.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/rgbd_camera.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/rgbd_camera.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/rgbd_camera.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/transformer.cpp">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/transformer.cpp">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/transformer.h">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/transformer.h">
 			<Option target="trace"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/local/share/pcl-1.8/PCLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/local/share/pcl-1.8/PCLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\pcl-1.8\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/local/share/pcl-1.8/PCLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\pcl-1.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/local/share/pcl-1.8/PCLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\pcl-1.8\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/UseVTK.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/VTKConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/UseVTK.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/../../../../../usr/lib/vtk-5.10/CMake/vtkMakeInstantiator.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\vtk-5.10\CMake\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/UseVTK.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Java.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Python.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/VTKConfig-Tcl.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/UseVTK.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/../../../../usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\vtk-5.8\CMake\"/>
-		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/cmake_modules/FindOpenNI2.cmake">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/cmake_modules/FindOpenNI2.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/cmake_modules/FindEigen3.cmake">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/cmake_modules/FindEigen3.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/protocol/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/protocol/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\protocol\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/thread/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/thread/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\thread\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\threadTaskFactory\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/trace/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\threadTaskFactory\trace\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\threadTaskFactory\cameraLocation\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/apriltag/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\threadTaskFactory\apriltag\"/>
 		</Unit>
-		<Unit filename="/home/robocon/workspace/singleton/src/calibration/CMakeLists.txt">
+		<Unit filename="/home/robocon/workspace/CLionProjects/singlelton/src/calibration/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\calibration\"/>
 		</Unit>
 	</Project>

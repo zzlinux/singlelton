@@ -1,4 +1,4 @@
-# Install script for directory: /home/robocon/workspace/singleton/src/threadTaskFactory/trace
+# Install script for directory: /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/trace
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
