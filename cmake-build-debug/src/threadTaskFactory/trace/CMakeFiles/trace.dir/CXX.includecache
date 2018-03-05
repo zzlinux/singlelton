@@ -36,6 +36,10 @@ opencv2/opencv.hpp
 serialapp.h
 ../src/thread/serialapp.h
 
+../src/threadTaskFactory/TaskFactory.h
+iostream
+../src/threadTaskFactory/iostream
+
 /home/robocon/workspace/singleton/src/threadTaskFactory/trace/BallAssociate.cpp
 BallAssociate.h
 /home/robocon/workspace/singleton/src/threadTaskFactory/trace/BallAssociate.h
@@ -177,6 +181,8 @@ opencv2/core/core.hpp
 -
 rgbd_camera.h
 /home/robocon/workspace/singleton/src/threadTaskFactory/trace/rgbd_camera.h
+TaskFactory.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/trace/TaskFactory.h
 
 /home/robocon/workspace/singleton/src/threadTaskFactory/trace/Trajectory.cpp
 Trajectory.h

@@ -8,9 +8,11 @@
 #include <boost/thread.hpp>
 #include <opencv2/core/core.hpp>
 #include "rgbd_camera.h"
+#include "TaskFactory.h"
 namespace hitcrt
 {
-    class TraceController {
+    class TraceController :public TaskProduct
+    {
     public:
         TraceController(){};
         void run();

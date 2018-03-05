@@ -1328,6 +1328,7 @@ src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/p
 src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/protocol/serialbase.h
 src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/protocol/utility.h
 src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/thread/Param.h
+src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/threadTaskFactory/TaskFactory.h
 src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/threadTaskFactory/trace/BallAssociate.h
 src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/threadTaskFactory/trace/BallDetector.h
 src/threadTaskFactory/trace/CMakeFiles/trace.dir/TraceController.cpp.o: ../src/threadTaskFactory/trace/CircleDetector.h

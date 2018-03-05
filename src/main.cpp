@@ -1,10 +1,7 @@
 #include <iostream>
 #include "makeParam.h"
 #include "thread/ThreadController.h"
-#include "calibration/RgbdCalibration.h"
-#include "calibration/MonoCameraCalibration.h"
-#include "calibration/RgbdRecorder.h"
-
+#include "CalibrationFactory.h"
 using namespace hitcrt;
 
 enum appMode{
@@ -27,25 +24,25 @@ int main() {
         case RGBDCALIBRATION:
         {
             std::cout<<"RGBD CALIBRATION APP"<<std::endl;
-            RgbdCalibration calibration;
-            calibration.run();
+            CalibrationProduct * calibration = CalibrationFactory::CreateCalibration("rgbdCalibration");
+            calibration->run();
             break;
         }
         case RGBDRECORDER:
         {
             std::cout<<"RGBD RECORDER APP"<<std::endl;
-            RgbdRecorder rgbdrecorder;
-            rgbdrecorder.run();
+            CalibrationProduct * rgbdrecorder = CalibrationFactory::CreateCalibration("rgbdRecorder");
+            rgbdrecorder->run();
             break;
         }
         case MONOCAMERACALIBRATION:
         {
             std::cout<<"MONOCAMERA CALIBRATION APP"<<std::endl;
-            MonoCameraCalibration calibration;
-            calibration.run();
+            CalibrationProduct * calibration = CalibrationFactory::CreateCalibration("monoCameraCalibration");
+            calibration->run();
             break;
         }
-#else
+#endif
         case ROBOCON:
         {
             std::cout<<"ROBOCON APP"<<std::endl;
@@ -54,7 +51,6 @@ int main() {
             thread.run();
             break;
         }
-#endif
         default:
             break;
     }

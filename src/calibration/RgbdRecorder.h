@@ -5,13 +5,15 @@
 #ifndef ROBOCON_RGBDRECORDER_H
 #define ROBOCON_RGBDRECORDER_H
 
+#include "CalibrationFactory.h"
 namespace hitcrt
 {
-    class RgbdRecorder {
+    class RgbdRecorder :public CalibrationProduct
+    {
     public:
         RgbdRecorder();
         ~RgbdRecorder(){};
-        int run();
+        void run();
 
     private:
         char * fileurl;

@@ -5,6 +5,7 @@ src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/protocol/serialbase.h
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/protocol/utility.h
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/thread/Param.h
+src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/threadTaskFactory/TaskFactory.h
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/threadTaskFactory/cameraLocation/CameraController.cpp
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/threadTaskFactory/cameraLocation/CameraController.h
 src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.o: ../src/threadTaskFactory/cameraLocation/CameraModel.h

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libcalibration.a  CMakeFiles/calibration.dir/rgbd_camera.cpp.o CMakeFiles/calibration.dir/RgbdCalibration.cpp.o CMakeFiles/calibration.dir/RgbdRecorder.cpp.o CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.o
+/usr/bin/ar qc libcalibration.a  CMakeFiles/calibration.dir/rgbd_camera.cpp.o CMakeFiles/calibration.dir/RgbdCalibration.cpp.o CMakeFiles/calibration.dir/RgbdRecorder.cpp.o CMakeFiles/calibration.dir/MonoCameraCalibration.cpp.o CMakeFiles/calibration.dir/CalibrationFactory.cpp.o
 /usr/bin/ranlib libcalibration.a

@@ -36,6 +36,10 @@ opencv2/opencv.hpp
 serialapp.h
 ../src/thread/serialapp.h
 
+../src/threadTaskFactory/TaskFactory.h
+iostream
+../src/threadTaskFactory/iostream
+
 /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.cpp
 ApriltagController.h
 /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.h
@@ -97,6 +101,8 @@ cmath
 -
 ../thread/Param.h
 /home/robocon/workspace/singleton/src/threadTaskFactory/thread/Param.h
+TaskFactory.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/TaskFactory.h
 
 /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/Edge.cc
 Edge.h

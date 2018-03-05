@@ -11,16 +11,17 @@
 #include <iostream>
 #include <boost/thread/thread.hpp>
 #include "../thread/Param.h"
+#include "TaskFactory.h"
 namespace hitcrt
 {
-    class CameraController :private CameraModel
+    class CameraController :private CameraModel,public TaskProduct
     {
     public:
         CameraController(int id);
         ~CameraController(){};
         void run();
-        static int count;
     private:
+        static int count;
         std::string windowName;
         cv::Mat frame;
         cv::Mat readFrame;

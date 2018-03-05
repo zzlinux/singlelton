@@ -36,6 +36,10 @@ opencv2/opencv.hpp
 serialapp.h
 ../src/thread/serialapp.h
 
+../src/threadTaskFactory/TaskFactory.h
+iostream
+../src/threadTaskFactory/iostream
+
 /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.cpp
 CameraController.h
 /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.h
@@ -55,6 +59,8 @@ boost/thread/thread.hpp
 -
 ../thread/Param.h
 /home/robocon/workspace/singleton/src/threadTaskFactory/thread/Param.h
+TaskFactory.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/TaskFactory.h
 
 /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.cpp
 CameraModel.h

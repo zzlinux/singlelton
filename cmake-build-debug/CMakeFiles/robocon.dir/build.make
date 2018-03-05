@@ -102,6 +102,7 @@ robocon_EXTERNAL_OBJECTS =
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 ../bin/robocon: src/calibration/libcalibration.a
 ../bin/robocon: src/protocol/libprotocol.a
+../bin/robocon: src/threadTaskFactory/libtaskFactory.a
 ../bin/robocon: src/threadTaskFactory/trace/libtrace.a
 ../bin/robocon: src/threadTaskFactory/cameraLocation/libcamera.a
 ../bin/robocon: src/threadTaskFactory/apriltag/libapriltag.a

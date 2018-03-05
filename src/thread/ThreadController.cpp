@@ -38,31 +38,28 @@ namespace hitcrt
     }
     void ThreadController::run()
     {
-#if ROBOT == 0
         if(Param::radarLocation.start)
         {
-            radarLocation = std::unique_ptr<RadarController>(new RadarController);
+            radarLocation = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("radarLocation"));
             m_radarLocationThread = boost::thread(boost::bind(&ThreadController::m_radarLocation,this));
         }
-#else
         if(Param::trace.start)
         {
-            trace = std::unique_ptr<TraceController>(new TraceController);
+            trace = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("trace"));
             m_traceThread = boost::thread(boost::bind(&ThreadController::m_trace,this));
         }
         if(Param::cameraLocation.start)
         {
-            cameraLocation0 = std::unique_ptr<CameraController>(new CameraController(0));
+            cameraLocation0 = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("cameraLocation",0));
             m_cameraLocation0Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation0,this));
-            cameraLocation1 = std::unique_ptr<CameraController>(new CameraController(1));
+            cameraLocation1 = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("cameraLocation",1));
             m_cameraLocation1Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation1,this));
         }
         if(Param::apriltag.start)
         {
-            aprilTag = std::unique_ptr<ApriltagController>(new ApriltagController(1));
+            aprilTag = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("apriltag",1));
             m_apriltagThread = boost::thread(boost::bind(&ThreadController::m_apriltag,this));
         }
-#endif
         m_communicationThread = boost::thread(boost::bind(&ThreadController::m_communication,this));
 
         if(Param::debug)
@@ -131,32 +128,44 @@ namespace hitcrt
         }
     }
 
-#if ROBOT == 0
     void ThreadController::m_radarLocation()
     {
         std::cout <<"radarProcessThread id: "<<m_radarLocationThread.get_id()<<std::endl;
-        radarLocation->run();
+        if(radarLocation == NULL)
+            radarLocation->error();
+        else
+            radarLocation->run();
     }
-#else
     void ThreadController::m_trace()
     {
         std::cout<<"traceThread id "<<m_traceThread.get_id()<<std::endl;
-        trace->run();
+        if(trace == NULL)
+            radarLocation->error();
+        else
+            trace->run();
     }
     void ThreadController::m_cameraLocation0()
     {
         std::cout<<"cameraLocation0Thread id "<<m_cameraLocation0Thread.get_id()<<std::endl;
-        cameraLocation0->run();
+        if(cameraLocation0 == NULL)
+            radarLocation->error();
+        else
+            cameraLocation0->run();
     }
     void ThreadController::m_cameraLocation1()
     {
         std::cout<<"cameraLocation1Thread id "<<m_cameraLocation1Thread.get_id()<<std::endl;
-        cameraLocation1->run();
+        if(cameraLocation1 == NULL)
+            cameraLocation1->error();
+        else
+            cameraLocation1->run();
     }
     void ThreadController::m_apriltag()
     {
         std::cout <<"apriltagThread id: "<<m_apriltagThread.get_id()<<std::endl;
-        aprilTag->run();
+        if(aprilTag == NULL)
+            aprilTag->error();
+        else
+            aprilTag->run();
     }
-#endif
 }

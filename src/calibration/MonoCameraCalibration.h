@@ -10,11 +10,13 @@
 #include <opencv2/core/utility.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/calib3d.hpp>
+#include "CalibrationFactory.h"
 using namespace cv;
 using namespace std;
 namespace hitcrt
 {
-    class MonoCameraCalibration {
+    class MonoCameraCalibration :public CalibrationProduct
+    {
     public:
         MonoCameraCalibration(){};
         void run();

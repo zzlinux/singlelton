@@ -6,6 +6,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
  ../src/protocol/serialbase.h
  ../src/protocol/utility.h
  ../src/thread/Param.h
+ ../src/threadTaskFactory/TaskFactory.h
  /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.cpp
  /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/ApriltagController.h
  /home/robocon/workspace/singleton/src/threadTaskFactory/apriltag/lib/FloatImage.h

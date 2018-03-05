@@ -23,14 +23,14 @@ namespace hitcrt
     {
         fileurl = "../../oni/color.ONI";
     }
-    int RgbdRecorder::run()
+    void RgbdRecorder::run()
     {
         // 1. Initial OpenNI
         if( OpenNI::initialize() != STATUS_OK )
         {
             cerr << "OpenNI Initial Error: "
                  << OpenNI::getExtendedError() << endl;
-            return -1;
+            return ;
         }
 
         // 2. Open Device
@@ -39,7 +39,7 @@ namespace hitcrt
         {
             cerr << "Can't Open Device: "
                  << OpenNI::getExtendedError() << endl;
-            return -1;
+            return ;
         }
         openni::Status status;
 
@@ -68,13 +68,13 @@ namespace hitcrt
             {
                 cerr << "Can't create depth stream on device: "
                      << OpenNI::getExtendedError() << endl;
-                return -1;
+                return ;
             }
         }
         else
         {
             cerr << "ERROR: This device does not have depth sensor" << endl;
-            return -1;
+            return ;
         }
 
 
@@ -109,7 +109,7 @@ namespace hitcrt
             {
                 cerr << "Can't create color stream on device: "
                      << OpenNI::getExtendedError() << endl;
-                return -1;
+                return ;
             }
         }
 
@@ -144,7 +144,7 @@ namespace hitcrt
         {
             cerr << "Can't Open Recorder: "
                  << OpenNI::getExtendedError() << endl;
-            return -1;
+            return ;
         }
 
         char key = ' ';
@@ -210,7 +210,7 @@ namespace hitcrt
         mDevice.close();
         OpenNI::shutdown();
         system("pause");
-        return 0;
+        return ;
 
     }
 }

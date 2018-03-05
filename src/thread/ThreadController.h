@@ -9,12 +9,7 @@
 #include <boost/thread.hpp>
 
 #include "serialapp.h"
-#include "TraceController.h"
-#include "CameraController.h"
-#include "RadarController.h"
-#include "ApriltagController.h"
-
-#include "makeParam.h"
+#include "TaskFactory.h"
 namespace hitcrt {
     class ThreadController
     {
@@ -39,14 +34,11 @@ namespace hitcrt {
         void m_radarLocation();
         void m_apriltag();
 
-#if ROBOT == 0
-        std::unique_ptr<RadarController> radarLocation;
-#else
-        std::unique_ptr<TraceController> trace;
-        std::unique_ptr<CameraController> cameraLocation0;
-        std::unique_ptr<CameraController> cameraLocation1;
-        std::unique_ptr<ApriltagController> aprilTag;
-#endif
+        std::unique_ptr<TaskProduct> radarLocation;
+        std::unique_ptr<TaskProduct> trace;
+        std::unique_ptr<TaskProduct> cameraLocation0;
+        std::unique_ptr<TaskProduct> cameraLocation1;
+        std::unique_ptr<TaskProduct> aprilTag;
     };
 }
 

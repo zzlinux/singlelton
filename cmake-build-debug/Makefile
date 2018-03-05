@@ -150,6 +150,19 @@ thread/fast:
 .PHONY : thread/fast
 
 #=============================================================================
+# Target rules for targets named taskFactory
+
+# Build rule for target.
+taskFactory: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 taskFactory
+.PHONY : taskFactory
+
+# fast build rule for target.
+taskFactory/fast:
+	$(MAKE) -f src/threadTaskFactory/CMakeFiles/taskFactory.dir/build.make src/threadTaskFactory/CMakeFiles/taskFactory.dir/build
+.PHONY : taskFactory/fast
+
+#=============================================================================
 # Target rules for targets named calibration
 
 # Build rule for target.
@@ -239,6 +252,7 @@ help:
 	@echo "... robocon"
 	@echo "... protocol"
 	@echo "... thread"
+	@echo "... taskFactory"
 	@echo "... calibration"
 	@echo "... trace"
 	@echo "... camera"

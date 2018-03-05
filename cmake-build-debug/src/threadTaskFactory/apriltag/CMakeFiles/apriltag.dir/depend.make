@@ -5,6 +5,7 @@ src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o:
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/protocol/serialbase.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/protocol/utility.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/thread/Param.h
+src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/threadTaskFactory/TaskFactory.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/threadTaskFactory/apriltag/ApriltagController.cpp
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/threadTaskFactory/apriltag/ApriltagController.h
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o: ../src/threadTaskFactory/apriltag/lib/FloatImage.h

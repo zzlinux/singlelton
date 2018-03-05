@@ -5,13 +5,14 @@
 #ifndef ROBOCON_RADARCONTROLLER_H
 #define ROBOCON_RADARCONTROLLER_H
 
-#include "RadarModel.h"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include "RadarModel.h"
+#include "TaskFactory.h"
 namespace hitcrt
 {
-    class RadarController :private RadarModel
+    class RadarController :private RadarModel,public TaskProduct
     {
     public:
         RadarController(){};

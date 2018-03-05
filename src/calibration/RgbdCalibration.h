@@ -5,11 +5,13 @@
 #ifndef ROBOCON_RGBDCALIBRATION_H
 #define ROBOCON_RGBDCALIBRATION_H
 
-#include "rgbd_camera.h"
 #include <memory>
+#include "rgbd_camera.h"
+#include "CalibrationFactory.h"
 namespace hitcrt
 {
-    class RgbdCalibration {
+    class RgbdCalibration :public CalibrationProduct
+    {
     public:
         RgbdCalibration();
         ~RgbdCalibration(){};

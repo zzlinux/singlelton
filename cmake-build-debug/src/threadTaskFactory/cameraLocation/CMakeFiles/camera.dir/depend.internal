@@ -6,6 +6,7 @@ src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/CameraController.cpp.
  ../src/protocol/serialbase.h
  ../src/protocol/utility.h
  ../src/thread/Param.h
+ ../src/threadTaskFactory/TaskFactory.h
  /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.cpp
  /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.h
  /home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.h

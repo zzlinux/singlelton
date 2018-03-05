@@ -125,6 +125,33 @@ calibration/fast:
 	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/build
 .PHONY : calibration/fast
 
+CalibrationFactory.o: CalibrationFactory.cpp.o
+
+.PHONY : CalibrationFactory.o
+
+# target to build an object file
+CalibrationFactory.cpp.o:
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/CalibrationFactory.cpp.o
+.PHONY : CalibrationFactory.cpp.o
+
+CalibrationFactory.i: CalibrationFactory.cpp.i
+
+.PHONY : CalibrationFactory.i
+
+# target to preprocess a source file
+CalibrationFactory.cpp.i:
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/CalibrationFactory.cpp.i
+.PHONY : CalibrationFactory.cpp.i
+
+CalibrationFactory.s: CalibrationFactory.cpp.s
+
+.PHONY : CalibrationFactory.s
+
+# target to generate assembly for a file
+CalibrationFactory.cpp.s:
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/CalibrationFactory.cpp.s
+.PHONY : CalibrationFactory.cpp.s
+
 MonoCameraCalibration.o: MonoCameraCalibration.cpp.o
 
 .PHONY : MonoCameraCalibration.o
@@ -242,6 +269,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... calibration"
+	@echo "... CalibrationFactory.o"
+	@echo "... CalibrationFactory.i"
+	@echo "... CalibrationFactory.s"
 	@echo "... MonoCameraCalibration.o"
 	@echo "... MonoCameraCalibration.i"
 	@echo "... MonoCameraCalibration.s"

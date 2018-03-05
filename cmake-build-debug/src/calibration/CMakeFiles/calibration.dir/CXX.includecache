@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.cpp
+CalibrationFactory.h
+/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.h
+RgbdCalibration.h
+/home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h
+MonoCameraCalibration.h
+/home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h
+RgbdRecorder.h
+/home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
+
+/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.h
+iostream
+/home/robocon/workspace/singleton/src/calibration/iostream
+
 /home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.cpp
 MonoCameraCalibration.h
 /home/robocon/workspace/singleton/src/calibration/MonoCameraCalibration.h
@@ -21,6 +35,8 @@ opencv2/imgproc/imgproc.hpp
 -
 opencv2/calib3d.hpp
 -
+CalibrationFactory.h
+/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.h
 
 /home/robocon/workspace/singleton/src/calibration/RgbdCalibration.cpp
 RgbdCalibration.h
@@ -49,10 +65,12 @@ boost/date_time/posix_time/posix_time.hpp
 -
 
 /home/robocon/workspace/singleton/src/calibration/RgbdCalibration.h
-rgbd_camera.h
-/home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
 memory
 -
+rgbd_camera.h
+/home/robocon/workspace/singleton/src/calibration/rgbd_camera.h
+CalibrationFactory.h
+/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.h
 
 /home/robocon/workspace/singleton/src/calibration/RgbdRecorder.cpp
 iostream
@@ -69,6 +87,8 @@ openni2/OpenNI.h
 -
 
 /home/robocon/workspace/singleton/src/calibration/RgbdRecorder.h
+CalibrationFactory.h
+/home/robocon/workspace/singleton/src/calibration/CalibrationFactory.h
 
 /home/robocon/workspace/singleton/src/calibration/rgbd_camera.cpp
 rgbd_camera.h

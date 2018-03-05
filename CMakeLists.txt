@@ -39,6 +39,7 @@ include_directories(
 )
 ADD_SUBDIRECTORY(src/protocol)
 ADD_SUBDIRECTORY(src/thread)
+ADD_SUBDIRECTORY(src/threadTaskFactory)
 if(MANUAL_ROBOT)
     ADD_SUBDIRECTORY(src/threadTaskFactory/radarLocation)
 else(MANUAL_ROBOT)

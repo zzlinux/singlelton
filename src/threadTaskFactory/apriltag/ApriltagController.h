@@ -27,10 +27,12 @@
 #include "lib/Tag36h11.h"
 #include <cmath>
 #include "../thread/Param.h"
+#include "TaskFactory.h"
 using namespace std;
 namespace hitcrt
 {
-    class ApriltagController {
+    class ApriltagController :public TaskProduct
+    {
     public:
         ApriltagController(int id);
         ~ApriltagController();

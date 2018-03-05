@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskFactory.a  CMakeFiles/taskFactory.dir/TaskFactory.cpp.o
+/usr/bin/ranlib libtaskFactory.a

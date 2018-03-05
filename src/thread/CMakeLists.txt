@@ -4,15 +4,6 @@ add_library(thread
         ThreadController.h
         Param.cpp
         )
-if(MANUAL_ROBOT)
-    target_link_libraries(thread
-            protocol
-            radar)
-else(MANUAL_ROBOT)
-    target_link_libraries(thread
-            protocol
-            trace
-            camera
-            apriltag
-            )
-endif(MANUAL_ROBOT)
+target_link_libraries(thread
+        protocol
+        taskFactory)
