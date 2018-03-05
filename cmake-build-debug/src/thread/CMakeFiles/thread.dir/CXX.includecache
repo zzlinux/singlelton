@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../config/makeParam.h
+
 ../src/protocol/serialapp.h
 boost/thread/mutex.hpp
 -
@@ -53,6 +55,8 @@ ThreadController.h
 /home/robocon/workspace/singleton/src/thread/ThreadController.h
 Param.h
 /home/robocon/workspace/singleton/src/thread/Param.h
+makeParam.h
+/home/robocon/workspace/singleton/src/thread/makeParam.h
 
 /home/robocon/workspace/singleton/src/thread/ThreadController.h
 iostream

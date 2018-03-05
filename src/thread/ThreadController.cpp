@@ -5,10 +5,10 @@
 #include <opencv2/core/core.hpp>
 #include "ThreadController.h"
 #include "Param.h"
-
+#include "makeParam.h"
 namespace hitcrt
 {
-    void ThreadController::init()
+    ThreadController::ThreadController()
     {
         Param::m_radarMode = 0;
         Param::m_traceMode = 0;
@@ -38,11 +38,13 @@ namespace hitcrt
     }
     void ThreadController::run()
     {
+#if ROBOT == 0
         if(Param::radarLocation.start)
         {
             radarLocation = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("radarLocation"));
             m_radarLocationThread = boost::thread(boost::bind(&ThreadController::m_radarLocation,this));
         }
+#else
         if(Param::trace.start)
         {
             trace = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("trace"));
@@ -60,6 +62,7 @@ namespace hitcrt
             aprilTag = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("apriltag",1));
             m_apriltagThread = boost::thread(boost::bind(&ThreadController::m_apriltag,this));
         }
+#endif
         m_communicationThread = boost::thread(boost::bind(&ThreadController::m_communication,this));
 
         if(Param::debug)

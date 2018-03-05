@@ -16,7 +16,9 @@ int main() {
     int mode = fs["appMode"];
     int sleeptime = fs["sleeptime"];
     fs.release();
+#if ROBOT == 0
     sleep(sleeptime);
+#endif
     std::cout << "Hello, World!" << std::endl;
     switch (mode)
     {
@@ -47,7 +49,6 @@ int main() {
         {
             std::cout<<"ROBOCON APP"<<std::endl;
             ThreadController thread;
-            thread.init();
             thread.run();
             break;
         }

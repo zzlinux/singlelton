@@ -60,6 +60,7 @@ src/thread/CMakeFiles/thread.dir/Param.cpp.o: /usr/local/include/opencv2/video/t
 src/thread/CMakeFiles/thread.dir/Param.cpp.o: /usr/local/include/opencv2/videoio.hpp
 src/thread/CMakeFiles/thread.dir/Param.cpp.o: /usr/local/include/opencv2/videoio/videoio_c.h
 
+src/thread/CMakeFiles/thread.dir/ThreadController.cpp.o: ../config/makeParam.h
 src/thread/CMakeFiles/thread.dir/ThreadController.cpp.o: ../src/protocol/serialapp.h
 src/thread/CMakeFiles/thread.dir/ThreadController.cpp.o: ../src/protocol/serialbase.h
 src/thread/CMakeFiles/thread.dir/ThreadController.cpp.o: ../src/protocol/utility.h

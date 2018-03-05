@@ -14,7 +14,7 @@ namespace hitcrt {
     class ThreadController
     {
     public:
-        void init();
+        ThreadController();
         void run();
     private:
 

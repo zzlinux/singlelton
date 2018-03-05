@@ -1,11 +1,11 @@
 %YAML:1.0
 appMode: 3
-sleeptime: 0
+sleeptime: 10
 TASK:
     trace: 0
-    radarLocation: 0
     cameraLocation: 0
     apriltag: 1
+    radarLocation: 1
 DEBUG:
     master: 1
     trace: 1

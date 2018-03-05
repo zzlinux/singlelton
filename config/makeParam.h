@@ -5,7 +5,7 @@
 #ifndef ROBOCON_MAKEPARAM_H
 #define ROBOCON_MAKEPARAM_H
 
-#define ROBOT 1
+#define ROBOT 0
 #define DEBUG 1
 
 #endif //ROBOCON_MAKEPARAM_H
