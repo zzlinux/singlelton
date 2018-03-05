@@ -34,6 +34,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../config"
   "../src/protocol"
   "../src/calibration"
+  "../src/thread"
   "../src/threadTaskFactory"
   "../src/threadTaskFactory/trace"
   "../src/threadTaskFactory/cameraLocation"

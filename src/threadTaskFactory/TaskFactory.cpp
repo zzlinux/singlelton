@@ -12,7 +12,8 @@ namespace hitcrt
 {
     void TaskProduct::error()
     {
-        std::cout<<"arguments error for TaskFactory::CreateTask"<<std::endl;
+        std::cerr<<"arguments error for TaskFactory::CreateTask"<<std::endl;
+        throw(0);
     }
     TaskProduct * TaskFactory::CreateTask(std::string task,int id)
     {

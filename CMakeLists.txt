@@ -26,6 +26,7 @@ include_directories(
         config
         src/protocol
         src/calibration
+        src/thread
         src/threadTaskFactory
         src/threadTaskFactory/trace
         src/threadTaskFactory/cameraLocation

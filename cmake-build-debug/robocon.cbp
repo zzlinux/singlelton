@@ -56,6 +56,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -100,6 +101,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -144,6 +146,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -187,6 +190,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -230,6 +234,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -274,6 +279,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -318,6 +324,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -362,6 +369,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -406,6 +414,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -450,6 +459,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -494,6 +504,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -538,6 +549,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -582,6 +594,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -626,6 +639,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -670,6 +684,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>
@@ -714,6 +729,7 @@
 					<Add directory="/home/robocon/workspace/singleton/config"/>
 					<Add directory="/home/robocon/workspace/singleton/src/protocol"/>
 					<Add directory="/home/robocon/workspace/singleton/src/calibration"/>
+					<Add directory="/home/robocon/workspace/singleton/src/thread"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/trace"/>
 					<Add directory="/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation"/>

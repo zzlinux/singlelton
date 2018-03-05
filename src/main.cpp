@@ -1,6 +1,6 @@
 #include <iostream>
 #include "makeParam.h"
-#include "thread/ThreadController.h"
+#include "ThreadController.h"
 #include "CalibrationFactory.h"
 using namespace hitcrt;
 

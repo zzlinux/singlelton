@@ -148,7 +148,7 @@ namespace hitcrt
     {
         std::cout<<"cameraLocation0Thread id "<<m_cameraLocation0Thread.get_id()<<std::endl;
         if(cameraLocation0 == NULL)
-            radarLocation->error();
+            cameraLocation0->error();
         else
             cameraLocation0->run();
     }

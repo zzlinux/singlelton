@@ -537,6 +537,9 @@ camera_LIB_DEPENDS:STATIC=general;opencv_videostab;general;opencv_videoio;genera
 //Dependencies for target
 protocol_LIB_DEPENDS:STATIC=
 
+//Dependencies for the target
+radar_LIB_DEPENDS:STATIC=general;opencv_videostab;general;opencv_videoio;general;opencv_video;general;opencv_superres;general;opencv_stitching;general;opencv_shape;general;opencv_photo;general;opencv_objdetect;general;opencv_ml;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_highgui;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_calib3d;
+
 //Value Computed by CMake
 robocon_BINARY_DIR:STATIC=/home/robocon/workspace/singleton/cmake-build-debug
 
