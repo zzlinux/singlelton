@@ -22,7 +22,6 @@ namespace hitcrt
             if(isLocationValued==true)
             {
                 recorder(position);
-                //std::cout<<"yesyesyesyesyesyesyesyesyesyes"<<std::endl;
                 Param::serial->send(SerialApp::SEND_RADAR,position);
             }
             position.clear();
