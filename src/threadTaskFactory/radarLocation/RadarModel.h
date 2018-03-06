@@ -6,6 +6,7 @@
 #define ROBOCON_RADARMODEL_H
 
 #include <list>
+#include <fstream>
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -53,6 +54,8 @@ namespace hitcrt
         /*----------------kalman filter end------------------------------------------------------------------------*/
         const int WINDOWSIZE = 7;
         void averageFilter(std::list<std::vector<float> > &slidewindow,std::vector<float> & position);
+        std::ofstream fout;
+        void recorder(std::vector<float> & position);
     };
 }
 

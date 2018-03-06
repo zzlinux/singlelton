@@ -21,6 +21,7 @@ namespace hitcrt
             bool isLocationValued = apply(position,mode);
             if(isLocationValued==true)
             {
+                recorder(position);
                 //std::cout<<"yesyesyesyesyesyesyesyesyesyes"<<std::endl;
                 Param::serial->send(SerialApp::SEND_RADAR,position);
             }
@@ -59,7 +60,7 @@ namespace hitcrt
             {
                 tempL.clear();
                 getLocation(l,tempL);
-                if(abs(tempL[1]>25)){
+                if(abs(tempL[1])>25){
                     //std::cout<<" angle too big "<<tempL[0]<<","<<tempL[1]<<std::endl;
                     continue;
                 }

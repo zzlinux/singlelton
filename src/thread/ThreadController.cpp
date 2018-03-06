@@ -109,14 +109,14 @@ namespace hitcrt
     void ThreadController::m_mutual()
     {
         std::cout<<"mutualThread id "<<m_mutualThread.get_id()<<std::endl;
-        while(true)
+        while(Param::m_process)
         {
             boost::this_thread::interruption_point();
             char ch = getchar();
             if(ch == 'q')
             {
                 Param::m_process = false;
-                break;
+                sleep(1);
             }else if(ch == '0'){
                 Param::m_traceMode = 0;
             }else if(ch == '1'){

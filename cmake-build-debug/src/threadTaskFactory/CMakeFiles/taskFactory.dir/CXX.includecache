@@ -179,6 +179,8 @@ TaskFactory.h
 ../src/threadTaskFactory/radarLocation/RadarModel.h
 list
 -
+fstream
+-
 opencv2/core/core.hpp
 -
 opencv2/imgproc/imgproc.hpp

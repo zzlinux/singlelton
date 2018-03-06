@@ -8,6 +8,7 @@ namespace hitcrt
 {
     RadarModel::RadarModel()
     {
+        fout.open("../src/dataAnalyse/radar.txt");
         char * tmp[20];
         Connection_information information(0,tmp);
         // Connects to the sensor
@@ -35,8 +36,8 @@ namespace hitcrt
         float scale = data.size()/240.0;
         if(mode == 0)
         {
-            start = int(scale*140);
-            end = int(scale*210);
+            start = int(scale*30);
+            end = int(scale*100);
         }else if(mode == 1)
         {
             start = int(scale*75);
@@ -222,7 +223,7 @@ namespace hitcrt
             //cout <<"leftpoints.size = "<<leftPointsIndex.size()<<" VecSize = "<<VecIndex.size()<<endl;
             if(leftPointsIndex.size()<MAXNOISENUM)   //提取直线点后剩余点小于阈值认为剩余为噪声
             {
-                std::cout <<"isnoise"<<std::endl;
+                //std::cout <<"isnoise"<<std::endl;
                 break;
             }
             for (int k = 0; k <ITERANUM ; ++k)   //迭代取出当前点集中最长线段
@@ -326,5 +327,9 @@ namespace hitcrt
         //position.push_back(sum.y/slidewindow.size());
         if(slidewindow.size()>WINDOWSIZE)
             slidewindow.pop_front();
+    }
+    void RadarModel::recorder(std::vector<float> &position)
+    {
+        fout << position[0]<<std::endl;
     }
 }

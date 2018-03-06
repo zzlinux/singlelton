@@ -1,6 +1,6 @@
 %YAML:1.0
 appMode: 3
-sleeptime: 10
+sleeptime: 0
 TASK:
     trace: 0
     cameraLocation: 0
