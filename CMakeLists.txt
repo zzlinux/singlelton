@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.7)
 
 project(robocon)
 
-set(MANUAL_ROBOT true)
+set(MANUAL_ROBOT false)
 
 set(CMAKE_CXX_STANDARD 11)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

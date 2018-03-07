@@ -2,10 +2,10 @@
 appMode: 3
 sleeptime: 0
 TASK:
-    trace: 0
+    trace: 1
     cameraLocation: 0
-    apriltag: 1
-    radarLocation: 1
+    apriltag: 0
+    radarLocation: 0
 DEBUG:
     master: 1
     trace: 1

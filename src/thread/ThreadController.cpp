@@ -15,6 +15,7 @@ namespace hitcrt
         Param::m_throwArea = 2;
         Param::m_process = true;
         cv::FileStorage fs(cv::String("../config/param.yaml"), cv::FileStorage::READ);
+        cv::FileStorage rt01(cv::String("../config/RT01.yml"),cv::FileStorage::READ);
         assert(fs.isOpened());
         cv::FileNode task = fs["TASK"],debug = fs["DEBUG"],trace = fs["trace"],cameraLocation = fs["cameraLocation"];
         cv::FileNode c = trace[(std::string)trace["ballcolor"]],g = trace[(std::string)trace["ballgold"]];

@@ -163,17 +163,56 @@ taskFactory/fast:
 .PHONY : taskFactory/fast
 
 #=============================================================================
-# Target rules for targets named radar
+# Target rules for targets named calibration
 
 # Build rule for target.
-radar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 radar
-.PHONY : radar
+calibration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 calibration
+.PHONY : calibration
 
 # fast build rule for target.
-radar/fast:
-	$(MAKE) -f src/threadTaskFactory/radarLocation/CMakeFiles/radar.dir/build.make src/threadTaskFactory/radarLocation/CMakeFiles/radar.dir/build
-.PHONY : radar/fast
+calibration/fast:
+	$(MAKE) -f src/calibration/CMakeFiles/calibration.dir/build.make src/calibration/CMakeFiles/calibration.dir/build
+.PHONY : calibration/fast
+
+#=============================================================================
+# Target rules for targets named trace
+
+# Build rule for target.
+trace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trace
+.PHONY : trace
+
+# fast build rule for target.
+trace/fast:
+	$(MAKE) -f src/threadTaskFactory/trace/CMakeFiles/trace.dir/build.make src/threadTaskFactory/trace/CMakeFiles/trace.dir/build
+.PHONY : trace/fast
+
+#=============================================================================
+# Target rules for targets named camera
+
+# Build rule for target.
+camera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera
+.PHONY : camera
+
+# fast build rule for target.
+camera/fast:
+	$(MAKE) -f src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build.make src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/build
+.PHONY : camera/fast
+
+#=============================================================================
+# Target rules for targets named apriltag
+
+# Build rule for target.
+apriltag: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag
+.PHONY : apriltag
+
+# fast build rule for target.
+apriltag/fast:
+	$(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build
+.PHONY : apriltag/fast
 
 src/main.o: src/main.cpp.o
 
@@ -214,7 +253,10 @@ help:
 	@echo "... protocol"
 	@echo "... thread"
 	@echo "... taskFactory"
-	@echo "... radar"
+	@echo "... calibration"
+	@echo "... trace"
+	@echo "... camera"
+	@echo "... apriltag"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

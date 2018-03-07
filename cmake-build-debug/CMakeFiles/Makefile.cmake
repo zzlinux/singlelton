@@ -41,10 +41,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
   "../cmake_modules/FindEigen3.cmake"
   "../cmake_modules/FindOpenNI2.cmake"
+  "../src/calibration/CMakeLists.txt"
   "../src/protocol/CMakeLists.txt"
   "../src/thread/CMakeLists.txt"
   "../src/threadTaskFactory/CMakeLists.txt"
-  "../src/threadTaskFactory/radarLocation/CMakeLists.txt"
+  "../src/threadTaskFactory/apriltag/CMakeLists.txt"
+  "../src/threadTaskFactory/cameraLocation/CMakeLists.txt"
+  "../src/threadTaskFactory/trace/CMakeLists.txt"
   "/usr/lib/vtk-5.8/CMake/vtkMakeInstantiator.cmake"
   "/usr/lib/vtk-5.8/UseVTK.cmake"
   "/usr/lib/vtk-5.8/VTKConfig-Java.cmake"
@@ -74,7 +77,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/protocol/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/thread/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/threadTaskFactory/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/threadTaskFactory/radarLocation/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/calibration/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/threadTaskFactory/trace/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/threadTaskFactory/cameraLocation/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/threadTaskFactory/apriltag/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -83,5 +89,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/protocol/CMakeFiles/protocol.dir/DependInfo.cmake"
   "src/thread/CMakeFiles/thread.dir/DependInfo.cmake"
   "src/threadTaskFactory/CMakeFiles/taskFactory.dir/DependInfo.cmake"
-  "src/threadTaskFactory/radarLocation/CMakeFiles/radar.dir/DependInfo.cmake"
+  "src/calibration/CMakeFiles/calibration.dir/DependInfo.cmake"
+  "src/threadTaskFactory/trace/CMakeFiles/trace.dir/DependInfo.cmake"
+  "src/threadTaskFactory/cameraLocation/CMakeFiles/camera.dir/DependInfo.cmake"
+  "src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/DependInfo.cmake"
   )
