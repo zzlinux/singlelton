@@ -1,3 +1,4 @@
 bin/*
+bin/robocon
 cmake-build-debug/*
 .idea/*
