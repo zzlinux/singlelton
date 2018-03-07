@@ -124,6 +124,6 @@ namespace hitcrt
         }
         if(circleNum!=1)return false;
         isValued = true;
-        return true;
+        return isValued;
     }
 }
