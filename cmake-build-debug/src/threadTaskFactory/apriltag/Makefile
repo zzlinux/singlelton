@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/CLionProjects/singlelton
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/robocon/workspace/CLionProjects/singlelton/cmake-build-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/apriltag/CMakeFiles/progress.marks
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/apriltag/CMakeFiles/progress.marks
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/clean
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/preinstall
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule
 .PHONY : src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ apriltag: src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/rule
 
 # fast build rule for target.
 apriltag/fast:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build
 .PHONY : apriltag/fast
 
 ApriltagController.o: ApriltagController.cpp.o
@@ -131,7 +131,7 @@ ApriltagController.o: ApriltagController.cpp.o
 
 # target to build an object file
 ApriltagController.cpp.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.o
 .PHONY : ApriltagController.cpp.o
 
 ApriltagController.i: ApriltagController.cpp.i
@@ -140,7 +140,7 @@ ApriltagController.i: ApriltagController.cpp.i
 
 # target to preprocess a source file
 ApriltagController.cpp.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.i
 .PHONY : ApriltagController.cpp.i
 
 ApriltagController.s: ApriltagController.cpp.s
@@ -149,7 +149,7 @@ ApriltagController.s: ApriltagController.cpp.s
 
 # target to generate assembly for a file
 ApriltagController.cpp.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/ApriltagController.cpp.s
 .PHONY : ApriltagController.cpp.s
 
 lib/Edge.o: lib/Edge.cc.o
@@ -158,7 +158,7 @@ lib/Edge.o: lib/Edge.cc.o
 
 # target to build an object file
 lib/Edge.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.o
 .PHONY : lib/Edge.cc.o
 
 lib/Edge.i: lib/Edge.cc.i
@@ -167,7 +167,7 @@ lib/Edge.i: lib/Edge.cc.i
 
 # target to preprocess a source file
 lib/Edge.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.i
 .PHONY : lib/Edge.cc.i
 
 lib/Edge.s: lib/Edge.cc.s
@@ -176,7 +176,7 @@ lib/Edge.s: lib/Edge.cc.s
 
 # target to generate assembly for a file
 lib/Edge.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Edge.cc.s
 .PHONY : lib/Edge.cc.s
 
 lib/FloatImage.o: lib/FloatImage.cc.o
@@ -185,7 +185,7 @@ lib/FloatImage.o: lib/FloatImage.cc.o
 
 # target to build an object file
 lib/FloatImage.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.o
 .PHONY : lib/FloatImage.cc.o
 
 lib/FloatImage.i: lib/FloatImage.cc.i
@@ -194,7 +194,7 @@ lib/FloatImage.i: lib/FloatImage.cc.i
 
 # target to preprocess a source file
 lib/FloatImage.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.i
 .PHONY : lib/FloatImage.cc.i
 
 lib/FloatImage.s: lib/FloatImage.cc.s
@@ -203,7 +203,7 @@ lib/FloatImage.s: lib/FloatImage.cc.s
 
 # target to generate assembly for a file
 lib/FloatImage.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/FloatImage.cc.s
 .PHONY : lib/FloatImage.cc.s
 
 lib/GLine2D.o: lib/GLine2D.cc.o
@@ -212,7 +212,7 @@ lib/GLine2D.o: lib/GLine2D.cc.o
 
 # target to build an object file
 lib/GLine2D.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.o
 .PHONY : lib/GLine2D.cc.o
 
 lib/GLine2D.i: lib/GLine2D.cc.i
@@ -221,7 +221,7 @@ lib/GLine2D.i: lib/GLine2D.cc.i
 
 # target to preprocess a source file
 lib/GLine2D.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.i
 .PHONY : lib/GLine2D.cc.i
 
 lib/GLine2D.s: lib/GLine2D.cc.s
@@ -230,7 +230,7 @@ lib/GLine2D.s: lib/GLine2D.cc.s
 
 # target to generate assembly for a file
 lib/GLine2D.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLine2D.cc.s
 .PHONY : lib/GLine2D.cc.s
 
 lib/GLineSegment2D.o: lib/GLineSegment2D.cc.o
@@ -239,7 +239,7 @@ lib/GLineSegment2D.o: lib/GLineSegment2D.cc.o
 
 # target to build an object file
 lib/GLineSegment2D.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.o
 .PHONY : lib/GLineSegment2D.cc.o
 
 lib/GLineSegment2D.i: lib/GLineSegment2D.cc.i
@@ -248,7 +248,7 @@ lib/GLineSegment2D.i: lib/GLineSegment2D.cc.i
 
 # target to preprocess a source file
 lib/GLineSegment2D.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.i
 .PHONY : lib/GLineSegment2D.cc.i
 
 lib/GLineSegment2D.s: lib/GLineSegment2D.cc.s
@@ -257,7 +257,7 @@ lib/GLineSegment2D.s: lib/GLineSegment2D.cc.s
 
 # target to generate assembly for a file
 lib/GLineSegment2D.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GLineSegment2D.cc.s
 .PHONY : lib/GLineSegment2D.cc.s
 
 lib/Gaussian.o: lib/Gaussian.cc.o
@@ -266,7 +266,7 @@ lib/Gaussian.o: lib/Gaussian.cc.o
 
 # target to build an object file
 lib/Gaussian.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.o
 .PHONY : lib/Gaussian.cc.o
 
 lib/Gaussian.i: lib/Gaussian.cc.i
@@ -275,7 +275,7 @@ lib/Gaussian.i: lib/Gaussian.cc.i
 
 # target to preprocess a source file
 lib/Gaussian.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.i
 .PHONY : lib/Gaussian.cc.i
 
 lib/Gaussian.s: lib/Gaussian.cc.s
@@ -284,7 +284,7 @@ lib/Gaussian.s: lib/Gaussian.cc.s
 
 # target to generate assembly for a file
 lib/Gaussian.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Gaussian.cc.s
 .PHONY : lib/Gaussian.cc.s
 
 lib/GrayModel.o: lib/GrayModel.cc.o
@@ -293,7 +293,7 @@ lib/GrayModel.o: lib/GrayModel.cc.o
 
 # target to build an object file
 lib/GrayModel.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.o
 .PHONY : lib/GrayModel.cc.o
 
 lib/GrayModel.i: lib/GrayModel.cc.i
@@ -302,7 +302,7 @@ lib/GrayModel.i: lib/GrayModel.cc.i
 
 # target to preprocess a source file
 lib/GrayModel.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.i
 .PHONY : lib/GrayModel.cc.i
 
 lib/GrayModel.s: lib/GrayModel.cc.s
@@ -311,7 +311,7 @@ lib/GrayModel.s: lib/GrayModel.cc.s
 
 # target to generate assembly for a file
 lib/GrayModel.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/GrayModel.cc.s
 .PHONY : lib/GrayModel.cc.s
 
 lib/Homography33.o: lib/Homography33.cc.o
@@ -320,7 +320,7 @@ lib/Homography33.o: lib/Homography33.cc.o
 
 # target to build an object file
 lib/Homography33.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.o
 .PHONY : lib/Homography33.cc.o
 
 lib/Homography33.i: lib/Homography33.cc.i
@@ -329,7 +329,7 @@ lib/Homography33.i: lib/Homography33.cc.i
 
 # target to preprocess a source file
 lib/Homography33.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.i
 .PHONY : lib/Homography33.cc.i
 
 lib/Homography33.s: lib/Homography33.cc.s
@@ -338,7 +338,7 @@ lib/Homography33.s: lib/Homography33.cc.s
 
 # target to generate assembly for a file
 lib/Homography33.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Homography33.cc.s
 .PHONY : lib/Homography33.cc.s
 
 lib/MathUtil.o: lib/MathUtil.cc.o
@@ -347,7 +347,7 @@ lib/MathUtil.o: lib/MathUtil.cc.o
 
 # target to build an object file
 lib/MathUtil.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.o
 .PHONY : lib/MathUtil.cc.o
 
 lib/MathUtil.i: lib/MathUtil.cc.i
@@ -356,7 +356,7 @@ lib/MathUtil.i: lib/MathUtil.cc.i
 
 # target to preprocess a source file
 lib/MathUtil.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.i
 .PHONY : lib/MathUtil.cc.i
 
 lib/MathUtil.s: lib/MathUtil.cc.s
@@ -365,7 +365,7 @@ lib/MathUtil.s: lib/MathUtil.cc.s
 
 # target to generate assembly for a file
 lib/MathUtil.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/MathUtil.cc.s
 .PHONY : lib/MathUtil.cc.s
 
 lib/Quad.o: lib/Quad.cc.o
@@ -374,7 +374,7 @@ lib/Quad.o: lib/Quad.cc.o
 
 # target to build an object file
 lib/Quad.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.o
 .PHONY : lib/Quad.cc.o
 
 lib/Quad.i: lib/Quad.cc.i
@@ -383,7 +383,7 @@ lib/Quad.i: lib/Quad.cc.i
 
 # target to preprocess a source file
 lib/Quad.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.i
 .PHONY : lib/Quad.cc.i
 
 lib/Quad.s: lib/Quad.cc.s
@@ -392,7 +392,7 @@ lib/Quad.s: lib/Quad.cc.s
 
 # target to generate assembly for a file
 lib/Quad.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Quad.cc.s
 .PHONY : lib/Quad.cc.s
 
 lib/Segment.o: lib/Segment.cc.o
@@ -401,7 +401,7 @@ lib/Segment.o: lib/Segment.cc.o
 
 # target to build an object file
 lib/Segment.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.o
 .PHONY : lib/Segment.cc.o
 
 lib/Segment.i: lib/Segment.cc.i
@@ -410,7 +410,7 @@ lib/Segment.i: lib/Segment.cc.i
 
 # target to preprocess a source file
 lib/Segment.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.i
 .PHONY : lib/Segment.cc.i
 
 lib/Segment.s: lib/Segment.cc.s
@@ -419,7 +419,7 @@ lib/Segment.s: lib/Segment.cc.s
 
 # target to generate assembly for a file
 lib/Segment.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Segment.cc.s
 .PHONY : lib/Segment.cc.s
 
 lib/Serial.o: lib/Serial.cpp.o
@@ -428,7 +428,7 @@ lib/Serial.o: lib/Serial.cpp.o
 
 # target to build an object file
 lib/Serial.cpp.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.o
 .PHONY : lib/Serial.cpp.o
 
 lib/Serial.i: lib/Serial.cpp.i
@@ -437,7 +437,7 @@ lib/Serial.i: lib/Serial.cpp.i
 
 # target to preprocess a source file
 lib/Serial.cpp.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.i
 .PHONY : lib/Serial.cpp.i
 
 lib/Serial.s: lib/Serial.cpp.s
@@ -446,7 +446,7 @@ lib/Serial.s: lib/Serial.cpp.s
 
 # target to generate assembly for a file
 lib/Serial.cpp.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/Serial.cpp.s
 .PHONY : lib/Serial.cpp.s
 
 lib/TagDetection.o: lib/TagDetection.cc.o
@@ -455,7 +455,7 @@ lib/TagDetection.o: lib/TagDetection.cc.o
 
 # target to build an object file
 lib/TagDetection.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.o
 .PHONY : lib/TagDetection.cc.o
 
 lib/TagDetection.i: lib/TagDetection.cc.i
@@ -464,7 +464,7 @@ lib/TagDetection.i: lib/TagDetection.cc.i
 
 # target to preprocess a source file
 lib/TagDetection.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.i
 .PHONY : lib/TagDetection.cc.i
 
 lib/TagDetection.s: lib/TagDetection.cc.s
@@ -473,7 +473,7 @@ lib/TagDetection.s: lib/TagDetection.cc.s
 
 # target to generate assembly for a file
 lib/TagDetection.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetection.cc.s
 .PHONY : lib/TagDetection.cc.s
 
 lib/TagDetector.o: lib/TagDetector.cc.o
@@ -482,7 +482,7 @@ lib/TagDetector.o: lib/TagDetector.cc.o
 
 # target to build an object file
 lib/TagDetector.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.o
 .PHONY : lib/TagDetector.cc.o
 
 lib/TagDetector.i: lib/TagDetector.cc.i
@@ -491,7 +491,7 @@ lib/TagDetector.i: lib/TagDetector.cc.i
 
 # target to preprocess a source file
 lib/TagDetector.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.i
 .PHONY : lib/TagDetector.cc.i
 
 lib/TagDetector.s: lib/TagDetector.cc.s
@@ -500,7 +500,7 @@ lib/TagDetector.s: lib/TagDetector.cc.s
 
 # target to generate assembly for a file
 lib/TagDetector.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagDetector.cc.s
 .PHONY : lib/TagDetector.cc.s
 
 lib/TagFamily.o: lib/TagFamily.cc.o
@@ -509,7 +509,7 @@ lib/TagFamily.o: lib/TagFamily.cc.o
 
 # target to build an object file
 lib/TagFamily.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.o
 .PHONY : lib/TagFamily.cc.o
 
 lib/TagFamily.i: lib/TagFamily.cc.i
@@ -518,7 +518,7 @@ lib/TagFamily.i: lib/TagFamily.cc.i
 
 # target to preprocess a source file
 lib/TagFamily.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.i
 .PHONY : lib/TagFamily.cc.i
 
 lib/TagFamily.s: lib/TagFamily.cc.s
@@ -527,7 +527,7 @@ lib/TagFamily.s: lib/TagFamily.cc.s
 
 # target to generate assembly for a file
 lib/TagFamily.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/TagFamily.cc.s
 .PHONY : lib/TagFamily.cc.s
 
 lib/UnionFindSimple.o: lib/UnionFindSimple.cc.o
@@ -536,7 +536,7 @@ lib/UnionFindSimple.o: lib/UnionFindSimple.cc.o
 
 # target to build an object file
 lib/UnionFindSimple.cc.o:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.o
 .PHONY : lib/UnionFindSimple.cc.o
 
 lib/UnionFindSimple.i: lib/UnionFindSimple.cc.i
@@ -545,7 +545,7 @@ lib/UnionFindSimple.i: lib/UnionFindSimple.cc.i
 
 # target to preprocess a source file
 lib/UnionFindSimple.cc.i:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.i
 .PHONY : lib/UnionFindSimple.cc.i
 
 lib/UnionFindSimple.s: lib/UnionFindSimple.cc.s
@@ -554,7 +554,7 @@ lib/UnionFindSimple.s: lib/UnionFindSimple.cc.s
 
 # target to generate assembly for a file
 lib/UnionFindSimple.cc.s:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(MAKE) -f src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/build.make src/threadTaskFactory/apriltag/CMakeFiles/apriltag.dir/lib/UnionFindSimple.cc.s
 .PHONY : lib/UnionFindSimple.cc.s
 
 # Help Target
@@ -625,6 +625,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

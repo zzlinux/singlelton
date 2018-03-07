@@ -48,15 +48,15 @@ TaskFactory.h
 iostream
 ../src/threadTaskFactory/iostream
 
-/home/robocon/workspace/CLionProjects/singlelton/src/main.cpp
+/home/robocon/workspace/singleton/src/main.cpp
 iostream
 -
 makeParam.h
-/home/robocon/workspace/CLionProjects/singlelton/src/makeParam.h
+/home/robocon/workspace/singleton/src/makeParam.h
 ThreadController.h
-/home/robocon/workspace/CLionProjects/singlelton/src/ThreadController.h
+/home/robocon/workspace/singleton/src/ThreadController.h
 CalibrationFactory.h
-/home/robocon/workspace/CLionProjects/singlelton/src/CalibrationFactory.h
+/home/robocon/workspace/singleton/src/CalibrationFactory.h
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

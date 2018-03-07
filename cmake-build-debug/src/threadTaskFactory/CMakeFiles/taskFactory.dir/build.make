@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/CLionProjects/singlelton
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/threadTaskFactory/CMakeFiles/taskFactory.dir/depend.make
@@ -59,16 +59,16 @@ include src/threadTaskFactory/CMakeFiles/taskFactory.dir/flags.make
 
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.o: src/threadTaskFactory/CMakeFiles/taskFactory.dir/flags.make
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.o: ../src/threadTaskFactory/TaskFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.o"
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/taskFactory.dir/TaskFactory.cpp.o -c /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/TaskFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.o"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/taskFactory.dir/TaskFactory.cpp.o -c /home/robocon/workspace/singleton/src/threadTaskFactory/TaskFactory.cpp
 
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/taskFactory.dir/TaskFactory.cpp.i"
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/TaskFactory.cpp > CMakeFiles/taskFactory.dir/TaskFactory.cpp.i
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/threadTaskFactory/TaskFactory.cpp > CMakeFiles/taskFactory.dir/TaskFactory.cpp.i
 
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/taskFactory.dir/TaskFactory.cpp.s"
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/TaskFactory.cpp -o CMakeFiles/taskFactory.dir/TaskFactory.cpp.s
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/threadTaskFactory/TaskFactory.cpp -o CMakeFiles/taskFactory.dir/TaskFactory.cpp.s
 
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.o.requires:
 
@@ -91,9 +91,9 @@ taskFactory_EXTERNAL_OBJECTS =
 src/threadTaskFactory/libtaskFactory.a: src/threadTaskFactory/CMakeFiles/taskFactory.dir/TaskFactory.cpp.o
 src/threadTaskFactory/libtaskFactory.a: src/threadTaskFactory/CMakeFiles/taskFactory.dir/build.make
 src/threadTaskFactory/libtaskFactory.a: src/threadTaskFactory/CMakeFiles/taskFactory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtaskFactory.a"
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory && $(CMAKE_COMMAND) -P CMakeFiles/taskFactory.dir/cmake_clean_target.cmake
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskFactory.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtaskFactory.a"
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory && $(CMAKE_COMMAND) -P CMakeFiles/taskFactory.dir/cmake_clean_target.cmake
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskFactory.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/build: src/threadTaskFactory/libtaskFactory.a
@@ -105,10 +105,10 @@ src/threadTaskFactory/CMakeFiles/taskFactory.dir/requires: src/threadTaskFactory
 .PHONY : src/threadTaskFactory/CMakeFiles/taskFactory.dir/requires
 
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/clean:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory && $(CMAKE_COMMAND) -P CMakeFiles/taskFactory.dir/cmake_clean.cmake
+	cd /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory && $(CMAKE_COMMAND) -P CMakeFiles/taskFactory.dir/cmake_clean.cmake
 .PHONY : src/threadTaskFactory/CMakeFiles/taskFactory.dir/clean
 
 src/threadTaskFactory/CMakeFiles/taskFactory.dir/depend:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/CLionProjects/singlelton /home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/src/threadTaskFactory/CMakeFiles/taskFactory.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/singleton /home/robocon/workspace/singleton/src/threadTaskFactory /home/robocon/workspace/singleton/cmake-build-debug /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory /home/robocon/workspace/singleton/cmake-build-debug/src/threadTaskFactory/CMakeFiles/taskFactory.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/threadTaskFactory/CMakeFiles/taskFactory.dir/depend
 

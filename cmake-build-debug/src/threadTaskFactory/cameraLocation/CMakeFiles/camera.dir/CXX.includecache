@@ -40,15 +40,15 @@ serialapp.h
 iostream
 ../src/threadTaskFactory/iostream
 
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraController.cpp
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.cpp
 CameraController.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraController.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.h
 ../thread/Param.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/thread/Param.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/thread/Param.h
 
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraController.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraController.h
 CameraModel.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.h
 vector
 -
 opencv2/core/core.hpp
@@ -58,17 +58,17 @@ iostream
 boost/thread/thread.hpp
 -
 ../thread/Param.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/thread/Param.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/thread/Param.h
 TaskFactory.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/TaskFactory.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/TaskFactory.h
 
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.cpp
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.cpp
 CameraModel.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.h
 ../thread/Param.h
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/thread/Param.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/thread/Param.h
 
-/home/robocon/workspace/CLionProjects/singlelton/src/threadTaskFactory/cameraLocation/CameraModel.h
+/home/robocon/workspace/singleton/src/threadTaskFactory/cameraLocation/CameraModel.h
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp

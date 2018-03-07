@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/robocon/Documents/installed/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/robocon/Documents/software/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocon/workspace/CLionProjects/singlelton
+CMAKE_SOURCE_DIR = /home/robocon/workspace/singleton
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug
+CMAKE_BINARY_DIR = /home/robocon/workspace/singleton/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/robocon.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/robocon.dir/flags.make
 
 CMakeFiles/robocon.dir/src/main.cpp.o: CMakeFiles/robocon.dir/flags.make
 CMakeFiles/robocon.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robocon.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robocon.dir/src/main.cpp.o -c /home/robocon/workspace/CLionProjects/singlelton/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/robocon.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/robocon.dir/src/main.cpp.o -c /home/robocon/workspace/singleton/src/main.cpp
 
 CMakeFiles/robocon.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/robocon.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/CLionProjects/singlelton/src/main.cpp > CMakeFiles/robocon.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robocon/workspace/singleton/src/main.cpp > CMakeFiles/robocon.dir/src/main.cpp.i
 
 CMakeFiles/robocon.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/robocon.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/CLionProjects/singlelton/src/main.cpp -o CMakeFiles/robocon.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robocon/workspace/singleton/src/main.cpp -o CMakeFiles/robocon.dir/src/main.cpp.s
 
 CMakeFiles/robocon.dir/src/main.cpp.o.requires:
 
@@ -123,63 +123,64 @@ robocon_EXTERNAL_OBJECTS =
 ../bin/robocon: /usr/local/lib/libopencv_flann.so.3.1.0
 ../bin/robocon: /usr/local/lib/libopencv_core.so.3.1.0
 ../bin/robocon: /usr/local/lib/libpcl_common.so
+../bin/robocon: /usr/lib/libvtkGenericFiltering.so.5.8.0
+../bin/robocon: /usr/lib/libvtkGeovis.so.5.8.0
+../bin/robocon: /usr/lib/libvtkCharts.so.5.8.0
+../bin/robocon: /usr/lib/libvtkViews.so.5.8.0
+../bin/robocon: /usr/lib/libvtkInfovis.so.5.8.0
+../bin/robocon: /usr/lib/libvtkWidgets.so.5.8.0
+../bin/robocon: /usr/lib/libvtkVolumeRendering.so.5.8.0
+../bin/robocon: /usr/lib/libvtkHybrid.so.5.8.0
+../bin/robocon: /usr/lib/libvtkParallel.so.5.8.0
+../bin/robocon: /usr/lib/libvtkRendering.so.5.8.0
+../bin/robocon: /usr/lib/libvtkImaging.so.5.8.0
+../bin/robocon: /usr/lib/libvtkGraphics.so.5.8.0
+../bin/robocon: /usr/lib/libvtkIO.so.5.8.0
+../bin/robocon: /usr/lib/libvtkFiltering.so.5.8.0
+../bin/robocon: /usr/lib/libvtkCommon.so.5.8.0
+../bin/robocon: /usr/lib/libvtksys.so.5.8.0
+../bin/robocon: /usr/lib/libOpenNI2.so
+../bin/robocon: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../bin/robocon: /usr/local/lib/libpcl_kdtree.so
 ../bin/robocon: /usr/local/lib/libpcl_octree.so
-../bin/robocon: /usr/lib/libvtkGenericFiltering.so.5.10.1
-../bin/robocon: /usr/lib/libvtkGeovis.so.5.10.1
-../bin/robocon: /usr/lib/libvtkCharts.so.5.10.1
-../bin/robocon: /usr/lib/libvtkViews.so.5.10.1
-../bin/robocon: /usr/lib/libvtkInfovis.so.5.10.1
-../bin/robocon: /usr/lib/libvtkWidgets.so.5.10.1
-../bin/robocon: /usr/lib/libvtkVolumeRendering.so.5.10.1
-../bin/robocon: /usr/lib/libvtkHybrid.so.5.10.1
-../bin/robocon: /usr/lib/libvtkParallel.so.5.10.1
-../bin/robocon: /usr/lib/libvtkRendering.so.5.10.1
-../bin/robocon: /usr/lib/libvtkImaging.so.5.10.1
-../bin/robocon: /usr/lib/libvtkGraphics.so.5.10.1
-../bin/robocon: /usr/lib/libvtkIO.so.5.10.1
-../bin/robocon: /usr/lib/libvtkFiltering.so.5.10.1
-../bin/robocon: /usr/lib/libvtkCommon.so.5.10.1
-../bin/robocon: /usr/lib/libvtksys.so.5.10.1
-../bin/robocon: /usr/lib/libOpenNI2.so
-../bin/robocon: /usr/local/lib/libpcl_io.so
-../bin/robocon: /usr/local/lib/libpcl_stereo.so
-../bin/robocon: /usr/local/lib/libpcl_ml.so
-../bin/robocon: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
-../bin/robocon: /usr/local/lib/libpcl_kdtree.so
 ../bin/robocon: /usr/local/lib/libpcl_search.so
 ../bin/robocon: /usr/local/lib/libpcl_sample_consensus.so
 ../bin/robocon: /usr/local/lib/libpcl_filters.so
+../bin/robocon: /usr/local/lib/libpcl_io.so
 ../bin/robocon: /usr/local/lib/libpcl_features.so
 ../bin/robocon: /usr/local/lib/libpcl_visualization.so
+../bin/robocon: /usr/local/lib/libpcl_ml.so
 ../bin/robocon: /usr/local/lib/libpcl_segmentation.so
 ../bin/robocon: /usr/local/lib/libpcl_people.so
-../bin/robocon: /usr/local/lib/libpcl_keypoints.so
-../bin/robocon: /usr/local/lib/libpcl_outofcore.so
+../bin/robocon: /usr/local/lib/libpcl_registration.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libqhull.so
 ../bin/robocon: /usr/local/lib/libpcl_surface.so
-../bin/robocon: /usr/local/lib/libpcl_registration.so
-../bin/robocon: /usr/local/lib/libpcl_recognition.so
 ../bin/robocon: /usr/local/lib/libpcl_tracking.so
-../bin/robocon: /usr/lib/libOpenNI2.so
-../bin/robocon: /usr/local/lib/libpcl_io.so
+../bin/robocon: /usr/local/lib/libpcl_outofcore.so
+../bin/robocon: /usr/local/lib/libpcl_keypoints.so
 ../bin/robocon: /usr/local/lib/libpcl_stereo.so
-../bin/robocon: /usr/local/lib/libpcl_ml.so
+../bin/robocon: /usr/local/lib/libpcl_recognition.so
+../bin/robocon: /usr/lib/libOpenNI2.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 ../bin/robocon: /usr/local/lib/libpcl_kdtree.so
+../bin/robocon: /usr/local/lib/libpcl_octree.so
 ../bin/robocon: /usr/local/lib/libpcl_search.so
 ../bin/robocon: /usr/local/lib/libpcl_sample_consensus.so
 ../bin/robocon: /usr/local/lib/libpcl_filters.so
+../bin/robocon: /usr/local/lib/libpcl_io.so
 ../bin/robocon: /usr/local/lib/libpcl_features.so
 ../bin/robocon: /usr/local/lib/libpcl_visualization.so
+../bin/robocon: /usr/local/lib/libpcl_ml.so
 ../bin/robocon: /usr/local/lib/libpcl_segmentation.so
 ../bin/robocon: /usr/local/lib/libpcl_people.so
-../bin/robocon: /usr/local/lib/libpcl_keypoints.so
-../bin/robocon: /usr/local/lib/libpcl_outofcore.so
+../bin/robocon: /usr/local/lib/libpcl_registration.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libqhull.so
 ../bin/robocon: /usr/local/lib/libpcl_surface.so
-../bin/robocon: /usr/local/lib/libpcl_registration.so
-../bin/robocon: /usr/local/lib/libpcl_recognition.so
 ../bin/robocon: /usr/local/lib/libpcl_tracking.so
+../bin/robocon: /usr/local/lib/libpcl_outofcore.so
+../bin/robocon: /usr/local/lib/libpcl_keypoints.so
+../bin/robocon: /usr/local/lib/libpcl_stereo.so
+../bin/robocon: /usr/local/lib/libpcl_recognition.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libboost_system.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libboost_thread.so
@@ -190,7 +191,7 @@ robocon_EXTERNAL_OBJECTS =
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 ../bin/robocon: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 ../bin/robocon: CMakeFiles/robocon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/robocon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/robocon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robocon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -207,6 +208,6 @@ CMakeFiles/robocon.dir/clean:
 .PHONY : CMakeFiles/robocon.dir/clean
 
 CMakeFiles/robocon.dir/depend:
-	cd /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/CLionProjects/singlelton /home/robocon/workspace/CLionProjects/singlelton /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug /home/robocon/workspace/CLionProjects/singlelton/cmake-build-debug/CMakeFiles/robocon.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocon/workspace/singleton/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocon/workspace/singleton /home/robocon/workspace/singleton /home/robocon/workspace/singleton/cmake-build-debug /home/robocon/workspace/singleton/cmake-build-debug /home/robocon/workspace/singleton/cmake-build-debug/CMakeFiles/robocon.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/robocon.dir/depend
 

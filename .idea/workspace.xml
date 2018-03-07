@@ -19,6 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e6680cf-f8fa-4e54-b450-34ee2486dd6f" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/src/threadTaskFactory/radarLocation/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/src/threadTaskFactory/radarLocation/CMakeFiles/progress.marks" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/src/threadTaskFactory/radarLocation/CMakeFiles/radar.dir/C.includecache" afterPath="" />
@@ -186,8 +187,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/param.yaml" afterPath="$PROJECT_DIR$/config/param.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calibration/RgbdCalibration.cpp" afterPath="$PROJECT_DIR$/src/calibration/RgbdCalibration.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/calibration/RgbdRecorder.cpp" afterPath="$PROJECT_DIR$/src/calibration/RgbdRecorder.cpp" />
+=======
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataAnalyse/traces.yml" afterPath="$PROJECT_DIR$/src/dataAnalyse/traces.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/thread/ThreadController.cpp" afterPath="$PROJECT_DIR$/src/thread/ThreadController.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -202,6 +204,7 @@
       <file leaf-file-name="ThreadController.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/thread/ThreadController.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="162">
               <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
               <folding />
@@ -214,6 +217,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="68" column="12" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+              <folding />
+=======
+            <state relative-caret-position="450">
+              <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+              <folding>
+                <element signature="e#40#72#0" expanded="true" />
+                <marker date="1520383251016" expanded="true" signature="6244:7247" ph="..." />
+              </folding>
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serialapp.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/protocol/serialapp.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="150" column="43" lean-forward="false" selection-start-line="150" selection-start-column="43" selection-end-line="150" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -245,8 +266,13 @@
       <file leaf-file-name="traces.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dataAnalyse/traces.yml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+            <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -272,21 +298,40 @@
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="param.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/param.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
               <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding />
+=======
+      <file leaf-file-name="RadarController.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/threadTaskFactory/radarLocation/RadarController.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+              <folding>
+                <element signature="e#41#69#0" expanded="true" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="RgbdRecorder.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/calibration/RgbdRecorder.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2898">
               <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+=======
+      <file leaf-file-name="param.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/param.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -416,7 +461,23 @@
             </path>
             <path>
               <item name="robocon" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+<<<<<<< Updated upstream
               <item name="singlelton" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="singleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAnalyse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robocon" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="singleton" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robocon" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="singleton" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="threadTaskFactory" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -527,14 +588,22 @@
       <workItem from="1520210157147" duration="18764000" />
       <workItem from="1520295953812" duration="637000" />
       <workItem from="1520336127288" duration="7092000" />
+<<<<<<< Updated upstream
       <workItem from="1520381025269" duration="3614000" />
       <workItem from="1520241763293" duration="1741000" />
       <workItem from="1520244187490" duration="3729000" />
+=======
+      <workItem from="1520381025269" duration="6161000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="164854000" />
+=======
+    <option name="totallyTimeSpent" value="161931000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1303" height="780" extended-state="6" />
@@ -601,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/protocol/serialapp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -838,6 +900,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/src/threadTaskFactory/trace/TraceController.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -862,6 +925,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -876,15 +941,44 @@
     <entry file="file://$PROJECT_DIR$/config/param.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
+<<<<<<< Updated upstream
           <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+=======
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/param.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/calibration/RgbdRecorder.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-2898">
           <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+=======
+        <state relative-caret-position="450">
+          <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding>
+            <element signature="e#40#72#0" expanded="true" />
+            <marker date="1520383251016" expanded="true" signature="6244:7247" ph="..." />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/serialapp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="150" column="43" lean-forward="false" selection-start-line="150" selection-start-column="43" selection-end-line="150" selection-end-column="43" />
           <folding />
         </state>
       </provider>
