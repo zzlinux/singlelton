@@ -14,7 +14,7 @@ DEBUG:
     apriltag: 1
 trace:
     mode: 0
-    oni: "/home/robocon/workspace/oni/0124-circleedgeback-10in.ONI"
+    oni: "/home/robocon/workspace/oni/0124-circleedgeback-2-no-failed.ONI"
     RT01: !!opencv-matrix
        rows: 4
        cols: 4

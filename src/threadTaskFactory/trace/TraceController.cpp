@@ -88,7 +88,7 @@ namespace hitcrt
                 ball.detector(depth,color,cloud,targets);
                 std::vector<Trajectory> ballTraces;
                 ballTraces.clear();
-                associate.apply(color,targets,ballTraces);
+                /*associate.apply(color,targets,ballTraces);
                 if(!ballTraces.empty())
                     std::cout<<"get traces: "<<static_cast<int>(ballTraces.size())<<std::endl;
                 for(auto t:ballTraces)
@@ -135,6 +135,7 @@ namespace hitcrt
                     std::cout<<"failed for tracetime: "<<tracetime<<std::endl;
                     continue;
                 }
+                 */
             }
             /***************************DEBUG VIEW*************************/
             if(!Param::trace.debug)continue;
@@ -148,7 +149,7 @@ namespace hitcrt
             Param::mimshow("color",color);
             //view.showCloud(cloud);
             cloud->points.clear();
-            cv::waitKey(1);
+            cv::waitKey(5);
             /**************************DEBUG VIEW**************************/
         }
     }
