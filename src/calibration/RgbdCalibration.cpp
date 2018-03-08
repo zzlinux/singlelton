@@ -57,7 +57,7 @@ namespace hitcrt
             time_now1 = boost::posix_time::microsec_clock::universal_time();
             time_elapse = time_now1 - time_now;
             int sec = time_elapse.total_seconds();
-            if(sec >=40) break;
+            if(sec >=60) break;
             rgb = cap->getFrameRGB();
             dep = cap->getFrameDepth();
             dep.convertTo(depth8U,CV_8UC1);

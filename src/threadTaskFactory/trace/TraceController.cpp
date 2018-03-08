@@ -1,7 +1,7 @@
 //
 // Created by robocon on 18-2-26.
 //
-
+#include <pcl/visualization/cloud_viewer.h>
 #include "TraceController.h"
 #include "../thread/Param.h"
 #include "BallAssociate.h"
@@ -35,6 +35,11 @@ namespace hitcrt
                 boost::unique_lock<boost::shared_mutex> writelock(kinectlock);
                 colorFrameBuff.push_back(rgb);
                 depthFrameBuff.push_back(dep);
+                if(colorFrameBuff.size()>=10)
+                {
+                    colorFrameBuff.pop_front();
+                    depthFrameBuff.pop_front();
+                }
             }
             gettimeofday(&en,NULL);
             boost::this_thread::sleep(boost::posix_time::milliseconds(1));
@@ -135,6 +140,7 @@ namespace hitcrt
             if(!Param::trace.debug)continue;
             if(circle.isValued)
             {
+                cv::circle(color,circle.ground2d,1,cv::Scalar(10,200,70),-1);
                 cv::circle(color,circle.center2d,3,cv::Scalar(80,35,176),-1);
                 cv::circle(color,circle.center2d,circle.radius2d,cv::Scalar(255,255,255),1);
                 cv::circle(color,circle.center2d,circle.radius2dOut,cv::Scalar(255,255,255),1);

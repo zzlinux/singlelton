@@ -93,7 +93,7 @@ namespace hitcrt
         //std::cout<<"z limited.size: "<<pt3d.size()<<std::endl;
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
         Transformer::imgToWorld(pt3d,cloud);
-        if(cloud->size()==0){std::cout<<"ball cloud.size "<<std::endl;return;}
+        if(cloud->size()==0){std::cout<<"ball cloud.size "<<cloud->size()<<std::endl;return;}
         // pass filter
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_z_filtered(new pcl::PointCloud<pcl::PointXYZ>);
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_y_filtered(new pcl::PointCloud<pcl::PointXYZ>);

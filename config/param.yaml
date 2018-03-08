@@ -1,5 +1,5 @@
 %YAML:1.0
-appMode: 1
+appMode: 3
 sleeptime: 0
 TASK:
     trace: 1
@@ -13,8 +13,8 @@ DEBUG:
     cameraLocation: 1
     apriltag: 1
 trace:
-    mode: 1
-    oni: "/home/robocon/workspace/oni/0124-circleedgeback-4in.ONI"
+    mode: 0
+    oni: "/home/robocon/workspace/oni/0124-circleedgeback-10in.ONI"
     RT01: !!opencv-matrix
        rows: 4
        cols: 4
