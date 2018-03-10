@@ -33,46 +33,9 @@ namespace hitcrt
     void BallDetector::init(char throwarea){area = (int)throwarea-1;updateNum = 0;};
     void BallDetector::detector(cv::Mat &depth,cv::Mat &color, pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,std::vector<pcl::PointXYZ>& targets)
     {
+        /********************remove giant targets**************************/
         cv::Mat depth8U;
         depth.convertTo(depth8U,CV_8UC1);
-        /*******************get moving targets*****************************/
-        cv::imshow("depth8U",depth8U);
-        cv::Mat fgmask;
-        cv::Mat colorBlur;
-        cv::medianBlur(color,colorBlur,3);
-        cv::imshow("colorblur",colorBlur);
-        bg_model->apply(colorBlur,fgmask,-1);
-        cv::medianBlur(fgmask,fgmask,3);
-        cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 2);	//膨胀
-        cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 1);		//腐蚀    开运算去除白噪声
-        cv::Mat fgcolor;
-        color.copyTo(fgcolor,fgmask);
-        cv::imshow("fgcolor",fgcolor);
-        cv::imshow("fgmask",fgmask);
-
-        if(updateNum<MAXUPDATENUM){updateNum++;return;}
-        //cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀    闭运算连通白块
-        //cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);		//腐蚀
-        std::vector<std::vector<cv::Point> > contours;
-        cv::findContours(fgmask,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
-        if(contours.size()>0)std::cout<<"ball contour size: "<<contours.size()<<std::endl;
-        else return;
-        cv::Mat mask(color.size(),CV_8UC1,cv::Scalar(0));
-        for(size_t i =0;i<contours.size();i++)
-        {
-            cv::Rect rect;
-            rect = cv::boundingRect(contours[i]);
-            //cv::rectangle(fgcolor,rect,cv::Scalar(255,255,255));
-            if(contours[i].size()<100) {
-                cv::drawContours(mask,contours,i,cv::Scalar(255),-1);
-            }
-            if(rect.area()>500)
-            {
-                std::cout<<"area  width  height "<<rect.area()<<"  ("<<rect.width<<","<<rect.height<<std::endl;
-                //cv::drawContours(fgmask,contours,i,cv::Scalar(0),-1);
-            }
-        }
-        /********************remove giant targets**************************/
         cv::erode(depth8U, depth8U, cv::Mat(), cv::Point(-1, -1), 4);		//腐蚀    开运算去除白噪声
         cv::dilate(depth8U, depth8U, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀
         std::vector<std::vector<cv::Point> > contour;
@@ -84,17 +47,37 @@ namespace hitcrt
             //std::cout<<std::dec<<contour[i].size()<<std::endl;
             if(contour[i].size()>110)cv::drawContours(contMask,contour,i,cv::Scalar(0),-1);
         }
-
-
-        cv::Mat andmask,fgimg;
+        /*******************get moving targets*****************************/
+        cv::Mat fgmask;
+        bg_model->apply(color,fgmask,-1);
+        if(updateNum<MAXUPDATENUM){updateNum++;return;}
+        cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 2);		//腐蚀    开运算去除白噪声
+        cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀
+        cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀    闭运算连通白块
+        cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);		//腐蚀
+        std::vector<std::vector<cv::Point> > contours;
+        cv::findContours(fgmask,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
+        if(contours.size()>0)std::cout<<"ball contour size: "<<contours.size()<<std::endl;
+        else return;
+        cv::Mat mask(color.size(),CV_8UC1,cv::Scalar(0));
+        for(size_t i =0;i<contours.size();i++)
+        {
+            //std::cout<<"cc size:"<<(int)contours[i].size()<<std::endl;
+            if(contours[i].size()<100) {
+                cv::drawContours(mask,contours,i,cv::Scalar(255),-1);
+            }
+        }
+        cv::Mat andmask,fgimg,fgcolor;
         andmask = contMask&mask;
         cv::Mat ballMask(depth8U.size(),CV_8UC1,cv::Scalar(0));
         cv::rectangle(ballMask,cv::Point(R[area].l,0),cv::Point(R[area].r,color.rows-1),cv::Scalar(255),-1);
         ballMask = andmask&ballMask;
         depth.copyTo(fgimg,ballMask);
+        color.copyTo(fgcolor,ballMask);
         //cv::imshow("ballmask",ballMask);
         //cv::imshow("andmask",andmask);
         //cv::imshow("mask",mask);
+        cv::imshow("fgcolor",fgcolor);
         //cv::imshow("contmask",contMask);
         std::vector<cv::Point3f> pt3d;
         for(int j = 0;j<fgimg.rows;j++)
@@ -110,7 +93,7 @@ namespace hitcrt
         //std::cout<<"z limited.size: "<<pt3d.size()<<std::endl;
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
         Transformer::imgToWorld(pt3d,cloud);
-        if(cloud->size()==0){std::cout<<"ball cloud.size "<<cloud->size()<<std::endl;return;}
+        if(cloud->size()==0){std::cout<<"ball cloud.size "<<std::endl;return;}
         // pass filter
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_z_filtered(new pcl::PointCloud<pcl::PointXYZ>);
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_y_filtered(new pcl::PointCloud<pcl::PointXYZ>);

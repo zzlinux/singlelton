@@ -75,8 +75,8 @@ namespace hitcrt
             if(Param::m_traceMode==1){
                 if(Param::m_throwArea == 0)continue;
                 if(!circle.detector(depth,cloud,Param::m_throwArea)){std::cout<<"find circle failed"<<std::endl;continue;}
-                std::cout<<"find circle ok"<<std::endl;
                 Param::m_traceMode = 2;
+                std::cout<<"find circle ok"<<std::endl;
             }else if(Param::m_traceMode ==2){
                 throwTimeStart = cv::getTickCount();
                 isHit = 10;
@@ -86,9 +86,9 @@ namespace hitcrt
             }else if(Param::m_traceMode ==3){
                 std::vector<pcl::PointXYZ> targets;
                 ball.detector(depth,color,cloud,targets);
-                std::vector<Trajectory> ballTraces;
+                /*std::vector<Trajectory> ballTraces;
                 ballTraces.clear();
-                /*associate.apply(color,targets,ballTraces);
+                associate.apply(color,targets,ballTraces);
                 if(!ballTraces.empty())
                     std::cout<<"get traces: "<<static_cast<int>(ballTraces.size())<<std::endl;
                 for(auto t:ballTraces)
