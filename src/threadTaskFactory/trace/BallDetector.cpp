@@ -50,6 +50,9 @@ namespace hitcrt
         /*******************get moving targets*****************************/
         cv::Mat fgmask;
         bg_model->apply(color,fgmask,-1);
+        cv::Mat bgcolor;
+        color.copyTo(bgcolor,fgmask);
+        cv::imshow("bgcolor",bgcolor);
         if(updateNum<MAXUPDATENUM){updateNum++;return;}
         cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 2);		//腐蚀    开运算去除白噪声
         cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀

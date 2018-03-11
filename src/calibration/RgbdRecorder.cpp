@@ -35,7 +35,8 @@ namespace hitcrt
 
         // 2. Open Device
         Device mDevice;
-        if( mDevice.open( ANY_DEVICE ) != STATUS_OK )
+        //if( mDevice.open("/home/robocon/workspace/oni/0306color.ONI" /*ANY_DEVICE*/ ) != STATUS_OK )
+        if( mDevice.open(ANY_DEVICE ) != STATUS_OK )
         {
             cerr << "Can't Open Device: "
                  << OpenNI::getExtendedError() << endl;
@@ -86,7 +87,7 @@ namespace hitcrt
             {
                 // 4a. set video mode
                 VideoMode mMode;
-                //mMode.setResolution( 640, 480 );
+                mMode.setResolution( 640, 480 );
                 mMode.setFps( 30 );
                 mMode.setPixelFormat( PIXEL_FORMAT_RGB888 );
 
@@ -102,7 +103,7 @@ namespace hitcrt
                 // 4b. image registration
                 if( mDevice.isImageRegistrationModeSupported(IMAGE_REGISTRATION_DEPTH_TO_COLOR ) )
                 {
-                    mDevice.setImageRegistrationMode( IMAGE_REGISTRATION_DEPTH_TO_COLOR );
+                    //mDevice.setImageRegistrationMode( IMAGE_REGISTRATION_DEPTH_TO_COLOR );
                 }
             }
             else

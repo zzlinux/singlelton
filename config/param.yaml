@@ -2,10 +2,10 @@
 appMode: 3
 sleeptime: 0
 TASK:
-    trace: 1
+    trace: 0
     cameraLocation: 0
     apriltag: 0
-    radarLocation: 0
+    radarLocation: 1
 DEBUG:
     master: 1
     trace: 1
@@ -14,7 +14,7 @@ DEBUG:
     apriltag: 1
 trace:
     mode: 0
-    oni: "/home/robocon/workspace/oni/0124-circleedgeback-3backno.ONI"
+    oni: "/home/robocon/workspace/oni/0124-circleedgeback.ONI"
     RT01: !!opencv-matrix
        rows: 4
        cols: 4
