@@ -12,6 +12,7 @@
 #include "CircleDetector.h"
 #include "transformer.h"
 #include "../thread/Param.h"
+#include "KinectCamera.h"
 namespace hitcrt
 {
     CircleDetector::CircleDetector():radius3d(0.4),radius2d(0),isValued(false){
@@ -34,6 +35,8 @@ namespace hitcrt
     };
     bool CircleDetector::detector(cv::Mat &depth,pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,char Area)
     {
+        KinectCamera::undistortDepth(depth,depth);
+        cv::flip(depth,depth,1);
         int area = (int)Area-1;
         cv::Mat circleMask(depth.size(),CV_8UC1,cv::Scalar(0));
         cv::rectangle(circleMask,cv::Point(R[area].l,0),cv::Point(R[area].r,depth.rows-1),cv::Scalar(255),-1);
@@ -42,7 +45,7 @@ namespace hitcrt
         std::vector<cv::Point3f> pt3d;
         for(int j = 0;j<circledepth.rows;j++)
         {
-            uint16_t* data = circledepth.ptr<uint16_t>(j);
+            float* data = circledepth.ptr<float>(j);
             for(int i = 0;i<circledepth.cols;i++)
             {
                 float depth = data[i];

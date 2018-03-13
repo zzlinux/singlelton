@@ -15,8 +15,7 @@ namespace hitcrt
 {
     void TraceController::run()
     {
-        if(Param::traceinfo.rgbdMode)cap = std::unique_ptr<RGBDcamera>(new RGBDcamera(RGBDcamera::Live_mode,RGBDcamera::Kinect));
-        else cap = std::unique_ptr<RGBDcamera>(new RGBDcamera(RGBDcamera::ONI_mode,RGBDcamera::Kinect,Param::traceinfo.file.data()));
+        cap = std::unique_ptr<KinectCamera>(new KinectCamera);
         m_traceDataThread = boost::thread(boost::bind(&TraceController::m_traceReadFrame,this));
         m_traceProcessThread = boost::thread(boost::bind(&TraceController::m_traceProcess,this));
         m_traceProcessThread.join();
@@ -28,6 +27,7 @@ namespace hitcrt
         {
             struct timeval st,en;
             gettimeofday(&st,NULL);
+            boost::this_thread::sleep(boost::posix_time::milliseconds(40));
             cv::Mat rgb,dep;
             rgb = cap->getFrameRGB();
             dep = cap->getFrameDepth();
@@ -35,15 +35,15 @@ namespace hitcrt
                 boost::unique_lock<boost::shared_mutex> writelock(kinectlock);
                 colorFrameBuff.push_back(rgb);
                 depthFrameBuff.push_back(dep);
-                if(colorFrameBuff.size()>=10)
+                if(colorFrameBuff.size()>=50)
                 {
+                    std::cout<<"buff is enriched"<<std::endl;
                     colorFrameBuff.pop_front();
                     depthFrameBuff.pop_front();
                 }
             }
             gettimeofday(&en,NULL);
-            boost::this_thread::sleep(boost::posix_time::milliseconds(1));
-            //std::cout<<"kinect write time is "<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
+            std::cout<<"kinect write time is "<<std::dec<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
         }
     }
     void TraceController::m_traceProcess()
@@ -53,6 +53,7 @@ namespace hitcrt
         const int MAXTHROWTIME = 4;
         //pcl::visualization::CloudViewer view("cloud");
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
+        std::vector<pcl::PointXYZ> targets;
         CircleDetector circle;
         BallDetector ball;
         BallAssociate associate;
@@ -60,7 +61,7 @@ namespace hitcrt
         char isHit = 10;
         while (Param::m_process)
         {
-            cv::Mat color,depth,depth8U;
+            cv::Mat color,depth;
             {
                 boost::shared_lock<boost::shared_mutex> readLock(kinectlock);
                 if (!depthFrameBuff.empty()) {
@@ -70,12 +71,16 @@ namespace hitcrt
                     depthFrameBuff.pop_front();
                 }
             }
-            if(color.empty()||depth.empty()){continue;}
-            depth.convertTo(depth8U,CV_8UC1);
+            if(color.empty()||depth.empty()){
+                //std::cout<<"empty"<<std::endl;
+                continue;
+            }
+            struct timeval st,en;
+            gettimeofday(&st,NULL);
             if(Param::m_traceMode==1){
+                Param::m_traceMode = 2;
                 if(Param::m_throwArea == 0)continue;
                 if(!circle.detector(depth,cloud,Param::m_throwArea)){std::cout<<"find circle failed"<<std::endl;continue;}
-                Param::m_traceMode = 2;
                 std::cout<<"find circle ok"<<std::endl;
             }else if(Param::m_traceMode ==2){
                 throwTimeStart = cv::getTickCount();
@@ -84,8 +89,8 @@ namespace hitcrt
                 associate.init(Param::m_throwArea);
                 Param::m_traceMode = 3;
             }else if(Param::m_traceMode ==3){
-                std::vector<pcl::PointXYZ> targets;
-                ball.detector(depth,color,cloud,targets);
+                targets.clear();
+                ball.detector(color,depth,cloud,targets);
                 /*std::vector<Trajectory> ballTraces;
                 ballTraces.clear();
                 associate.apply(color,targets,ballTraces);
@@ -146,10 +151,21 @@ namespace hitcrt
                 cv::circle(color,circle.center2d,circle.radius2d,cv::Scalar(255,255,255),1);
                 cv::circle(color,circle.center2d,circle.radius2dOut,cv::Scalar(255,255,255),1);
             }
-            Param::mimshow("color",color);
+            cv::Mat registed,undistort;
+            KinectCamera::registrate(color,depth,registed,undistort);
+            cv::flip(registed,registed,1);
+            cv::Point ballCenter;
+            for (auto p:targets) {
+                Transformer::invTrans(p, ballCenter);
+                cv::circle(registed, ballCenter, 20, cv::Scalar(255, 255, 255), 1);
+            }
+            Param::mimshow("color",registed);
+            //Param::mimshow("depth",undistort);
             //view.showCloud(cloud);
             cloud->points.clear();
             cv::waitKey(5);
+            gettimeofday(&en,NULL);
+            std::cout<<"kinect process time is "<<std::dec<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
             /**************************DEBUG VIEW**************************/
         }
     }

@@ -5,6 +5,7 @@ project(robocon)
 set(MANUAL_ROBOT false)
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} $ENV{HOME}/freenect2/lib/cmake/freenect2)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
@@ -21,6 +22,7 @@ find_package(Boost  REQUIRED)
 find_package(OpenNI2 REQUIRED)
 find_package(PCL 1.7 REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(freenect2 REQUIRED)
 
 include_directories(
         config
@@ -37,6 +39,7 @@ include_directories(
         ${PCL_INCLUDE_DIRS}
         ${EIGEN3_INCLUDE_DIR}
         ${Boost_INCLUDE_DIRS}
+        ${freenect2_INCLUDE_DIR}
 )
 ADD_SUBDIRECTORY(src/protocol)
 ADD_SUBDIRECTORY(src/thread)

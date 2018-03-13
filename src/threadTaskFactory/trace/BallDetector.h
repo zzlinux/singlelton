@@ -13,7 +13,7 @@ namespace hitcrt {
     class BallDetector {
     public:
         BallDetector();
-        void detector(cv::Mat &depth,cv::Mat &color,pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,std::vector<pcl::PointXYZ>& targets);
+        void detector(cv::Mat &color,cv::Mat &depth,pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,std::vector<pcl::PointXYZ>& targets);
         void init(char throwarea);
     private:
         struct searchRange{

@@ -28,7 +28,7 @@ public:
     int radius2d;
     int radius2dOut;
     bool isValued;
-    bool detector(cv::Mat &depth,pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,char Area);
+    bool detector(cv::Mat &dep,pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,char Area);
 private:
     std::vector<pcl::PointXYZ> center3dQueue;
     bool averageFilter(pcl::PointXYZ &center3d);

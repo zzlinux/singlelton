@@ -12,6 +12,7 @@
 #include "BallDetector.h"
 #include "transformer.h"
 #include "../thread/Param.h"
+#include "KinectCamera.h"
 namespace hitcrt
 {
     BallDetector::BallDetector():updateNum(0){
@@ -31,72 +32,74 @@ namespace hitcrt
         R[2] = {ball2D.at<int>(2,0),ball2D.at<int>(2,1)};
     };
     void BallDetector::init(char throwarea){area = (int)throwarea-1;updateNum = 0;};
-    void BallDetector::detector(cv::Mat &depth,cv::Mat &color, pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,std::vector<pcl::PointXYZ>& targets)
+    void BallDetector::detector(cv::Mat &color,cv::Mat &depth, pcl::PointCloud<pcl::PointXYZ>::Ptr outCloud,std::vector<pcl::PointXYZ>& targets)
     {
-        /********************remove giant targets**************************/
-        cv::Mat depth8U;
-        depth.convertTo(depth8U,CV_8UC1);
-        cv::erode(depth8U, depth8U, cv::Mat(), cv::Point(-1, -1), 4);		//腐蚀    开运算去除白噪声
-        cv::dilate(depth8U, depth8U, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀
-        std::vector<std::vector<cv::Point> > contour;
-        cv::findContours(depth8U,contour,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
-        cv::Mat contMask(depth8U.size(),CV_8UC1,cv::Scalar(255));
-        //std::cout<<"contours.size: "<<contour.size()<<std::endl;
-        for(size_t i = 0;i<contour.size();i++)
-        {
-            //std::cout<<std::dec<<contour[i].size()<<std::endl;
-            if(contour[i].size()>110)cv::drawContours(contMask,contour,i,cv::Scalar(0),-1);
-        }
-        /*******************get moving targets*****************************/
-        cv::Mat fgmask;
-        bg_model->apply(color,fgmask,-1);
-        cv::Mat bgcolor;
-        color.copyTo(bgcolor,fgmask);
-        cv::imshow("bgcolor",bgcolor);
-        if(updateNum<MAXUPDATENUM){updateNum++;return;}
-        cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 2);		//腐蚀    开运算去除白噪声
-        cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀
-        cv::dilate(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀    闭运算连通白块
-        cv::erode(fgmask, fgmask, cv::Mat(), cv::Point(-1, -1), 4);		//腐蚀
+        cv::Mat red,colormask;
+        cv::Mat colorhsv;
+        cv::cvtColor(color,colorhsv,CV_BGR2HSV);
+        cv::inRange(colorhsv,cv::Scalar(90,100,40),cv::Scalar(108,255,255),colormask);     //{85,100,40} {108,255,255}
+        color.copyTo(red,colormask);
+        cv::Mat colorsmall;
+        cv::Mat registrated,undistorted;
+        KinectCamera::registrate(red,depth,registrated,undistorted);
+        cv::imshow("colorregisted",registrated);
+        //cv::imshow("undistorted",undistorted);
+        cv::Mat bgcolor,bgmask;
+        bg_model->apply(registrated,bgmask,-1);
+        //cv::imshow("bgmaskpre",bgmask);
+        cv::erode(bgmask, bgmask, cv::Mat(), cv::Point(-1, -1), 1);		//腐蚀    开运算去除白噪声
+        cv::dilate(bgmask, bgmask, cv::Mat(), cv::Point(-1, -1), 4);	//膨胀
+        cv::imshow("bgmask",bgmask);
         std::vector<std::vector<cv::Point> > contours;
-        cv::findContours(fgmask,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
+        cv::findContours(bgmask,contours,CV_RETR_EXTERNAL,CV_CHAIN_APPROX_NONE);
         if(contours.size()>0)std::cout<<"ball contour size: "<<contours.size()<<std::endl;
         else return;
-        cv::Mat mask(color.size(),CV_8UC1,cv::Scalar(0));
-        for(size_t i =0;i<contours.size();i++)
+        cv::Mat mask(bgmask.rows,bgmask.cols,CV_8UC1,cv::Scalar(0));
+        for(size_t i = 0;i<contours.size();i++)
         {
-            //std::cout<<"cc size:"<<(int)contours[i].size()<<std::endl;
-            if(contours[i].size()<100) {
+            cv::Rect rect = cv::boundingRect(contours[i]);
+            float ratio;
+            if(rect.height>rect.width) ratio = static_cast<float>(rect.height)/rect.width;
+            else ratio = static_cast<float>(rect.width)/rect.height;
+            if(rect.area()>200000&&ratio>1.5)
+            {
+                std::cout<<"failed for area,ratio: "<<rect.area()<<","<<ratio<<std::endl;
+                continue;
+            }else{
+                std::cout<<"succeed for area,ratio: "<<rect.area()<<","<<ratio<<std::endl;
                 cv::drawContours(mask,contours,i,cv::Scalar(255),-1);
             }
         }
-        cv::Mat andmask,fgimg,fgcolor;
-        andmask = contMask&mask;
-        cv::Mat ballMask(depth8U.size(),CV_8UC1,cv::Scalar(0));
+        registrated.copyTo(bgcolor,mask);
+        cv::flip(bgcolor,bgcolor,1);
+        cv::flip(mask,mask,1);
+        cv::flip(undistorted,undistorted,1);
+        cv::Mat ballMask(depth.size(),CV_8UC1,cv::Scalar(0));
         cv::rectangle(ballMask,cv::Point(R[area].l,0),cv::Point(R[area].r,color.rows-1),cv::Scalar(255),-1);
-        ballMask = andmask&ballMask;
-        depth.copyTo(fgimg,ballMask);
-        color.copyTo(fgcolor,ballMask);
-        //cv::imshow("ballmask",ballMask);
-        //cv::imshow("andmask",andmask);
-        //cv::imshow("mask",mask);
-        cv::imshow("fgcolor",fgcolor);
-        //cv::imshow("contmask",contMask);
+        ballMask = mask&ballMask;
+        cv::Mat fgimg;
+        undistorted.copyTo(fgimg,ballMask);
+        cv::imshow("undistorted",undistorted);
+        cv::imshow("balldepth",fgimg);
+        //cv::imshow("ballcolor",bgcolor);
         std::vector<cv::Point3f> pt3d;
         for(int j = 0;j<fgimg.rows;j++)
         {
-            uint16_t* data = fgimg.ptr<uint16_t>(j);
+            float* data = fgimg.ptr<float>(j);
             for(int i = 0;i<fgimg.cols;i++)
             {
                 float depth = data[i];
                 float pz = fabs(depth);
-                if(pz>800&& pz<8*1000.0) pt3d.push_back(cv::Point3f(i,j,pz));
+                if(pz>80&& pz<8*1000.0) {
+                    //std::cout<<"z :"<<pz<<std::endl;
+                    pt3d.push_back(cv::Point3f(i,j,pz));
+                }
             }
         }
-        //std::cout<<"z limited.size: "<<pt3d.size()<<std::endl;
+        std::cout<<"z limited.size: "<<pt3d.size()<<std::endl;
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
         Transformer::imgToWorld(pt3d,cloud);
-        if(cloud->size()==0){std::cout<<"ball cloud.size "<<std::endl;return;}
+        if(cloud->size()==0){std::cout<<"ball cloud.size "<<cloud->size()<<std::endl;return;}
         // pass filter
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_z_filtered(new pcl::PointCloud<pcl::PointXYZ>);
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_y_filtered(new pcl::PointCloud<pcl::PointXYZ>);
@@ -117,7 +120,7 @@ namespace hitcrt
         //std::cout<<"x :"<<r[i].x.min<<","<<r[i].x.max<<std::endl;
         pass.setFilterLimits(r[area].x.min,r[area].x.max);
         pass.filter(*cloud_x_filtered);
-        //std::cout<<"ball pass filter.size: "<<cloud_x_filtered->points.size()<<std::endl;
+        std::cout<<"ball pass filter.size: "<<cloud_x_filtered->points.size()<<std::endl;
         if(cloud_x_filtered->points.size()==0)return;
         // radius filter
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_r_filtered(new pcl::PointCloud<pcl::PointXYZ>);
@@ -127,7 +130,7 @@ namespace hitcrt
         rfil.setMinNeighborsInRadius(4);
         rfil.filter(*cloud_r_filtered);
         if(cloud_r_filtered->points.size()==0) return;
-        //std::cout<<"radius filter.size: "<<cloud_r_filtered->points.size()<<std::endl;
+        std::cout<<"radius filter.size: "<<cloud_r_filtered->points.size()<<std::endl;
         pcl::search::KdTree<pcl::PointXYZ>::Ptr tree(new pcl::search::KdTree<pcl::PointXYZ>);
         tree->setInputCloud(cloud_r_filtered);
         std::vector<pcl::PointIndices> cluster_indices;
@@ -164,7 +167,7 @@ namespace hitcrt
             //          << maxPt.x-minPt.x << ", "
             //          << maxPt.y-minPt.y << ", "
             //          << maxPt.z-minPt.z << ") "<< std::endl;
-            std::cout << "The XYZ centroid are: ("
+            std::cout << "The BALL XYZ centroid are: ("
                       << centroid[0] << ", "
                       << centroid[1] << ", "
                       << centroid[2] << ")." << std::endl;
@@ -172,11 +175,6 @@ namespace hitcrt
             //          << maxPt.x<< ", "
             //          << maxPt.y<< ", "
             //          << maxPt.z<< ")." << std::endl;
-            cv::Point ballCenter;
-            for (auto p:targets) {
-                Transformer::invTrans(p, ballCenter);
-                cv::circle(color, ballCenter, 20, cv::Scalar(255, 255, 255), 1);
-            }
         }
 
     }

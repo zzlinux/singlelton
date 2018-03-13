@@ -13,8 +13,10 @@ add_library(trace
         CircleDetector.h
         FitTrace.cpp
         FitTrace.h
-        rgbd_camera.cpp
-        rgbd_camera.h
+        KinectCamera.cpp
+        KinectCamera.h
+        #rgbd_camera.cpp
+        #rgbd_camera.h
         Trajectory.cpp
         Trajectory.h
         transformer.cpp
@@ -23,6 +25,7 @@ add_library(trace
         Recorder.h
         )
 target_link_libraries(trace
+        ${freenect2_LIBRARIES}
         ${PCL_LIBRARIES}
         ${OpenNI2_LIBRARIES}
         ${EIGEN3_LIBS}

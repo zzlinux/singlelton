@@ -7,8 +7,8 @@
 
 #include <boost/thread.hpp>
 #include <opencv2/core/core.hpp>
-#include "rgbd_camera.h"
 #include "TaskFactory.h"
+#include "KinectCamera.h"
 namespace hitcrt
 {
     class TraceController :public TaskProduct
@@ -19,7 +19,7 @@ namespace hitcrt
     private:
         std::list<cv::Mat> depthFrameBuff;
         std::list<cv::Mat> colorFrameBuff;
-        std::unique_ptr<RGBDcamera> cap;
+        std::unique_ptr<KinectCamera> cap;
         boost::shared_mutex kinectlock;
         boost::thread m_traceDataThread;
         boost::thread m_traceProcessThread;
