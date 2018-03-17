@@ -14,7 +14,8 @@
 using namespace std;
 namespace hitcrt
 {
-    static int lastSend;
+    boost::mutex TagTask::lastSenddMutex;
+    int TagTask::lastSend = 10;
     //const char* windowName = "apriltags_demo";
     const double PI = 3.14159265358979323846;
     const double TWOPI = 2.0*PI;

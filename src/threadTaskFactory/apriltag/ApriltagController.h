@@ -78,7 +78,7 @@ namespace hitcrt
         void m_apriltagProcess();
         struct {int id = 10;int lastId = 10;int count = 0;} message;
         bool isSend = false;
-        static int lastSend = 10;
+        static int lastSend ;
         static boost::mutex lastSenddMutex;
     };
     class ApriltagController :public TaskProduct
