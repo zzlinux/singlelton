@@ -7,13 +7,11 @@
 
 namespace hitcrt
 {
-    int CameraController::count = 0;
     CameraController::CameraController(int id):CameraModel(id)
     {
         std::stringstream text;
         text<<"cameraLocation "<<count<<std::endl;
         windowName = text.str();
-        count++;
     };
     void CameraController::run()
     {
@@ -52,7 +50,7 @@ namespace hitcrt
             apply(position,isLocationValued);
             if(isLocationValued)
             {
-                if(cameraid == 0) Param::serial->send(SerialApp::SEND_CAMERA0,position);
+                if(cameraid == 1) Param::serial->send(SerialApp::SEND_CAMERA0,position);
                 else Param::serial->send(SerialApp::SEND_CAMERA1,position);
             }
             position.clear();
@@ -61,13 +59,16 @@ namespace hitcrt
     void CameraController::apply(std::vector<float> &data,bool & isLocationValued) {
         isLocationValued = true;
         if (readFrame.empty()) { isLocationValued = false;return;}
-        std::vector<cv::Mat> channels;
-        cv::remap(readFrame, readFrame, map1, map2, cv::INTER_LINEAR);
-        split(readFrame, channels);
-        temp = channels.at(2);
+        cv::Mat distortedMat = readFrame.clone();
+        cv::undistort(distortedMat, readFrame, cameraMatrix, distCoeffs);
+        //std::vector<cv::Mat> channels;
+        //split(readFrame, channels);
+        cv::cvtColor(readFrame,temp,CV_BGR2GRAY);
+        //temp = channels.at(2);
         std::stringstream txt,linenum;
-        if(cv::threshold(temp, temp, 0, 1, CV_THRESH_OTSU)<150) {isLocationValued=false;txt<<"isSend = false bin";linenum<<"zero line";}    //case no white
+        if(cv::threshold(temp, temp, 0, 1, CV_THRESH_OTSU)<50) {isLocationValued=false;txt<<"isSend = false bin";linenum<<"zero line";}    //case no white
         else {
+            //cv::imshow("temp",temp*255);
             cv::Mat element = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(15, 15));
             cv::morphologyEx(temp, temp, cv::MORPH_OPEN, element);
             std::vector<cv::Point2d> bonePoints;

@@ -21,7 +21,6 @@ namespace hitcrt
         ~CameraController(){};
         void run();
     private:
-        static int count;
         std::string windowName;
         cv::Mat frame;
         cv::Mat readFrame;

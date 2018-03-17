@@ -33,8 +33,10 @@ namespace hitcrt
         trace["BALL"]>>Param::traceinfo.ball_range;
         trace["BALL2D"]>>Param::traceinfo.ball_range2d;
         rt01["RT01"] >> Param::RT01;
-        cameraLocation["OV2710_INTRINSIC"] >> Param::cameraLocationIntrinsic;
-        cameraLocation["OV2710_COEFFS"] >> Param::cameraLocationCoeffs;
+        cameraLocation["OV2710_INTRINSIC_0"] >> Param::cameraLocationIntrinsic_0;
+        cameraLocation["OV2710_COEFFS_0"] >> Param::cameraLocationCoeffs_0;
+        cameraLocation["OV2710_INTRINSIC_1"] >> Param::cameraLocationIntrinsic_1;
+        cameraLocation["OV2710_COEFFS_1"] >> Param::cameraLocationCoeffs_1;
         fs.release();
     }
     void ThreadController::run()
@@ -53,9 +55,9 @@ namespace hitcrt
         }
         if(Param::cameraLocation.start)
         {
-            cameraLocation0 = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("cameraLocation",0));
+            cameraLocation0 = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("cameraLocation",1));
             m_cameraLocation0Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation0,this));
-            cameraLocation1 = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("cameraLocation",1));
+            cameraLocation1 = std::unique_ptr<TaskProduct>(TaskFactory::CreateTask("cameraLocation",2));
             m_cameraLocation1Thread = boost::thread(boost::bind(&ThreadController::m_cameraLocation1,this));
         }
         if(Param::apriltag.start)

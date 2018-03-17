@@ -43,6 +43,7 @@ add_library(apriltag
         lib/UnionFindSimple.cc
         )
 target_link_libraries(apriltag
+        device
         ${EIGEN3_LIBS}
         ${OpenCV_LIBS}
         )

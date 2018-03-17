@@ -20,13 +20,18 @@ namespace hitcrt
         int delay = 1000;
         clock_t prevTimestamp = 0;
         int mode = DETECTION;
-        int cameraId = 0;
+        int cameraId = 1;
         Pattern pattern = CHESSBOARD;
         vector<vector<Point2f> > imagePoints;
         Mat cameraMatrix, distCoeffs;
 
         VideoCapture capture;
         capture.open(cameraId);
+        if(!capture.isOpened())
+        {
+            std::cerr<<"open camera error"<<std::endl;
+            throw -1;
+        }
         namedWindow( "Image View", 1 );
 
         for(i = 0;;i++)

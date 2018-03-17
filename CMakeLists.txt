@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 2.7)
 project(robocon)
 
 set(MANUAL_ROBOT false)
-
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} $ENV{HOME}/freenect2/lib/cmake/freenect2)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -26,6 +25,7 @@ find_package(freenect2 REQUIRED)
 
 include_directories(
         config
+        src/device
         src/protocol
         src/calibration
         src/thread
@@ -41,6 +41,7 @@ include_directories(
         ${Boost_INCLUDE_DIRS}
         ${freenect2_INCLUDE_DIR}
 )
+ADD_SUBDIRECTORY(src/device)
 ADD_SUBDIRECTORY(src/protocol)
 ADD_SUBDIRECTORY(src/thread)
 ADD_SUBDIRECTORY(src/threadTaskFactory)

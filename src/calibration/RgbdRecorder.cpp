@@ -21,7 +21,7 @@ namespace hitcrt
 {
     RgbdRecorder::RgbdRecorder()
     {
-        fileurl = "../../oni/0305color.ONI";
+        fileurl = "../../oni/0314area1-5.ONI";
     }
     void RgbdRecorder::run()
     {
@@ -103,7 +103,7 @@ namespace hitcrt
                 // 4b. image registration
                 if( mDevice.isImageRegistrationModeSupported(IMAGE_REGISTRATION_DEPTH_TO_COLOR ) )
                 {
-                    //mDevice.setImageRegistrationMode( IMAGE_REGISTRATION_DEPTH_TO_COLOR );
+                    mDevice.setImageRegistrationMode( IMAGE_REGISTRATION_DEPTH_TO_COLOR );
                 }
             }
             else

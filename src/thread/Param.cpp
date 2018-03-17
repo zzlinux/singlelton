@@ -20,8 +20,10 @@ namespace  hitcrt{
     float Param::CAMERA_FACTOR = 1000.0;
 
     cv::Mat Param::RT01 = cv::Mat(4,4,CV_32FC1, cv::Scalar(0));
-    cv::Mat Param::cameraLocationIntrinsic;
-    cv::Mat Param::cameraLocationCoeffs;
+    cv::Mat Param::cameraLocationIntrinsic_0;
+    cv::Mat Param::cameraLocationCoeffs_0;
+    cv::Mat Param::cameraLocationIntrinsic_1;
+    cv::Mat Param::cameraLocationCoeffs_1;
     pthread_mutex_t Param::mutex;
     void Param::mimshow(std::string winname, cv::Mat &mat)
     {
@@ -84,8 +86,10 @@ namespace  hitcrt{
         traceN["BALL"]>>traceinfo.ball_range;
         traceN["BALL2D"]>>traceinfo.ball_range2d;
         traceN["RT01"] >>RT01;
-        cameraLocationN["OV2710_INTRINSIC"] >> Param::cameraLocationIntrinsic;
-        cameraLocationN["OV2710_COEFFS"] >> Param::cameraLocationCoeffs;
+        cameraLocationN["OV2710_INTRINSIC_0"] >> Param::cameraLocationIntrinsic_0;
+        cameraLocationN["OV2710_COEFFS_0"] >> Param::cameraLocationCoeffs_0;
+        cameraLocationN["OV2710_INTRINSIC_1"] >> Param::cameraLocationIntrinsic_1;
+        cameraLocationN["OV2710_COEFFS_1"] >> Param::cameraLocationCoeffs_1;
         fs.release();
     }
 }

@@ -20,8 +20,10 @@ namespace  hitcrt{
         static float CAMERA_FACTOR;
 
         static cv::Mat RT01;
-        static cv::Mat cameraLocationIntrinsic;
-        static cv::Mat cameraLocationCoeffs;
+        static cv::Mat cameraLocationIntrinsic_0;
+        static cv::Mat cameraLocationCoeffs_0;
+        static cv::Mat cameraLocationIntrinsic_1;
+        static cv::Mat cameraLocationCoeffs_1;
 
         struct task{bool start;bool debug;};
         static task trace,cameraLocation,radarLocation,apriltag;
@@ -71,8 +73,10 @@ namespace  hitcrt{
         float CAMERA_FACTOR;
         cv::Mat RT01;
 
-        cv::Mat cameraLocationIntrinsic;
-        cv::Mat cameraLocationCoeffs;
+        cv::Mat cameraLocationIntrinsic_0;
+        cv::Mat cameraLocationCoeffs_0;
+        cv::Mat cameraLocationIntrinsic_1;
+        cv::Mat cameraLocationCoeffs_1;
 
         struct task{bool start;bool debug;};
         task trace,cameraLocation,radarLocation,apriltag;

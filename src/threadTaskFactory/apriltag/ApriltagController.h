@@ -28,16 +28,18 @@
 #include <cmath>
 #include "../thread/Param.h"
 #include "TaskFactory.h"
+#include "myVideoCap.h"
 using namespace std;
 namespace hitcrt
 {
-    class ApriltagController :public TaskProduct
+    class TagTask
     {
     public:
-        ApriltagController(int id);
-        ~ApriltagController();
+        TagTask(int id);
+        ~TagTask(){};
         void run();
     private:
+        char *windowName;
         AprilTags::TagDetector* m_tagDetector;
         AprilTags::TagCodes m_tagCodes;
 
@@ -56,7 +58,8 @@ namespace hitcrt
 
         list<string> m_imgNames;
 
-        cv::VideoCapture m_cap;
+        //cv::VideoCapture m_cap;
+        hitcrt::myVideoCap * m_cap;
 
         int m_exposure;
         int m_gain;
@@ -65,7 +68,7 @@ namespace hitcrt
         cv::Mat frame,readFrame;
         boost::shared_mutex cameralock;
 
-        inline double standardRad(double t);
+        double standardRad(double t);
         void wRo_to_euler(const Eigen::Matrix3d& wRo, double& yaw, double& pitch, double& roll);
         void print_detection(AprilTags::TagDetection& detection);
         void apply();
@@ -73,7 +76,24 @@ namespace hitcrt
         boost::thread m_apriltagProcessThread;
         void m_apriltagReadFrame();
         void m_apriltagProcess();
-        struct {int id = 10;int lastId = 10;int count = 0;int lastSend =10;} message;
+        struct {int id = 10;int lastId = 10;int count = 0;} message;
+        bool isSend = false;
+        static int lastSend = 10;
+        static boost::mutex lastSenddMutex;
+    };
+    class ApriltagController :public TaskProduct
+    {
+    public:
+        ApriltagController(int id){};
+        ~ApriltagController();
+        void run();
+    private:
+        TagTask *m_tag0;
+        TagTask *m_tag1;
+        boost::thread m_apriltag0;
+        boost::thread m_apriltag1;
+        void m_task0();
+        void m_task1();
     };
 }
 #endif //ROBOCON_APRILTAGCONTROLLER_H

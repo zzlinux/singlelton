@@ -7,11 +7,25 @@
 
 namespace hitcrt
 {
+    int CameraModel::count = 0;
     CameraModel::CameraModel(int id):cameraid(id)
     {
         cap = cv::VideoCapture(cameraid);
         assert(cap.isOpened());
-        cv::initUndistortRectifyMap(Param::cameraLocationIntrinsic.t(), Param::cameraLocationCoeffs, cv::Mat(), cv::Mat(), cv::Size(640, 480), CV_32F, map1, map2);
+        if(count == 0)
+        {
+            cameraMatrix = Param::cameraLocationIntrinsic_0.clone();
+            distCoeffs = Param::cameraLocationCoeffs_0.clone();
+            cv::initUndistortRectifyMap(Param::cameraLocationIntrinsic_0, Param::cameraLocationCoeffs_0, cv::Mat(), cv::Mat(), cv::Size(640, 480), CV_32F, map1, map2);
+            std::cout<<"cameraMatrix "<<Param::cameraLocationIntrinsic_0<<std::endl;
+            std::cout<<"camera id "<<cameraid<<std::endl;
+        } else
+        {
+            cv::initUndistortRectifyMap(Param::cameraLocationIntrinsic_1, Param::cameraLocationCoeffs_1, cv::Mat(), cv::Mat(), cv::Size(640, 480), CV_32F, map1, map2);
+            cameraMatrix = Param::cameraLocationIntrinsic_1.clone();
+            distCoeffs = Param::cameraLocationCoeffs_1.clone();
+        }
+        count++;
     }
     #define  RANDOMPOINT VecPoint.at(leftPointsIndex.at(rand()%leftPointsIndex.size()))
     void CameraModel::Ransc(std::vector<cv::Point2d> & VecPoint,std::vector<std::vector<cv::Point>> &lines)

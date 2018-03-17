@@ -15,6 +15,10 @@ namespace hitcrt
 {
     class KinectCamera {
     public:
+        enum Mode{
+            Live_mode,
+            File_mode
+        };
         KinectCamera();
         ~KinectCamera();
         cv::Mat getFrameDepth();

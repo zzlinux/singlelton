@@ -14,32 +14,67 @@
 using namespace std;
 namespace hitcrt
 {
-    const char* windowName = "apriltags_demo";
+    static int lastSend;
+    //const char* windowName = "apriltags_demo";
     const double PI = 3.14159265358979323846;
     const double TWOPI = 2.0*PI;
-    ApriltagController::ApriltagController(int id) : m_tagDetector(NULL),
-                                 m_tagCodes(AprilTags::tagCodes36h11),
+    ApriltagController::~ApriltagController()
+    {}
+    void ApriltagController::run()
+    {
+        m_tag0 = new TagTask(0);
+        m_tag1 = new TagTask(1);
+        m_apriltag0 = boost::thread(boost::bind(&ApriltagController::m_task0,this));
+        m_apriltag1 = boost::thread(boost::bind(&ApriltagController::m_task1,this));
+        m_apriltag0.join();
+    }
+    void ApriltagController::m_task0()
+    {
+        std::cout<<"apriltagThread0 id "<<m_apriltag0.get_id()<<std::endl;
+        m_tag0->run();
+    }
+    void ApriltagController::m_task1()
+    {
+        std::cout<<"apriltagThread1 id "<<m_apriltag1.get_id()<<std::endl;
+        m_tag1->run();
+    }
+    TagTask::TagTask(int id) : m_tagDetector(NULL),
+                               m_tagCodes(AprilTags::tagCodes36h11),
 
-                                 m_draw(true),
-                                 m_timing(false),
+                               m_draw(true),
+                               m_timing(false),
 
-                                 m_width(640),
-                                 m_height(480),
-                                 m_tagSize(0.166),
-                                 m_fx(600),
-                                 m_fy(600),
-                                 m_px(m_width/2),
-                                 m_py(m_height/2),
+                               m_width(640),
+                               m_height(480),
+                               m_tagSize(0.166),
+                               m_fx(600),
+                               m_fy(600),
+                               m_px(m_width/2),
+                               m_py(m_height/2),
 
-                                 m_exposure(-1),
-                                 m_gain(-1),
-                                 m_brightness(-1),
-                                 m_deviceId(id)
+                               m_exposure(-1),
+                               m_gain(-1),
+                               m_brightness(-1),
+                               m_deviceId(id)
     {
         m_tagDetector = new AprilTags::TagDetector(m_tagCodes);
 
         // find and open a USB camera (built in laptop camera, web cam etc)
+        if(m_deviceId ==1)
+        {
+            m_cap = new hitcrt::myVideoCap("/dev/video1",640,480,60);
+            windowName = "tag0";
+        }else
+        {
+            windowName = "tag1";
+            m_cap = new hitcrt::myVideoCap("/dev/video2",640,480,60);
+        }
+        /*
         m_cap = cv::VideoCapture(m_deviceId);
+        double fps = m_cap.get(CV_CAP_PROP_FPS);
+        double width = m_cap.get(CV_CAP_PROP_FRAME_WIDTH);
+        double height = m_cap.get(CV_CAP_PROP_FRAME_HEIGHT);
+        std::cout<<"fps "<<fps<<"     (x,y) "<<width<<","<<height<<std::endl;
         if(!m_cap.isOpened()) {
             cerr << "ERROR: Can't find video device " << m_deviceId << "\n";
             exit(1);
@@ -50,17 +85,16 @@ namespace hitcrt
         cout << "Actual resolution: "
              << m_cap.get(CV_CAP_PROP_FRAME_WIDTH) << "x"
              << m_cap.get(CV_CAP_PROP_FRAME_HEIGHT) << endl;
+             */
 
     }
-    ApriltagController::~ApriltagController()
-    {}
-    void ApriltagController::run()
+    void TagTask::run()
     {
-        m_apriltagProcessThread = boost::thread(boost::bind(&ApriltagController::m_apriltagProcess,this));
-        m_apriltagDataThread = boost::thread(boost::bind(&ApriltagController::m_apriltagReadFrame,this));
+        m_apriltagDataThread = boost::thread(boost::bind(&TagTask::m_apriltagReadFrame,this));
+        m_apriltagProcessThread = boost::thread(boost::bind(&TagTask::m_apriltagProcess,this));
         m_apriltagDataThread.join();
     }
-    void ApriltagController::m_apriltagReadFrame()
+    void TagTask::m_apriltagReadFrame()
     {
         std::cout<<"apriltagDataThread id "<<m_apriltagDataThread.get_id()<<std::endl;
         while (Param::m_process)
@@ -69,14 +103,14 @@ namespace hitcrt
             gettimeofday(&st,NULL);
             {
                 boost::unique_lock<boost::shared_mutex> writelock(cameralock);
-                m_cap>>frame;
+                m_cap->VideoGrab(frame);
             }
             gettimeofday(&en,NULL);
             boost::this_thread::sleep(boost::posix_time::milliseconds(1));
-            //std::cout<<"camera write time is "<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
+            std::cout<<"camera write time is "<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
         }
     }
-    void ApriltagController::m_apriltagProcess()
+    void TagTask::m_apriltagProcess()
     {
         std::cout <<"apriltagProcessThread id: "<<m_apriltagProcessThread.get_id()<<std::endl;
         while (Param::m_process)
@@ -91,10 +125,10 @@ namespace hitcrt
             gettimeofday(&en,NULL);
             apply();
             boost::this_thread::sleep(boost::posix_time::milliseconds(1));
-            //std::cout<<"camera write time is "<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
+            std::cout<<"camera process time is "<<(en.tv_usec-st.tv_usec)/1000<<" ms"<<std::endl;
         }
     }
-    inline double ApriltagController::standardRad(double t) {
+    double TagTask::standardRad(double t) {
         if (t >= 0.) {
             t = fmod(t+PI, TWOPI) - PI;
         } else {
@@ -102,14 +136,14 @@ namespace hitcrt
         }
         return t;
     }
-    void ApriltagController::wRo_to_euler(const Eigen::Matrix3d& wRo, double& yaw, double& pitch, double& roll) {
+    void TagTask::wRo_to_euler(const Eigen::Matrix3d& wRo, double& yaw, double& pitch, double& roll) {
         yaw = standardRad(atan2(wRo(1,0), wRo(0,0)));
         double c = cos(yaw);
         double s = sin(yaw);
         pitch = standardRad(atan2(-wRo(2,0), wRo(0,0)*c + wRo(1,0)*s));
         roll  = standardRad(atan2(wRo(0,2)*s - wRo(1,2)*c, -wRo(0,1)*s + wRo(1,1)*c));
     }
-    void ApriltagController::print_detection(AprilTags::TagDetection& detection) {
+    void TagTask::print_detection(AprilTags::TagDetection& detection) {
         //cout << "  Id: " << detection.id
         //     << " (Hamming: " << detection.hammingDistance << ")";
 
@@ -152,23 +186,34 @@ namespace hitcrt
         else message.count = 1;
         cv::putText(readFrame,text.str(),cv::Point(10,30),cv::FONT_HERSHEY_PLAIN,1,cv::Scalar(10,40,255),2);
     }
-    void ApriltagController::apply()
+    void TagTask::apply()
     {
         if(readFrame.empty())return;
         cv::Mat image_gray;
-        cv::cvtColor(readFrame, image_gray, CV_BGR2GRAY);
+        std::vector<cv::Mat> channels;
+        cv::split(readFrame,channels);
+        //cv::cvtColor(readFrame, image_gray, CV_BGR2GRAY);
+        image_gray = channels[1];
+        //cv::imshow("apriltag",image_gray);
         vector<AprilTags::TagDetection> detections = m_tagDetector->extractTags(image_gray);
         for (int i=0; i<detections.size(); i++) {
             print_detection(detections[i]);
         }
         if(message.count ==1)
         {
-            if(message.lastSend != message.id)
+            lastSenddMutex.lock();
+            if(lastSend != message.id)
+                isSend = true;
+            lastSend = message.id;
+            lastSenddMutex.unlock();
+            if(isSend)
+            {
                 Param::serial->send(SerialApp::SEND_APRILTAG,std::vector<float>(1,message.id));
+                isSend = false;
+            }
             std::stringstream text;
             text<<"message id  :  "<<message.id;
             cv::putText(readFrame,text.str(),cv::Point(10,80),cv::FONT_HERSHEY_PLAIN,2,cv::Scalar(0,255,25),2);
-            message.lastSend = message.id;
             message.lastId = 10;
             message.id = 10;
             message.count = 0;

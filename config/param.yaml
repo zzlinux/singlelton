@@ -2,10 +2,10 @@
 appMode: 3
 sleeptime: 0
 TASK:
-    trace: 1
+    trace: 0
     cameraLocation: 0
-    apriltag: 0
-    radarLocation: 1
+    apriltag: 1
+    radarLocation: 0
 DEBUG:
     master: 1
     trace: 1
@@ -94,6 +94,32 @@ cameraLocation:
        cols: 4
        dt: f
        data: [-0.224965668654656,    0.038536667147829,    8.150664191690574e-04,  -9.482220330654349e-04]
+    OV2710_INTRINSIC_0: !!opencv-matrix
+       rows: 3
+       cols: 3
+       dt: d
+       data: [ 3.0887996635666332e+02, 0., 2.9568270173560489e+02, 0.,
+           3.0887996635666332e+02, 2.5642677444175797e+02, 0., 0., 1. ]
+    OV2710_COEFFS_0: !!opencv-matrix
+       rows: 5
+       cols: 1
+       dt: d
+       data: [ -3.1364493812914795e-01, 1.2666872921321376e-01,
+           -2.8908521284088267e-03, -1.5915954356424675e-03,
+           -2.4686920701074720e-02 ]
+    OV2710_INTRINSIC_1: !!opencv-matrix
+       rows: 3
+       cols: 3
+       dt: d
+       data: [ 1.0793874982785831e+03, 0., 2.9873830839899318e+02, 0.,
+           1.0793874982785831e+03, 1.8769458142541174e+02, 0., 0., 1. ]
+    OV2710_COEFFS_1: !!opencv-matrix
+       rows: 5
+       cols: 1
+       dt: d
+       data: [ -5.2967654565949784e-01, -1.2668821754405948e+00,
+             3.6429018907526103e-02, 8.2851694150036931e-03,
+             7.6329199841975708e+00 ]
 apriltag:
     camera_matrix: !!opencv-matrix
        rows: 3

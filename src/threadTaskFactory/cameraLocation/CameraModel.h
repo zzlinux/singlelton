@@ -17,10 +17,12 @@ namespace hitcrt
         CameraModel(int id);
         ~CameraModel(){};
         int cameraid;
+        static int count;
         struct LINEKB{ double k;double b; };
         struct LINEE{ cv::Point2d PointStart;cv::Point2d PointEnd;};
         cv::VideoCapture cap;
-        cv::Mat map1, map2;
+        cv::Mat cameraMatrix, distCoeffs;
+        cv::Mat map1,map2;
         void thinImg(cv::Mat & src,std::vector<cv::Point2d> & bonePoints);
         void Ransc(std::vector<cv::Point2d> & VecPoint,std::vector<std::vector<cv::Point>> &lines);
         double calYawAngle(LINEKB & lkb);

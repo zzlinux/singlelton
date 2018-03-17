@@ -27,7 +27,7 @@ namespace hitcrt
         {
             struct timeval st,en;
             gettimeofday(&st,NULL);
-            boost::this_thread::sleep(boost::posix_time::milliseconds(40));
+            boost::this_thread::sleep(boost::posix_time::milliseconds(20));
             cv::Mat rgb,dep;
             rgb = cap->getFrameRGB();
             dep = cap->getFrameDepth();
